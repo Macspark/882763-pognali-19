@@ -1,0 +1,14 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    transition: 200ms ease-out;
+  }
+
+  &:active,
+  &:focus {
+    transition: 200ms ease-out;
+  }
+}
