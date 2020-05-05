@@ -23,73 +23,7 @@
           </picture>
         </a>
 
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Меню</button>
-
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__menu">
-              <li>
-                <a href="index.html">О сервисе</a>
-              </li>
-              <li>
-                <a href="catalog.html">Направления</a>
-              </li>
-              <li>
-                <a href="form.html">Попутчики</a>
-              </li>
-            </ul>
-
-            <a href="#" class="button main-nav__button">Авторизация</a>
-
-            <ul class="main-nav__contact">
-              <li>
-                <a href="tel:88005558628">
-                  <div class="main-nav__img">
-                    <svg width="18" height="18">
-                      <use xlink:href="./img/sprite.svg#contacts-phone" />
-                    </svg>
-                  </div>
-                  8 800 555-86-28
-                </a>
-              </li>
-              <li>
-                <a href="mailto:mail@htmlacademy.ru" class="main-nav__mail">
-                  <div class="main-nav__img">
-                    <svg width="18" height="13">
-                      <use xlink:href="./img/sprite.svg#contacts-mail" />
-                    </svg>
-                  </div>
-                  mail@htmlacademy.ru
-                </a>
-              </li>
-            </ul>
-
-            <ul class="main-nav__social">
-              <li>
-                <a href="https://facebook.com" target="_blank" aria-label="Мы на Фейсбуке">
-                  <svg width="11" height="21">
-                    <use xlink:href="./img/sprite.svg#facebook" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://vk.com" target="_blank" aria-label="Мы Вконтакте">
-                  <svg width="23" height="12">
-                    <use xlink:href="./img/sprite.svg#vk" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://instagram.com" target="_blank" aria-label="Мы в Инстаграме">
-                  <svg width="18" height="18">
-                    <use xlink:href="./img/sprite.svg#instagram" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-
-          </div>
-        </nav>
+        <button class="page-header__toggle" type="button">Меню</button>
 
         <ul class="page-header__panel panel">
           <li class="panel__item panel__item--phone">
@@ -111,26 +45,98 @@
           </li>
         </ul>
       </div>
+
+      <nav class="main-nav">
+
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__menu">
+            <li>
+              <a href="index.html">О сервисе</a>
+            </li>
+            <li>
+              <a href="catalog.html">Направления</a>
+            </li>
+            <li>
+              <a href="form.html">Попутчики</a>
+            </li>
+          </ul>
+
+          <a href="#" class="button main-nav__button">Авторизация</a>
+
+          <ul class="main-nav__contact">
+            <li>
+              <a href="tel:88005558628">
+                <div class="main-nav__img">
+                  <svg width="18" height="18">
+                    <use xlink:href="./img/sprite.svg#contacts-phone" />
+                  </svg>
+                </div>
+                8 800 555-86-28
+              </a>
+            </li>
+            <li>
+              <a href="mailto:mail@htmlacademy.ru" class="main-nav__mail">
+                <div class="main-nav__img">
+                  <svg width="18" height="13">
+                    <use xlink:href="./img/sprite.svg#contacts-mail" />
+                  </svg>
+                </div>
+                mail@htmlacademy.ru
+              </a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__social">
+            <li>
+              <a href="https://facebook.com" target="_blank" aria-label="Мы на Фейсбуке">
+                <svg width="11" height="21">
+                  <use xlink:href="./img/sprite.svg#facebook" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://vk.com" target="_blank" aria-label="Мы Вконтакте">
+                <svg width="23" height="12">
+                  <use xlink:href="./img/sprite.svg#vk" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" aria-label="Мы в Инстаграме">
+                <svg width="18" height="18">
+                  <use xlink:href="./img/sprite.svg#instagram" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
     </header>
 
     <main>
       <section class="promo">
         <div class="promo__wrapper">
           <h1 class="promo__title">В путешествие <br>с крутыми <br>попутчиками!</h1>
+          <div class="promo__img">
+            <source srcset="./img/traveller-illustration-desktop@1x.png 1x, ./img/traveller-illustration-desktop@2x.png 2x" media="(min-width: 1440px)">
+            <source srcset="./img/traveller-illustration-tablet@1x.png 1x, ./img/traveller-illustration-tablet@2x.png 2x" media="(min-width: 768px)">
+            <img src="./img/traveller-illustration-mobile@1x.png" srcset="./img/traveller-illustration-mobile@2x.png 2x" width="192" height="255" alt="Погнали!">
+          </div>
           <p class="promo__text">«Лучшее приложение, <br>что я видел в жизни!»</p>
-          <p class="promo__bold">Мурат Эльтазин <br>главный редактор <br>газеты «гаджетлайф»</p>
+          <p class="promo__text promo__text--bold">Мурат Эльтазин <br>главный редактор <br>газеты «гаджетлайф»</p>
           <ul class="promo__list">
             <li class="promo__item">
-              <p>Выберите направление</p>
+              <p>Выберите <br>направление</p>
             </li>
             <li class="promo__item">
-              <p>Изучите идеи путешественников</p>
+              <p>Изучите идеи <br>путешественников</p>
             </li>
             <li class="promo__item">
-              <p>Находите тех, кто похож на вас</p>
+              <p>Находите тех, <br>кто похож на вас</p>
             </li>
             <li class="promo__item">
-              <p>Путешествуйте вместе!</p>
+              <p>Путешествуйте <br>вместе!</p>
             </li>
           </ul>
         </div>

@@ -1,5 +1,5 @@
 var header = document.querySelector('.page-header');
-var navBtn = document.querySelector('.main-nav__toggle');
+var navBtn = document.querySelector('.page-header__toggle');
 var headerToggled = 'page-header--toggled';
 
 header.classList.remove('page-header--nojs');

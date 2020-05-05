@@ -1,0 +1,113 @@
+.promo {
+  padding-bottom: 40px;
+  margin-top: -1px;
+  background-color: $color-darkblue;
+  background-image:
+    linear-gradient(to bottom, transparent 390px, $color-darkblue 390px, $color-darkblue 675px, $color-darkbluegrey 675px),
+    url("../img/globe-back-mobile@1x.jpg");
+  background-position: center, center -89px;
+  background-size: 100%, 100% 569px;
+  background-repeat: no-repeat;
+}
+
+.promo__wrapper {
+  @include container-padding;
+  @include container-size;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.15;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo__img {
+  margin-bottom: 48px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.promo__text {
+  padding: 0 25px;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.38;
+  color: #ffffff;
+
+  &--bold {
+    font-weight: bold;
+  }
+}
+
+.promo__list {
+  @include reset-list;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: $color-darktwo;
+}
+
+.promo__list li {
+  position: relative;
+  margin-bottom: -15px;
+  padding: 20px 25px;
+
+  min-height: 95px;
+  border-radius: 10px;
+
+  background-color: $color-lightgold;
+
+  &:nth-child(1) {
+    background-color: $color-mango;
+  }
+
+  &:nth-child(2) {
+    background-color: $color-mangotwo;
+  }
+
+  &:nth-child(3) {
+    background-color: $color-mangothree;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    min-height: 80px;
+  }
+}
+
+.promo__list li::after {
+  position: absolute;
+  right: 21px;
+  top: 22px;
+
+  content: "";
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.promo__list li:nth-child(1)::after {
+  content: "1";
+}
+
+.promo__list li:nth-child(2)::after {
+  content: "2";
+}
+
+.promo__list li:nth-child(3)::after {
+  content: "3";
+}
+
+.promo__list li:nth-child(4)::after {
+  content: "4";
+}
+
+.promo__list p {
+  margin: 0;
+}
