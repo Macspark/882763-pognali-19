@@ -1,0 +1,154 @@
+.main-nav {
+  position: relative;
+  z-index: 10;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 0;
+  top: -85px;
+
+  width: 25px;
+  height: 19px;
+
+  border: none;
+  font-size: 0;
+
+  background: none;
+
+  z-index: 3;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    content: "";
+
+    width: 25px;
+    height: 4px;
+    background-color: #ffffff;
+
+    box-shadow: 0 8px 0 0 #ffffff;
+    border-radius: 2px;
+  }
+}
+
+.page-header--nojs .main-nav__toggle {
+  display: none;
+}
+
+.page-header--toggled .main-nav__toggle,
+.page-header--nojs .main-nav__toggle {
+  &::before {
+    top: 5px;
+    height: 2px;
+    background-color: $color-pinkishgrey;
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    display: block;
+    content: "";
+
+    width: 25px;
+    height: 2px;
+    background-color: $color-pinkishgrey;
+
+    transform: rotate(-45deg);
+  }
+}
+
+.page-header--toggled .main-nav__wrapper,
+.page-header--nojs .main-nav__wrapper {
+  display: block;
+}
+
+.main-nav__wrapper {
+  display: none;
+}
+
+.main-nav__menu {
+  @include reset-list;
+  margin-bottom: 50px;
+
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-darkbluegrey;
+}
+
+.main-nav__button {
+  margin-bottom: 51px;
+
+  width: 270px;
+  height: 50px;
+  border-radius: 25px;
+  color: $color-darktwo;
+}
+
+.main-nav__contact {
+  @include reset-list;
+  margin-bottom: 42px;
+
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.38;
+  text-transform: uppercase;
+  color: $color-darkbluegrey;
+}
+
+.main-nav__contact li {
+  position: relative;
+  padding-left: 60px;
+
+  display: flex;
+  align-items: center;
+  min-height: 45px;
+}
+
+.main-nav__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-color: $dark-blue-grey-two;
+
+  border-radius: 50%;
+  fill: $color-lightgold;
+}
+
+.main-nav__social {
+  @include reset-list;
+  padding-bottom: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav__social li {
+  margin: 0 13px;
+}
+
+.main-nav__social svg {
+  fill: $color-darkbluegrey;
+}

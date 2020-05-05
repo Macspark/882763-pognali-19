@@ -1,0 +1,55 @@
+.page-header {
+  position: relative;
+  padding-top: 27px;
+  background-color: $color-darkblue;
+}
+
+.page-header__logo {
+  margin-bottom: 65px;
+  display: none;
+
+  &--white {
+    display: block;
+  }
+}
+
+.page-header__wrapper {
+  @include container-padding;
+  @include container-size;
+}
+
+.page-header--toggled {
+  background-color: #ffffff;
+}
+
+.page-header--toggled .page-header__logo {
+  &--white {
+    display: none;
+  }
+
+  &--blue {
+    display: block;
+  }
+}
+
+.page-header--toggled .page-header__panel {
+  display: none;
+}
+
+.page-header--nojs {
+  background-color: #ffffff;
+}
+
+.page-header--nojs .page-header__logo {
+  &--white {
+    display: none;
+  }
+
+  &--blue {
+    display: block;
+  }
+}
+
+.page-header--nojs .page-header__panel {
+  display: none;
+}

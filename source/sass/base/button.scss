@@ -3,6 +3,17 @@
   align-items: center;
   justify-content: center;
 
+  width: 280px;
+  height: 81px;
+  border-radius: 20px;
+  background-color: $color-lightgold;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.76;
+  text-transform: uppercase;
+  color: $color-darkslateblue;
+
   &:hover {
     transition: 200ms ease-out;
   }
