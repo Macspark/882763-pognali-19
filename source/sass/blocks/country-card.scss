@@ -1,0 +1,61 @@
+.country-card__img img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.country-card__desc {
+  position: relative;
+  margin-top: -15px;
+  padding: 24px 25px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.country-card__flag {
+  position: absolute;
+  left: 25px;
+  top: -12px;
+}
+
+.country-card__title {
+  margin: 0;
+  font-size: 21px;
+  color: $color-darktwo;
+}
+
+.country-card__text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  text-align: left;
+  color: $color-blackish;
+  opacity: 0.3;
+}
+
+.country-card__views {
+  position: absolute;
+  top: 28px;
+  right: 24px;
+
+  margin: 0;
+  padding-left: 18px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  color: $color-blackish;
+  opacity: 0.3;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-image: url("../img/sprite.svg#user");
+    opacity: 0.3;
+  }
+}

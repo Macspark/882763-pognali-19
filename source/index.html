@@ -144,11 +144,11 @@
 
       <section class="about">
         <div class="about__wrapper">
-          <div class="about__text">
-            <h2>О сервисе</h2>
-            <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-            <p><b>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b></p>
-            <a>Подробнее</a>
+          <div class="about__desc">
+            <h2 class="about__title">О сервисе</h2>
+            <p class="about__text">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте&nbsp;вдохновение в чужих. </p>
+            <p class="about__text about__text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+            <a class="about__link">Подробнее</a>
           </div>
           <div class="about__img">
             <picture>
@@ -161,9 +161,9 @@
 
       <section class="routes">
         <div class="routes__wrapper">
-          <div class="routes__text">
-            <h2>Направления</h2>
-            <p>Мы не продаем туры <br>и ничего не рекламируем. <br> Люди сами пишут о странах, куда хотели бы отправиться <br>и чем можно там заняться.</p>
+          <div class="routes__desc">
+            <h2 class="routes__title">Направления</h2>
+            <p class="routes__text">Мы не продаем туры <br>и ничего не рекламируем. <br> Люди сами пишут о странах, куда хотели бы отправиться <br>и чем можно там заняться.</p>
           </div>
           <ul class="routes__list">
             <li class="routes__item country-card">
@@ -173,14 +173,14 @@
                   <img src="./img/thailand-mobile@1x.jpg" srcset="./img/thailand-mobile@2x.jpg 2x" width="270" height="110" alt="Тайланд">
                 </picture>
               </div>
-              <svg class="country-card__flag" width="35" height="24">
-                <use xlink:href="./img/sprite.svg#flag-thailand" />
-              </svg>
               <div class="country-card__desc">
-                <h3>Таиланд</h3>
-                <p>Джунгли зовут!</p>
+                <svg class="country-card__flag" width="35" height="24">
+                  <use xlink:href="./img/sprite.svg#flag-thailand" />
+                </svg>
+                <h3 class="country-card__title">Таиланд</h3>
+                <p class="country-card__text">Джунгли зовут!</p>
+                <small class="country-card__views">18321</small>
               </div>
-              <small class="country-card__views">18321</small>
             </li>
             <li class="routes__item country-card">
               <div class="country-card__img">
@@ -189,14 +189,14 @@
                   <img src="./img/france-mobile@1x.jpg" srcset="./img/france-mobile@2x.jpg 2x" width="270" height="110" alt="Погнали!">
                 </picture>
               </div>
-              <svg class="country-card__flag" width="35" height="24">
-                <use xlink:href="./img/sprite.svg#flag-france" />
-              </svg>
               <div class="country-card__desc">
-                <h3>Франция</h3>
-                <p>Трэ бьен, манифик!</p>
-              </div>
+                <svg class="country-card__flag" width="35" height="24">
+                  <use xlink:href="./img/sprite.svg#flag-france" />
+                </svg>
+                <h3 class="country-card__title">Франция</h3>
+                <p class="country-card__text">Трэ бьен, манифик!</p>
               <small class="country-card__views">12518</small>
+              </div>
             </li>
             <li class="routes__item country-card">
               <div class="country-card__img">
@@ -205,17 +205,17 @@
                   <img src="./img/czech-mobile@1x.jpg" srcset="./img/czech-mobile@2x.jpg 2x" width="270" height="110" alt="Погнали!">
                 </picture>
               </div>
-              <svg class="country-card__flag" width="35" height="24">
-                <use xlink:href="./img/sprite.svg#flag-czech" />
-              </svg>
               <div class="country-card__desc">
-                <h3>Чехия</h3>
-                <p>Закоулки старой Европы</p>
+                <svg class="country-card__flag" width="35" height="24">
+                  <use xlink:href="./img/sprite.svg#flag-czech" />
+                </svg>
+                <h3 class="country-card__title">Чехия</h3>
+                <p class="country-card__text">Закоулки старой Европы</p>
+                <small class="country-card__views">5326</small>
               </div>
-              <small class="country-card__views">5326</small>
             </li>
           </ul>
-          <a class="routes__button">Показать все</a>
+          <a class="button button--arrow routes__button">Показать все</a>
         </div>
       </section>
 

@@ -1,0 +1,71 @@
+.routes {
+  margin-top: -31px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  background-color: $color-palegrey;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.routes__wrapper {
+  @include container-padding;
+  @include container-size;
+}
+
+.routes__desc {
+  margin-bottom: 61px;
+  padding: 0 25px;
+}
+
+.routes__title {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 24px;
+  color: $color-mango;
+}
+
+.routes__text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.38;
+  color: $color-blackish;
+}
+
+.routes__list {
+  @include reset-list;
+}
+
+.routes__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 25px;
+  }
+}
+
+.routes__button {
+  position: relative;
+  padding: 24px;
+
+  justify-content: flex-start;
+  width: 270px;
+  height: 62px;
+  border-radius: 10px;
+
+  font-size: 18px;
+  text-transform: none;
+
+  &::before {
+    position: absolute;
+    top: -118px;
+    left: 0;
+
+    content: "";
+    width: 100%;
+    height: 100px;
+
+    background-image: linear-gradient(to top, $color-palegrey, transparent);
+    z-index: 3;
+  }
+}

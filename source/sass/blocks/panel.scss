@@ -28,6 +28,14 @@
   text-transform: uppercase;
   color: $color-darktwo;
 
+  &--phone {
+    background-color: $color-mango;
+  }
+
+  &--mail {
+    background-color: $color-mangothree;
+  }
+
   &--button {
     min-width: 189px;
   }
