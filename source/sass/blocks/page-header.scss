@@ -29,6 +29,7 @@
 .page-header__wrapper {
   @include container-padding;
   @include container-size;
+  display: flex;
 }
 
 .page-header__toggle {
@@ -67,10 +68,8 @@
   }
 }
 
-.page-header__panel {
-  position: absolute;
-  left: 0;
-  top: 458px;
+.page-header .page-header__panel {
+  display: none;
 }
 
 .page-header--scrolled .page-header__toggle {
@@ -129,11 +128,6 @@
   }
 }
 
-.page-header--toggled .page-header__panel,
-.page-header--nojs .page-header__panel {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .page-header {
     padding-top: 40px;
@@ -171,7 +165,6 @@
   }
 
   .page-header__wrapper {
-    display: flex;
     align-items: center;
     justify-content: space-between;
   }

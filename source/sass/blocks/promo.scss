@@ -27,10 +27,15 @@
 }
 
 .promo__img {
-  margin-bottom: 48px;
+  margin-bottom: 0;
   padding-left: 30px;
   display: flex;
   justify-content: center;
+}
+
+.promo__panel {
+  margin-top: -20px;
+  margin-bottom: 27px;
 }
 
 .promo__text {
@@ -130,6 +135,10 @@
     margin-bottom: 87px;
     font-size: 60px;
     line-height: 1.17;
+  }
+
+  .promo .promo__panel {
+    display: none;
   }
 
   .promo__text {
