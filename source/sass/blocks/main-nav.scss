@@ -188,4 +188,16 @@
   .main-nav .main-nav__social {
     display: none;
   }
+
+  .page-header--scrolled .main-nav {
+    top: 5px;
+
+    &::before {
+      background-color: $color-darkbluegrey;
+    }
+  }
+
+  .page-header--scrolled a {
+    color: $color-darkbluegrey;
+  }
 }
