@@ -105,3 +105,80 @@
   border-radius: 50%;
   fill: $color-lightgold;
 }
+
+@media (min-width: $tablet-width) {
+  .contact {
+    margin-top: -61px;
+    padding-top: 97px;
+    padding-bottom: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .contact__wrapper {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .contact__title {
+    margin-bottom: 55px;
+    font-size: 45px;
+    line-height: 1;
+  }
+
+  .contact__text {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  .contact__text br {
+    display: none;
+  }
+
+  .contact__form {
+    margin-top: 68px;
+    margin-bottom: 55px;
+  }
+
+  .contact__form input {
+    padding: 35px;
+    height: 81px;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .contact__form button {
+    width: 82px;
+    height: 81px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .contact__list {
+    margin-top: 42px;
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .contact__list li {
+    padding-left: 90px;
+    min-height: 67px;
+  }
+
+  .contact__img {
+    width: 67px;
+    height: 67px;
+  }
+
+  .contact__img--phone svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .contact__img--mail svg {
+    width: 27px;
+    height: 19px;
+  }
+}

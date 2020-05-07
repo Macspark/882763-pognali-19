@@ -70,3 +70,44 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .business {
+    top: 8%;
+  }
+
+  .business__title {
+    margin-bottom: 45px;
+    font-size: 45px;
+    line-height: 1;
+  }
+
+  .business__list {
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  .business__item {
+    position: relative;
+    z-index: 2;
+
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 80%;
+    min-height: 67px;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 22px;
+    line-height: 1.27;
+  }
+
+  .business__button {
+    height: 108px;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: none;
+    background-color: $color-palegreyfour;
+  }
+}

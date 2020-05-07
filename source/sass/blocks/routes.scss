@@ -70,3 +70,70 @@
   font-size: 18px;
   text-transform: none;
 }
+
+@media (min-width: $tablet-width) {
+  .routes {
+    margin-top: -61px;
+    padding-top: 130px;
+    padding-bottom: 80px;
+
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+    &::before {
+      position: absolute;
+      top: 465px;
+      left: 40px;
+      content: "";
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: $color-palegreythree;
+    }
+  }
+
+  .routes__wrapper {
+    position: relative;
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: 91.7% 10px;
+  }
+
+  .routes__desc {
+    margin-bottom: 107px;
+    padding-left: 35px;
+    padding-right: 45%;
+  }
+
+  .routes__title {
+    margin-bottom: 58px;
+    font-size: 45px;
+    line-height: 1;
+  }
+
+  .routes__text {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  .routes__button {
+    margin: 0 auto;
+    padding-left: 34px;
+
+    width: 90%;
+    height: 81px;
+    border-radius: 20px;
+    background-position: 94.4% center;
+
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .routes__item {
+    margin-bottom: 6px;
+  }
+
+  .routes__item:last-child {
+    margin-bottom: 42px;
+  }
+}

@@ -24,6 +24,8 @@
   }
 
   &--arrow {
+    justify-content: flex-start;
+    text-transform: none;
     background-image: url("../img/sprite.svg#triangle-arrow-right");
     background-repeat: no-repeat;
     background-size: 14px 18px;

@@ -106,3 +106,111 @@
   font-weight: bold;
   color: $color-darkbluegrey;
 }
+
+@media (min-width: $tablet-width) {
+  .premium {
+    margin-top: -61px;
+    padding-top: 130px;
+    padding-bottom: 88px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .premium__title {
+    margin-bottom: 77px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 1;
+
+    &::after {
+      display: none;
+      background-image: none;
+    }
+  }
+
+  .premium__title br {
+    display: none;
+  }
+
+  .premium__list {
+    position: relative;
+    margin-bottom: 55px;
+    padding-left: 90px;
+
+    &::before {
+      position: absolute;
+      top: -40px;
+      right: 0;
+
+      content: "";
+      width: 198px;
+      height: 285px;
+
+      border-radius: 20px;
+      background-color: $color-palegreythree;
+    }
+
+    &::after {
+      position: absolute;
+      right: 45px;
+      bottom: -115px;
+
+      content: "";
+      width: 99px;
+      height: 99px;
+
+      background-image: url("../img/rates@1x.png");
+      background-size: contain;
+    }
+  }
+
+  .premium__item {
+    position: relative;
+    z-index: 2;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 93.8%;
+    min-height: 67px;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 28px;
+    line-height: 1.18;
+
+    &::after {
+      top: 0;
+      left: -90px;
+      right: auto;
+
+      width: 67px;
+      height: 67px;
+      font-size: 28px;
+    }
+  }
+
+  .premium__button {
+    position: relative;
+    padding-left: 89px;
+    font-size: 20px;
+    line-height: 1;
+    color: $color-lightnavy;
+
+    &::after {
+      position: absolute;
+      top: -20px;
+      left: 0;
+
+      content: "";
+      width: 67px;
+      height: 67px;
+      border-radius: 50%;
+
+      background-color: $color-palegreythree;
+      background-image: url("../img/sprite.svg#business");
+      background-size: 21px 26px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
