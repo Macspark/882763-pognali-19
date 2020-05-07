@@ -1,0 +1,43 @@
+.header-social {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-social__item {
+  margin: 0 13px;
+}
+
+.header-social__item svg {
+  fill: $color-darkbluegrey;
+}
+
+@media (min-width: $tablet-width) {
+  .header-social {
+    justify-content: flex-start;
+  }
+
+  .header-social__item {
+    margin: 0 18px;
+
+    &:first-child {
+      margin-left: 25px;
+    }
+  }
+
+  .header-social__item--fb svg {
+    width: 14px;
+    height: 28px;
+  }
+
+  .header-social__item--vk svg {
+    width: 31px;
+    height: 16px;
+  }
+
+  .header-social__item--insta svg {
+    width: 24px;
+    height: 24px;
+  }
+}

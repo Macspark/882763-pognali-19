@@ -1,8 +1,5 @@
 .panel {
   @include reset-list;
-  position: absolute;
-  left: 0;
-  top: 458px;
 
   width: 100%;
   display: flex;
@@ -40,5 +37,26 @@
 
   &--button {
     min-width: 189px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .panel {
+    width: auto;
+  }
+
+  .panel__item {
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    line-height: 1.5;
+
+    &--phone {
+      display: none;
+    }
+
+    &--mail {
+      display: none;
+    }
   }
 }
