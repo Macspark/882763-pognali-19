@@ -1,0 +1,108 @@
+.premium {
+  position: relative;
+  z-index: 47;
+  margin-top: -31px;
+  padding-top: 80px;
+  padding-bottom: 37px;
+  background-color: $color-palegrey;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.premium__wrapper {
+  @include container-padding;
+  @include container-size;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.premium__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 46px;
+
+  font-size: 24px;
+  line-height: 1;
+  color: $color-mango;
+
+  &::after {
+    position: absolute;
+    top: -12px;
+    right: -25px;
+
+    content: "";
+    width: 99px;
+    height: 99px;
+
+    background-image: url("../img/rates@1x.png");
+    background-size: contain;
+  }
+}
+
+.premium__list {
+  @include reset-list;
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.38;
+  color: $color-blackish;
+}
+
+.premium__list p {
+  margin: 0;
+}
+
+.premium__item {
+  position: relative;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 11px;
+
+  width: 90%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  &::after {
+    position: absolute;
+    top: 3px;
+    right: -45px;
+
+    content: "1";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+
+    font-size: 16px;
+    line-height: 0.88;
+    color: #ffffff;
+
+    background-color: $color-lightgold;
+  }
+}
+
+.premium__item:nth-child(1)::after {
+  content: "1";
+  background-color: $color-mangotwo;
+}
+
+.premium__item:nth-child(2)::after {
+  content: "2";
+  background-color: $color-mangothree;
+}
+
+.premium__item:nth-child(3)::after {
+  content: "3";
+}
+
+.premium__button {
+  font-size: 16px;
+  font-weight: bold;
+  color: $color-darkbluegrey;
+}

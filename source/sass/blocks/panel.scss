@@ -29,10 +29,12 @@
   color: $color-darktwo;
 
   &--phone {
+    padding-top: 6px;
     background-color: $color-mango;
   }
 
   &--mail {
+    padding-top: 2px;
     background-color: $color-mangothree;
   }
 

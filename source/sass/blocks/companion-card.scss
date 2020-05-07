@@ -1,0 +1,134 @@
+.companion-card {
+  position: relative;
+}
+
+.companion-card__img img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.companion-card__level-wrapper {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.companion-card__circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: rotate(270deg);
+}
+
+.companion-card__level {
+  position: relative;
+  margin: 0;
+  margin-top: 11px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+
+  &::before {
+    position: absolute;
+    left: -3px;
+    bottom: 23px;
+
+    content: "";
+    width: 31px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+
+    content: "level";
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+.companion-card__desc {
+  position: relative;
+  margin-top: -4px;
+  padding: 23px 45px 17px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.companion-card__countries {
+  @include reset-list;
+  position: absolute;
+  top: -12px;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.companion-card__countries li {
+  margin: 0 9px;
+}
+
+.companion-card__name {
+  position: relative;
+  font-size: 21px;
+  font-weight: bold;
+  color: $color-darkslateblue;
+}
+
+.companion-card__name::before {
+  position: absolute;
+  top: 10px;
+  left: -16px;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: $color-offline;
+}
+
+.companion-card__name--online::before {
+  background-color: $color-online;
+}
+
+.companion-card__tags {
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: center;
+  color: $color-blackish;
+}
+
+.companion-card__transport {
+  @include reset-list;
+  display: flex;
+}
+
+.companion-card__transport-item {
+  margin: 0 7px;
+  fill: $color-darkslateblue;
+  opacity: 0.15;
+
+  &--checked {
+    opacity: 1;
+  }
+}
