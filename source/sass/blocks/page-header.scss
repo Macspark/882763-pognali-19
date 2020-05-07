@@ -204,6 +204,7 @@
 @media (min-width: $desktop-width) {
   .page-header {
     padding-top: 48px;
+    background-color: $color-darkblue;
 
     &--toggled {
       background-color: $color-darkbluegrey;

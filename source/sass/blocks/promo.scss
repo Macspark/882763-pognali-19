@@ -1,5 +1,6 @@
 .promo {
   position: relative;
+  z-index: 51;
   padding-bottom: 41px;
   margin-top: -1px;
   background-color: $color-darkblue;
@@ -164,7 +165,7 @@
 
   .promo__img img {
     width: 372px;
-    height: 495px;
+    height: 451px;
   }
 
   .promo__list {
@@ -221,6 +222,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .promo {
+    padding-bottom: 123px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+    background-color: $color-darkblue;
+    background-image: url("../img/globe-back-desktop@1x.jpg");
+    background-size: 1800px 750px;
+    background-position: center bottom;
+  }
+
   .promo__wrapper {
     position: relative;
   }
@@ -241,5 +253,66 @@
   .promo__text {
     margin-right: 0;
     max-width: 100%;
+  }
+
+  .promo__list {
+    margin-top: 105px;
+  }
+
+  .promo .promo__item {
+    margin: 0;
+    margin-right: -53px;
+    padding: 27px 32px;
+    width: 28%;
+    min-height: 107px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    &:nth-child(1) {
+      margin-right: -53px;
+    }
+
+    &:nth-child(2) {
+      margin-right: -25px;
+    }
+
+    &:nth-child(3) {
+      margin-right: -28px;
+    }
+
+    &:nth-child(4) {
+      margin-right: 0;
+      width: 24%;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  }
+
+  .promo__item::after {
+    top: 27px;
+    right: 58px;
+    left: auto;
+    bottom: auto;
+    font-size: 24px;
+  }
+
+  .promo__item:first-child::after {
+    right: 87px;
+  }
+
+  .promo__item:last-child::after {
+    right: 33px;
+  }
+
+  .promo__img {
+    position: absolute;
+    top: -95px;
+    right: 28%;
+  }
+
+  .promo__img img {
+    width: 431px;
+    height: 640px;
   }
 }

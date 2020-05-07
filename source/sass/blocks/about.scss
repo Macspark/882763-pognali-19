@@ -119,3 +119,34 @@
     background-position: 87% center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about {
+    margin-top: -61px;
+    padding-top: 150px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .about__wrapper {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 213px;
+      height: 213px;
+      border-radius: 20px;
+      background-color: $color-darkbluegreytwo;
+    }
+  }
+
+  .about__title,
+  .about__text {
+    position: relative;
+  }
+}

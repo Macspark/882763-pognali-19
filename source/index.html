@@ -119,30 +119,31 @@
         <div class="promo__wrapper">
           <h1 class="promo__title">В путешествие <br>с крутыми <br>попутчиками!</h1>
           <div class="promo__img">
-            <source srcset="./img/traveller-illustration-desktop@1x.png 1x, ./img/traveller-illustration-desktop@2x.png 2x" media="(min-width: 1440px)">
-            <source srcset="./img/traveller-illustration-tablet@1x.png 1x, ./img/traveller-illustration-tablet@2x.png 2x" media="(min-width: 768px)">
-            <img src="./img/traveller-illustration-mobile@1x.png" srcset="./img/traveller-illustration-mobile@2x.png 2x" width="192" height="255" alt="Погнали!">
+            <picture>
+              <source srcset="./img/traveller-illustration-desktop@1x.png 1x, ./img/traveller-illustration-desktop@2x.png 2x" media="(min-width: 1440px)">
+              <source srcset="./img/traveller-illustration-tablet@1x.png 1x, ./img/traveller-illustration-tablet@2x.png 2x" media="(min-width: 768px)">
+              <img src="./img/traveller-illustration-mobile@1x.png" srcset="./img/traveller-illustration-mobile@2x.png 2x" width="192" height="255" alt="Погнали!">
+            </picture>
           </div>
-
-                  <ul class="promo__panel panel">
-                    <li class="panel__item panel__item--phone">
-                      <a href="tel:88005558628">
-                        <svg width="18" height="18">
-                          <use xlink:href="./img/sprite.svg#topmenu-phone" />
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="panel__item panel__item--mail">
-                      <a href="mailto:mail@htmlacademy.ru" >
-                        <svg width="18" height="14">
-                          <use xlink:href="./img/sprite.svg#topmenu-mail" />
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="panel__item panel__item--button">
-                      <a href="#">Авторизация</a>
-                    </li>
-                  </ul>
+          <ul class="promo__panel panel">
+            <li class="panel__item panel__item--phone">
+              <a href="tel:88005558628">
+                <svg width="18" height="18">
+                  <use xlink:href="./img/sprite.svg#topmenu-phone" />
+                </svg>
+              </a>
+            </li>
+            <li class="panel__item panel__item--mail">
+              <a href="mailto:mail@htmlacademy.ru" >
+                <svg width="18" height="14">
+                  <use xlink:href="./img/sprite.svg#topmenu-mail" />
+                </svg>
+              </a>
+            </li>
+            <li class="panel__item panel__item--button">
+              <a href="#">Авторизация</a>
+            </li>
+          </ul>
           <div class="promo__quote">
             <p class="promo__text">«Лучшее&nbsp;приложение, что&nbsp;я&nbsp;видел&nbsp;в&nbsp;жизни!»</p>
             <p class="promo__text promo__text--author">Мурат Эльтазин главный&nbsp;редактор газеты «гаджетлайф»</p>
