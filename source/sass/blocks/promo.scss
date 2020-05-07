@@ -210,3 +210,27 @@
     font-size: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    position: relative;
+  }
+
+  .promo__title {
+    margin-top: 37px;
+    padding-left: 68px;
+    text-align: left;
+  }
+
+  .promo__quote {
+    position: absolute;
+    width: 365px;
+    top: -16px;
+    right: 15px;
+  }
+
+  .promo__text {
+    margin-right: 0;
+    max-width: 100%;
+  }
+}

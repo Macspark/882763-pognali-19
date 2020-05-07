@@ -129,3 +129,63 @@
     line-height: 1;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    top: 30px;
+    left: -66px;
+    right: 0;
+    bottom: auto;
+    max-width: 800px;
+
+    background-color: transparent;
+
+    &::before {
+      position: absolute;
+      top: 14px;
+      left: 13px;
+
+      content: "";
+      width: 60px;
+      height: 2px;
+
+      background-color: #ffffff;
+    }
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .main-nav__menu {
+    position: relative;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 1.5;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -10px;
+    }
+  }
+
+  .main-nav__menu li {
+    margin-right: 34px;
+  }
+
+  .main-nav__menu a {
+    color: #ffffff;
+  }
+
+  .main-nav .main-nav__contact,
+  .main-nav .main-nav__social {
+    display: none;
+  }
+}
