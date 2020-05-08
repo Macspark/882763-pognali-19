@@ -118,7 +118,7 @@
   }
 
   .map__container {
-    height: 700px;
+    height: 558px;
     background-image:
       url("../img/sprite.svg#map-marker"),
       url("../img/map-tablet@1x.jpg");
@@ -127,7 +127,7 @@
       center -50px;
     background-size:
       57px 56px,
-      100% 700px;
+      100% 560px;
   }
 }
 
@@ -142,7 +142,9 @@
   }
 
   .map__text {
-    margin-left: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 250px;
     display: flex;
     justify-content: flex-start;
   }

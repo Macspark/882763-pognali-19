@@ -40,8 +40,8 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    margin-top: -202px;
-    padding-top: 39px;
+    margin-top: -61px;
+    padding-top: 42px;
     padding-bottom: 15px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
@@ -55,6 +55,10 @@
   .page-footer__logo img {
     width: 166px;
     height: 42px;
+  }
+
+  .page-footer__social {
+    margin-right: 10px;
   }
 
   .page-footer__copyright {

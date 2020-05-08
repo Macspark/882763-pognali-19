@@ -105,6 +105,10 @@
     display: block;
   }
 
+  .about__text--bold br {
+    display: none;
+  }
+
   .about__desc {
     width: 225px;
   }
