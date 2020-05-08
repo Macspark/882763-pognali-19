@@ -123,20 +123,33 @@
 @media (min-width: $desktop-width) {
   .about {
     margin-top: -61px;
-    padding-top: 150px;
+    padding-top: 148px;
 
     &::before {
       display: none;
     }
   }
 
+  .about__background {
+    background: none;
+  }
+
   .about__wrapper {
     position: relative;
+    padding-top: 40px;
+    padding-right: 670px;
+    padding-left: 131px;
+    padding-bottom: 164px;
+
+    background-image: url("../img/about-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 630px 665px;
+    background-position: 92.5% top;
 
     &::before {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: -15px;
+      left: 60px;
       content: "";
       width: 213px;
       height: 213px;
@@ -148,5 +161,29 @@
   .about__title,
   .about__text {
     position: relative;
+  }
+
+  .about__title {
+    margin-bottom: 60px;
+  }
+
+  .about__text {
+    margin-bottom: 42px;
+
+    &--bold {
+      margin-bottom: 85px;
+    }
+  }
+
+  .about__text br {
+    display: none;
+  }
+
+  .about__text--bold br {
+    display: block;
+  }
+
+  .about__button {
+    width: 274px;
   }
 }

@@ -214,3 +214,37 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .premium {
+    padding-top: 165px;
+    padding-bottom: 190px;
+  }
+
+  .premium__wrapper {
+    padding-left: 130px;
+  }
+
+  .premium__title {
+    margin-right: 67px;
+    margin-bottom: 135px;
+  }
+
+  .premium__list {
+    width: 960px;
+
+    &::before {
+      top: -50px;
+      right: -105px;
+      width: 444px;
+      height: 300px;
+    }
+
+    &::after {
+      right: -215px;
+      bottom: 0;
+      width: 198px;
+      height: 198px;
+    }
+  }
+}

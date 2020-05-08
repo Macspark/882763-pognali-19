@@ -177,3 +177,10 @@
     line-height: 1.2;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .companion-card__level-wrapper {
+    top: 23px;
+    left: 23px;
+  }
+}

@@ -12,7 +12,7 @@
   border-radius: 20px;
   background-color: #ffffff;
 
-  z-index: 100;
+  z-index: 1000;
 
   &--toggled {
     display: block;
@@ -73,7 +73,7 @@
 
 @media (min-width: $tablet-width) {
   .business {
-    top: 8%;
+    top: 15%;
   }
 
   .business__title {
@@ -109,5 +109,15 @@
     line-height: 1;
     text-transform: none;
     background-color: $color-palegreyfour;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .business {
+    width: 750px;
+  }
+
+  .business__item {
+    width: 100%;
   }
 }

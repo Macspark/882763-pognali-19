@@ -66,3 +66,20 @@
     line-height: 1.2;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    margin-top: -61px;
+    padding-top: 42px;
+    padding-bottom: 15px;
+  }
+
+  .page-footer__social {
+    margin-right: 40px;
+  }
+
+  .page-footer__logo img {
+    width: 198px;
+    height: 52px;
+  }
+}

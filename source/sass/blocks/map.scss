@@ -130,3 +130,57 @@
       100% 700px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    margin-top: -61px;
+    padding-top: 68px;
+  }
+
+  .map__wrapper {
+    padding-bottom: 10px;
+  }
+
+  .map__text {
+    margin-left: 260px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .map__address {
+    margin-right: 150px;
+    padding-top: 27px;
+    padding-left: 155px;
+
+    width: auto;
+    min-height: 90px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+
+      background-size: 46px 58px;
+    }
+  }
+
+  .map__button {
+    margin: 0;
+    padding-bottom: 2px;
+    width: 324px;
+
+    background-position: 89% center;
+  }
+
+  .map__container {
+    height: 494px;
+    background-image:
+      url("../img/sprite.svg#map-marker"),
+      url("../img/map-desktop@1x.jpg");
+    background-position:
+      center 180px,
+      center -50px;
+    background-size:
+      57px 56px,
+      100% 494px;
+  }
+}

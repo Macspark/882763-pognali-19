@@ -69,6 +69,10 @@
 
   font-size: 18px;
   text-transform: none;
+
+  &--top {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -135,5 +139,65 @@
 
   .routes__item:last-child {
     margin-bottom: 42px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .routes {
+    padding-bottom: 33px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .routes__wrapper {
+    display: flex;
+    padding-top: 92px;
+    padding-left: 95px;
+    background-image: url("../img/flags-back@1x.png");
+    background-position: 94.7% 20px;
+
+    &::before {
+      position: absolute;
+      top: 20px;
+      left: 60px;
+      content: "";
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: $color-palegreythree;
+    }
+  }
+
+  .routes__desc {
+    order: 2;
+    padding: 0;
+    width: 350px;
+  }
+
+  .routes__list {
+    order: 1;
+    margin-right: 138px;
+    width: 629px;
+  }
+
+  .routes__text {
+    margin-bottom: 100px;
+  }
+
+  .routes__button {
+    margin: 0;
+    width: 274px;
+    background-position: 88% center;
+
+    &--top {
+      display: flex;
+    }
+
+    &--bottom {
+      display: none;
+    }
   }
 }

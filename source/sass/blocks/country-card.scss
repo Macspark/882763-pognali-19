@@ -135,3 +135,15 @@
     line-height: 0.88;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .country-card__desc {
+    padding-top: 22px;
+    padding-left: 32px;
+  }
+
+  .country-card__flag {
+    top: 23px;
+  }
+}
