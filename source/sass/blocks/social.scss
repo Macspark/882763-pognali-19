@@ -7,6 +7,9 @@
 
 .page-header .social__item {
   margin: 0 13px;
+}
+
+.page-header .social__img {
   fill: $color-darkbluegrey;
 }
 
@@ -21,6 +24,9 @@
   height: 45px;
   border-radius: 50%;
   background-color: $color-lightgold;
+}
+
+.page-footer .social__img {
   fill: $color-darkslateblue;
 }
 
@@ -42,17 +48,17 @@
     height: 60px;
   }
 
-  .social__item--fb svg {
+  .social__img--fb {
     width: 14px;
     height: 28px;
   }
 
-  .social__item--vk svg {
+  .social__img--vk {
     width: 31px;
     height: 16px;
   }
 
-  .social__item--insta svg {
+  .social__img--insta {
     width: 24px;
     height: 24px;
   }
