@@ -8,57 +8,12 @@
   border-top-right-radius: 10px;
 }
 
-.companion-card__level-wrapper {
+.companion-card__level {
   position: absolute;
   top: 16px;
   left: 17px;
-
-  display: flex;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
 }
 
-.companion-card__circle {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  transform: rotate(270deg);
-}
-
-.companion-card__level {
-  position: relative;
-  margin: 0;
-  margin-top: 11px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-
-  &::before {
-    position: absolute;
-    left: -3px;
-    bottom: 23px;
-
-    content: "";
-    width: 31px;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-
-  &::after {
-    position: absolute;
-    left: 0;
-    bottom: 6px;
-
-    content: "level";
-    font-size: 14px;
-    font-weight: normal;
-  }
-}
 
 .companion-card__desc {
   position: relative;
@@ -119,21 +74,6 @@
   color: $color-blackish;
 }
 
-.companion-card__transport {
-  @include reset-list;
-  display: flex;
-}
-
-.companion-card__transport-item {
-  margin: 0 7px;
-  fill: $color-darkslateblue;
-  opacity: 0.15;
-
-  &--checked {
-    opacity: 1;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .companion-card {
     width: 50%;
@@ -155,7 +95,7 @@
     border-bottom-right-radius: 20px;
   }
 
-  .companion-card__level-wrapper {
+  .companion-card__level {
     top: 21px;
     left: 20px;
   }
@@ -180,7 +120,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .companion-card__level-wrapper {
+  .companion-card__level {
     top: 23px;
     left: 23px;
   }

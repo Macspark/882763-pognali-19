@@ -1,0 +1,14 @@
+.transport {
+  @include reset-list;
+  display: flex;
+}
+
+.transport__item {
+  margin: 0 7px;
+  fill: $color-darkslateblue;
+  opacity: 0.15;
+
+  &--checked {
+    opacity: 1;
+  }
+}
