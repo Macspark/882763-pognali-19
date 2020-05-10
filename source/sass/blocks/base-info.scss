@@ -1,0 +1,118 @@
+.base-info {
+  @include reset-list;
+  margin-top: 20px;
+}
+
+.base-info__item {
+  margin: 0;
+  padding: 0;
+}
+
+.base-info__label {
+  position: relative;
+  padding-right: 50px;
+
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: $color-darkslateblue;
+}
+
+.base-info__label::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 50px;
+  content: "";
+  letter-spacing: 1.6px;
+  text-align: right;
+  opacity: 0.3;
+}
+
+.base-info__label--comp::after {
+  content: "чел.";
+}
+
+.base-info__label--days::after {
+  content: "дн.";
+}
+
+.base-info__wrapper {
+  margin-top: 8px;
+  margin-bottom: 18px;
+  padding: 11px 13px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  border: 1px solid $color-cloudyblue;
+}
+
+.base-info__input {
+  width: 50%;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.base-info__button {
+  width: 14px;
+  height: 14px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  opacity: 0.3;
+
+  &--minus {
+    background-image: url("../img/sprite.svg#qty-minus");
+  }
+
+  &--plus {
+    background-image: url("../img/sprite.svg#qty-plus");
+  }
+}
+
+.base-info__input[type="checkbox"] {
+  display: none;
+}
+
+.base-info__label--kids {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 39px;
+
+  display: flex;
+  align-items: center;
+  min-height: 26px;
+
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #444444;
+}
+
+.base-info__label--kids::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  content: "";
+  width: 26px;
+  height: 26px;
+
+  border: 1px solid $color-cloudyblue;
+  border-radius: 4px;
+}
+
+.base-info__input[type="checkbox"]:checked + .base-info__label--kids::before {
+  background-image: url("../img/sprite.svg#tick");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px 9px;
+}

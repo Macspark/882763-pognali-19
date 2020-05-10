@@ -1,0 +1,35 @@
+.fieldset {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 5px 25px 22px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.fieldset__next,
+.fieldset__prev,
+.fieldset__submit {
+  width: 100%;
+  height: 40px;
+}
+
+.fieldset__title {
+  font-size: 20px;
+  line-height: 1;
+  color: $color-darkslateblue;
+}
+
+.fieldset__text {
+  font-size: 16px;
+  line-height: 1.38;
+  color: $color-blackish;
+}
+
+.fieldset__calendar {
+  margin-top: 21px;
+  margin-bottom: 23px;
+}

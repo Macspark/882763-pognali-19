@@ -1,0 +1,44 @@
+.add-plan {
+  position: relative;
+  z-index: 51;
+  margin-top: -31px;
+  padding-top: 7px;
+
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: $color-lightbluegrey;
+}
+
+.add-plan__wrapper {
+  @include container-padding;
+  @include container-size;
+}
+
+.add-plan__title {
+  position: relative;
+  margin-bottom: 29px;
+}
+
+.add-plan__title::after {
+  position: absolute;
+  top: 12px;
+  right: 13px;
+
+  content: "";
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+}
+
+.add-plan__title--stepone::after {
+  box-shadow: -5px 0 0 $color-steelgrey-30, -26px 0 0 $color-steelgrey-30, -47px 0 0 $color-darkslateblue;
+}
+
+.add-plan__title--steptwo::after {
+  box-shadow: -5px 0 0 $color-steelgrey-30, -26px 0 0 $color-darkslateblue, -47px 0 0 $color-steelgrey-30;
+}
+
+.add-plan__title--stepthree::after {
+  box-shadow: -5px 0 0 $color-darkslateblue, -26px 0 0 $color-steelgrey-30, -47px 0 0 $color-steelgrey-30;
+}

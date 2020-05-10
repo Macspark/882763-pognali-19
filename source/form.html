@@ -203,100 +203,110 @@
 
       <section class="add-plan">
         <div class="add-plan__wrapper">
-          <h2 class="add-plan__title">Добавить план:</h2>
+          <h2 class="add-plan__title add-plan__title--stepone">Добавить план:</h2>
           <form class="add-plan__form">
             <fieldset class="add-plan__fieldset fieldset fieldset--stepone" id="stepone">
-              <h2 class="fieldset__title">Шаг 1. Даты пребывания</h2>
+              <h2 class="fieldset__title">Шаг 1. <br>Даты пребывания</h2>
               <p class="fieldset__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-              <ul class="fieldset__basics basics">
-                <li class="basics__item basics__item--comp">
-                  <label for="companions">Ищу попутчиков:</label>
-                  <div class="basics__input">
-                    <button class="basics__button basics__button--minus" type="button"></button>
-                    <input type="number" id="companions" name="companions" placeholder="2">
-                    <button class="basics__button basics__button--plus" type="button"></button>
+              <ul class="fieldset__base-info base-info">
+                <li class="base-info__item">
+                  <label class="base-info__label base-info__label--comp" for="companions">Ищу попутчиков:</label>
+                  <div class="base-info__wrapper">
+                    <button class="base-info__button base-info__button--minus" type="button"></button>
+                    <input class="base-info__input" type="number" id="companions" name="companions" placeholder="2">
+                    <button class="base-info__button base-info__button--plus" type="button"></button>
                   </div>
                 </li>
-                <li class="basics__item basics__item--days">
-                  <label for="days">Длительность</label>
-                  <div class="basics__input">
-                    <button class="basics__button basics__button--minus" type="button"></button>
-                    <input type="number" id="days" name="days" placeholder="2">
-                    <button class="basics__button basics__button--plus" type="button"></button>
+                <li class="base-info__item">
+                  <label class="base-info__label base-info__label--days" for="days">Длительность</label>
+                  <div class="base-info__wrapper">
+                    <button class="base-info__button base-info__button--minus" type="button"></button>
+                    <input class="base-info__input" type="number" id="days" name="days" placeholder="2">
+                    <button class="base-info__button base-info__button--plus" type="button"></button>
                   </div>
                 </li>
-                <li class="basics__item">
-                  <input type="checkbox" id="kids" name="kids" checked>
-                  <label for="kids">Можно с детьми</label>
+                <li class="base-info__item">
+                  <input class="base-info__input" type="checkbox" id="kids" name="kids" checked>
+                  <label class="base-info__label base-info__label--kids" for="kids">Можно с детьми</label>
                 </li>
               </ul>
               <div class="fieldset__calendar calendar">
                 <div class="calendar__block">
-                  <button class="calendar__prev" type="button"></button>
+                  <button class="calendar__button calendar__button--prev" type="button"></button>
                   <p class="calendar__month">Март 2019</p>
-                  <button class="calendar__next" type="button"></button>
+                  <button class="calendar__button calendar__button--next" type="button"></button>
                 </div>
-                <div class="calendar__block">
-                  <ul class="calendar__weekday">
-                    <li>Пн</li>
-                    <li>Вт</li>
-                    <li>Ср</li>
-                    <li>Чт</li>
-                    <li>Пт</li>
-                    <li>Сб</li>
-                    <li>Вс</li>
-                  </ul>
-                  <ul class="calendar__day">
-                    <li>23</li>
-                    <li>24</li>
-                    <li>25</li>
-                    <li>26</li>
-                    <li>27</li>
-                    <li>28</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-                    <li>11</li>
-                    <li>12</li>
-                    <li>13</li>
-                    <li>14</li>
-                    <li>15</li>
-                    <li>16</li>
-                    <li>17</li>
-                    <li>18</li>
-                    <li>19</li>
-                    <li>20</li>
-                    <li>21</li>
-                    <li>22</li>
-                    <li>23</li>
-                    <li>24</li>
-                    <li>25</li>
-                    <li>26</li>
-                    <li>27</li>
-                    <li>28</li>
-                    <li>29</li>
-                    <li>30</li>
-                    <li>31</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                  </ul>
-                </div>
+                <table class="calendar__table">
+                  <tr class="calendar__weekday">
+                    <td class="calendar__slot calendar__slot--disabled"><span>П</span>н</td>
+                    <td class="calendar__slot calendar__slot--disabled"><span>В</span>т</td>
+                    <td class="calendar__slot calendar__slot--disabled"><span>С</span>р</td>
+                    <td class="calendar__slot calendar__slot--disabled"><span>Ч</span>т</td>
+                    <td class="calendar__slot calendar__slot--disabled"><span>П</span>т</td>
+                    <td class="calendar__slot calendar__slot--disabled"><span>С</span>б</td>
+                    <td class="calendar__slot calendar__slot--disabled"><span>В</span>с</td>
+                  </tr>
+                  <tr class="calendar__day">
+                    <td class="calendar__slot calendar__slot--disabled">23</td>
+                    <td class="calendar__slot calendar__slot--disabled">24</td>
+                    <td class="calendar__slot calendar__slot--disabled">25</td>
+                    <td class="calendar__slot calendar__slot--disabled">26</td>
+                    <td class="calendar__slot calendar__slot--disabled">27</td>
+                    <td class="calendar__slot calendar__slot--disabled">28</td>
+                    <td class="calendar__slot calendar__slot--disabled">1</td>
+                  </tr>
+                  <tr class="calendar__day">
+                    <td class="calendar__slot calendar__slot--disabled">2</td>
+                    <td class="calendar__slot calendar__slot--disabled">3</td>
+                    <td class="calendar__slot calendar__slot--disabled">4</td>
+                    <td class="calendar__slot calendar__slot--disabled">5</td>
+                    <td class="calendar__slot calendar__slot--disabled">6</td>
+                    <td class="calendar__slot calendar__slot--disabled">7</td>
+                    <td class="calendar__slot calendar__slot--disabled">8</td>
+                  </tr>
+                  <tr class="calendar__day">
+                    <td class="calendar__slot calendar__slot--disabled">9</td>
+                    <td class="calendar__slot calendar__slot--disabled">10</td>
+                    <td class="calendar__slot calendar__slot--disabled">11</td>
+                    <td class="calendar__slot calendar__slot--disabled">12</td>
+                    <td class="calendar__slot calendar__slot--disabled">13</td>
+                    <td class="calendar__slot calendar__slot--disabled">14</td>
+                    <td class="calendar__slot calendar__slot--disabled">15</td>
+                  </tr>
+                  <tr class="calendar__day">
+                    <td class="calendar__slot calendar__slot--disabled">16</td>
+                    <td class="calendar__slot calendar__slot--disabled">17</td>
+                    <td class="calendar__slot calendar__slot--disabled">18</td>
+                    <td class="calendar__slot calendar__slot--disabled">19</td>
+                    <td class="calendar__slot calendar__slot--disabled">20</td>
+                    <td class="calendar__slot calendar__slot--disabled calendar__slot--disabled">21</td>
+                    <td class="calendar__slot calendar__slot--disabled">22</td>
+                  </tr>
+                  <tr class="calendar__day">
+                    <td class="calendar__slot calendar__slot--disabled">23</td>
+                    <td class="calendar__slot calendar__slot--disabled">24</td>
+                    <td class="calendar__slot calendar__slot--disabled">25</td>
+                    <td class="calendar__slot calendar__slot--checked">26</td>
+                    <td class="calendar__slot calendar__slot--checked">27</td>
+                    <td class="calendar__slot calendar__slot--checked">28</td>
+                    <td class="calendar__slot">29</td>
+                  </tr>
+                  <tr class="calendar__day">
+                    <td class="calendar__slot">30</td>
+                    <td class="calendar__slot">31</td>
+                    <td class="calendar__slot">1</td>
+                    <td class="calendar__slot">2</td>
+                    <td class="calendar__slot">3</td>
+                    <td class="calendar__slot">4</td>
+                    <td class="calendar__slot">5</td>
+                  </tr>
+                </table>
               </div>
               <a href="#steptwo" class="button fieldset__next">Следующий шаг</a>
             </fieldset>
 
             <fieldset class="add-plan__fieldset fieldset fieldset--steptwo" id="steptwo">
-              <h2 class="fieldset__title">Шаг 1. Маршрут</h2>
+              <h2 class="fieldset__title">Шаг 2. Маршрут</h2>
               <p class="fieldset__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
               <ul class="fieldset__countries countries">
                 <li class="countries__item">
