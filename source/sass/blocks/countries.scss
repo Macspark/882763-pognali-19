@@ -1,0 +1,66 @@
+.countries {
+  @include reset-list;
+  margin-top: 22px;
+}
+
+.countries__item {
+  position: relative;
+  display: flex;
+
+  height: 42px;
+}
+
+.countries__country {
+  position: relative;
+  margin: 0;
+  padding: 10px;
+  padding-right: 0;
+
+  width: 76.3%;
+
+  overflow: hidden;
+
+  border: 1px solid $color-cloudyblue;
+  border-radius: 4px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: $color-darkslateblue;
+}
+
+.countries__country span {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.countries__flag {
+  margin-left: -1px;
+  padding: 8px;
+
+  width: 24%;
+  height: 100%;
+
+  border: 1px solid $color-cloudyblue;
+  border-radius: 4px;
+}
+
+.countries__remove {
+  position: absolute;
+  top: -4px;
+  right: -16px;
+
+  width: 21px;
+  height: 21px;
+
+  outline: none;
+  border: none;
+  background-color: $color-palegrey;
+  background-image: url("../img/sprite.svg#close");
+  background-repeat: no-repeat;
+  background-size: 9px 9px;
+  opacity: 0.3;
+}
