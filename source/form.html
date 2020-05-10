@@ -116,7 +116,9 @@
 
     <main class="page-main">
       <section class="routes-header">
-        <h1 class="routes-header__title">Направления</h1>
+        <div class="routes-header__wrapper">
+          <h1 class="routes-header__title">Направления</h1>
+        </div>
       </section>
 
       <section class="profile">
@@ -125,7 +127,7 @@
             <div class="avatar__wrapper">
               <div class="avatar__level level">
                 <svg class="level__circle" viewBox="0 0 60 60">
-                  <circle cx="30" cy="30" r="29" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="150, 1000"></circle>
+                  <circle cx="30" cy="30" r="29" fill="transparent" stroke="#ff8d30" stroke-width="2" stroke-dasharray="152, 1000"></circle>
                 </svg>
                 <p class="level__number">80</p>
               </div>
@@ -133,39 +135,43 @@
                 <picture>
                   <source srcset="./img/demin-desktop@1x.jpg 1x, ./img/demin-desktop@2x.jpg 2x" media="(min-width: 1440px)">
                   <source srcset="./img/demin-tablet@1x.jpg 1x, ./img/demin-tablet@2x.jpg 2x" media="(min-width: 768px)">
-                  <img src="./img/demin-mobile@1x.jpg" srcset="./img/demin-mobile@2x.jpg 2x" width="270" height="270" alt="Петя Демин">
+                  <img src="./img/demin-mobile@1x.jpg" srcset="./img/demin-mobile@2x.jpg 2x" width="99" height="100" alt="Петя Демин">
                 </picture>
               </div>
             </div>
             <a class="button avatar__button" href="#">Сменить фото</a>
           </div>
 
-          <div class="profile__tags">
-            <textarea name="my-tags">#бургер #бар #футбол #концерт #крафт</textarea>
+          <div class="profile__block">
+            <h3 class="profile__title">Тэги</h3>
+            <textarea class="profile__tags" name="my-tags">#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
 
-          <ul class="profile__transport transport">
-            <li class="transport__item transport__item--checked">
-              <svg width="14" height="16">
-                <use xlink:href="./img/sprite.svg#plane" />
-              </svg>
-            </li>
-            <li class="transport__item transport__item--checked">
-              <svg width="13" height="16">
-                <use xlink:href="./img/sprite.svg#bus" />
-              </svg>
-            </li>
-            <li class="transport__item">
-              <svg width="19" height="17">
-                <use xlink:href="./img/sprite.svg#bike" />
-              </svg>
-            </li>
-            <li class="transport__item transport__item--checked">
-              <svg width="15" height="17">
-                <use xlink:href="./img/sprite.svg#run" />
-              </svg>
-            </li>
-          </ul>
+          <div class="profile__block profile__block--transport">
+            <h3 class="profile__title">Транспорт</h3>
+            <ul class="profile__transport transport">
+              <li class="transport__item transport__item--checked">
+                <svg width="14" height="16">
+                  <use xlink:href="./img/sprite.svg#plane" />
+                </svg>
+              </li>
+              <li class="transport__item transport__item--checked">
+                <svg width="13" height="16">
+                  <use xlink:href="./img/sprite.svg#bus" />
+                </svg>
+              </li>
+              <li class="transport__item">
+                <svg width="19" height="17">
+                  <use xlink:href="./img/sprite.svg#bike" />
+                </svg>
+              </li>
+              <li class="transport__item transport__item--checked">
+                <svg width="15" height="17">
+                  <use xlink:href="./img/sprite.svg#run" />
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -173,21 +179,21 @@
         <div class="plans__wrapper">
           <h2 class="plans__title">Мои планы:</h2>
           <div class="plans__plan plan">
-            <p class="plan__title">Франция, Италия</p>
+            <p class="plan__title"><span>1.</span>Франция, Италия</p>
             <div class="plan__wrapper">
               <div class="plan__details">
-                <p class="plan__companions"><span>3<span> попутчика</p>
-                <p class="plan-date"><time>26 мар</time> - <time>29 мар</time></p>
+                <p class="plan__text"><span>3<span> попутчика</p>
+                <p class="plan__text"><time>26 мар</time> - <time>29 мар</time></p>
               </div>
               <a class="plan__button">Изменить</a>
             </div>
           </div>
           <div class="plans__plan plan">
-            <p class="plan__title">Тайланд, Индонезия</p>
+            <p class="plan__title"><span>2.</span>Тайланд, Индонезия</p>
             <div class="plan__wrapper">
               <div class="plan__details">
-                <p class="plan__companions"><span>1<span> попутчик</p>
-                <p class="plan-date"><time>1 июл</time> - <time>15 июл</time></p>
+                <p class="plan__text"><span>1<span> попутчик</p>
+                <p class="plan__text"><time>1 июл</time> - <time>15 июл</time></p>
               </div>
               <a class="plan__button">Изменить</a>
             </div>

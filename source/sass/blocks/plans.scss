@@ -1,0 +1,23 @@
+.plans {
+  position: relative;
+  z-index: 49;
+  margin-top: -31px;
+  padding-top: 27px;
+
+  background-color: $color-palegreyfive;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.plans__wrapper {
+  @include container-padding;
+  @include container-size;
+}
+
+.plans__title {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 24px;
+  color: $color-darkslateblue;
+}

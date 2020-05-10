@@ -3,12 +3,22 @@
   display: flex;
 }
 
-.transport__item {
-  margin: 0 7px;
+.transport__item svg {
   fill: $color-darkslateblue;
   opacity: 0.15;
+}
 
-  &--checked {
-    opacity: 1;
-  }
+.transport__item--checked svg {
+  opacity: 1;
+}
+
+.transport__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 33px;
+  height: 33px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }

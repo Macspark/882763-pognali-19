@@ -1,0 +1,36 @@
+.routes-header {
+  position: relative;
+  z-index: 50;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  background-color: $color-darkblue;
+
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.routes-header__wrapper {
+  @include container-padding;
+  @include container-size;
+}
+
+.routes-header__title {
+  position: relative;
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #ffffff;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+
+    content: "";
+    width: 214px;
+    height: 5px;
+
+    border-radius: 2.4px;
+    background-color: $color-mango;
+  }
+}

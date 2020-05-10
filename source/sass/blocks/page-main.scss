@@ -1,7 +1,10 @@
 .page-main--scrolled {
-  padding-top: 90px;
+  padding-top: 81px;
 }
 
+.page-main--index.page-main--scrolled {
+  padding-top: 90px;
+}
 
 @media (min-width: $tablet-width) {
   .page-main--scrolled {

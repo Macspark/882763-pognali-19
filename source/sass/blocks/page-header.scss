@@ -1,8 +1,12 @@
 .page-header {
   position: relative;
-  padding-top: 27px;
+  padding-top: 18px;
   padding-bottom: 44px;
   background-color: $color-darkblue;
+
+  &--index {
+    padding-top: 27px;
+  }
 
   &--scrolled {
     position: fixed;
@@ -35,7 +39,7 @@
 .page-header__toggle {
   position: absolute;
   right: 25px;
-  top: 31px;
+  top: 24px;
 
   width: 25px;
   height: 19px;
@@ -66,6 +70,10 @@
     box-shadow: 0 8px 0 0 #ffffff;
     border-radius: 2px;
   }
+}
+
+.page-header--index .page-header__toggle {
+  top: 31px;
 }
 
 .page-header .page-header__panel {
