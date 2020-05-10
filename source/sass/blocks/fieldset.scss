@@ -1,13 +1,17 @@
 .fieldset {
   margin: 0;
   margin-bottom: 10px;
-  padding: 5px 25px 22px;
+  padding: 5px 25px 7px;
 
   border: none;
   outline: none;
 
   border-radius: 10px;
   background-color: #ffffff;
+
+  &--stepone {
+    padding-bottom: 17px;
+  }
 }
 
 .fieldset__next,
@@ -15,6 +19,19 @@
 .fieldset__submit {
   width: 100%;
   height: 40px;
+}
+
+.fieldset__next {
+  margin-bottom: 5px;
+}
+
+.fieldset__prev {
+  background: none;
+}
+
+.fieldset__submit {
+  margin-bottom: 8px;
+  border: none;
 }
 
 .fieldset__title {

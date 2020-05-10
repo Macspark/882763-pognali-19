@@ -9,24 +9,13 @@
 }
 
 .calendar__button {
+  padding: 0;
   width: 9px;
   height: 17px;
   border: none;
   outline: none;
   background-color: transparent;
-  background-repeat: no-repeat;
-
-  &--prev {
-    background-image: url("../img/sprite.svg#month-arrow-left");
-    background-size: 18px 34px;
-    background-position: center;
-  }
-
-  &--next {
-    background-image: url("../img/sprite.svg#month-arrow-right");
-    background-size: 18px 34px;
-    background-position: center;
-  }
+  opacity: 0.3;
 }
 
 .calendar__month {
@@ -37,6 +26,7 @@
 }
 
 .calendar__table {
+  margin: 0 auto;
   border-collapse: collapse;
 }
 

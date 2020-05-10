@@ -1,6 +1,6 @@
 .add-plan {
   position: relative;
-  z-index: 51;
+  z-index: 44;
   margin-top: -31px;
   padding-top: 7px;
 
@@ -41,4 +41,8 @@
 
 .add-plan__title--stepthree::after {
   box-shadow: -5px 0 0 $color-darkslateblue, -26px 0 0 $color-steelgrey-30, -47px 0 0 $color-steelgrey-30;
+}
+
+.add-plan__form {
+  padding-bottom: 65px;
 }

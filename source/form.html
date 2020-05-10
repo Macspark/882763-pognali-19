@@ -139,7 +139,7 @@
                 </picture>
               </div>
             </div>
-            <a class="button avatar__button" href="#">Сменить фото</a>
+            <a href="#" class="button avatar__button">Сменить фото</a>
           </div>
 
           <div class="profile__block">
@@ -185,7 +185,7 @@
                 <p class="plan__text"><span>3<span> попутчика</p>
                 <p class="plan__text"><time>26 мар</time> - <time>29 мар</time></p>
               </div>
-              <a class="plan__button">Изменить</a>
+              <a href="#" class="plan__button">Изменить</a>
             </div>
           </div>
           <div class="plans__plan plan">
@@ -195,7 +195,7 @@
                 <p class="plan__text"><span>1<span> попутчик</p>
                 <p class="plan__text"><time>1 июл</time> - <time>15 июл</time></p>
               </div>
-              <a class="plan__button">Изменить</a>
+              <a href="#" class="plan__button">Изменить</a>
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@
       <section class="add-plan">
         <div class="add-plan__wrapper">
           <h2 class="add-plan__title add-plan__title--stepone">Добавить план:</h2>
-          <form class="add-plan__form">
+          <form class="add-plan__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="add-plan__fieldset fieldset fieldset--stepone" id="stepone">
               <h2 class="fieldset__title">Шаг 1. <br>Даты пребывания</h2>
               <p class="fieldset__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
@@ -212,17 +212,33 @@
                 <li class="base-info__item">
                   <label class="base-info__label base-info__label--comp" for="companions">Ищу попутчиков:</label>
                   <div class="base-info__wrapper">
-                    <button class="base-info__button base-info__button--minus" type="button"></button>
+                    <button class="base-info__button" type="button">
+                      <svg width="14" height="2">
+                        <use xlink:href="./img/sprite.svg#qty-minus">
+                      </svg>
+                    </button>
                     <input class="base-info__input" type="number" id="companions" name="companions" placeholder="2">
-                    <button class="base-info__button base-info__button--plus" type="button"></button>
+                    <button class="base-info__button" type="button">
+                      <svg width="14" height="14">
+                        <use xlink:href="./img/sprite.svg#qty-plus">
+                      </svg>
+                    </button>
                   </div>
                 </li>
                 <li class="base-info__item">
                   <label class="base-info__label base-info__label--days" for="days">Длительность</label>
                   <div class="base-info__wrapper">
-                    <button class="base-info__button base-info__button--minus" type="button"></button>
+                    <button class="base-info__button" type="button">
+                      <svg width="14" height="2">
+                        <use xlink:href="./img/sprite.svg#qty-minus">
+                      </svg>
+                    </button>
                     <input class="base-info__input" type="number" id="days" name="days" placeholder="2">
-                    <button class="base-info__button base-info__button--plus" type="button"></button>
+                    <button class="base-info__button" type="button">
+                      <svg width="14" height="14">
+                        <use xlink:href="./img/sprite.svg#qty-plus">
+                      </svg>
+                    </button>
                   </div>
                 </li>
                 <li class="base-info__item">
@@ -232,9 +248,17 @@
               </ul>
               <div class="fieldset__calendar calendar">
                 <div class="calendar__block">
-                  <button class="calendar__button calendar__button--prev" type="button"></button>
+                  <button class="calendar__button calendar__button--prev" type="button">
+                    <svg width="9" height="17">
+                      <use xlink:href="./img/sprite.svg#month-arrow-left">
+                    </svg>
+                  </button>
                   <p class="calendar__month">Март 2019</p>
-                  <button class="calendar__button calendar__button--next" type="button"></button>
+                  <button class="calendar__button calendar__button--next" type="button">
+                    <svg width="9" height="17">
+                      <use xlink:href="./img/sprite.svg#month-arrow-right">
+                    </svg>
+                  </button>
                 </div>
                 <table class="calendar__table">
                   <tr class="calendar__weekday">
@@ -310,61 +334,85 @@
               <p class="fieldset__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
               <ul class="fieldset__countries countries">
                 <li class="countries__item">
-                  <p class="countries__country"><span>Босния и герцегония и герцв<span></p>
+                  <p class="countries__country"><span>Босния и Герцеговина<span></p>
                   <svg class="countries__flag" width="35" height="24">
                     <use xlink:href="./img/sprite.svg#flag-bosnia">
                   </svg>
-                  <button class="countries__remove" type="button"></button>
+                  <button class="countries__remove" type="button">
+                    <svg width="9" height="9">
+                      <use xlink:href="./img/sprite.svg#close">
+                    </svg>
+                  </button>
+                </li>
+                <li class="countries__item">
+                  <p class="countries__country"><span>Чехия<span></p>
+                  <svg class="countries__flag" width="35" height="24">
+                    <use xlink:href="./img/sprite.svg#flag-czech">
+                  </svg>
+                  <button class="countries__remove" type="button">
+                    <svg width="9" height="9">
+                      <use xlink:href="./img/sprite.svg#close">
+                    </svg>
+                  </button>
                 </li>
                 <li class="countries__item countries__item--new">
                   <p class="countries__country">Выберите страну</p>
-                  <button class="countries__remove" type="button"></button>
+                  <button class="countries__remove" type="button">
+                    <svg width="9" height="9">
+                      <use xlink:href="./img/sprite.svg#close">
+                    </svg>
+                  </button>
+                  <div class="countries__list add-country">
+                    <h3 class="add-country__title">Выберите страну:</h3>
+                    <button class="add-country__close" type="button">
+                      <svg width="9" height="9">
+                        <use xlink:href="./img/sprite.svg#close">
+                      </svg>
+                    </button>
+                    <ul class="add-country__letters">
+                      <li class="add-country__letter add-country__letter--current">А</li>
+                      <li class="add-country__letter">Б</li>
+                      <li class="add-country__letter">В</li>
+                      <li class="add-country__letter">Г</li>
+                      <li class="add-country__letter">Д</li>
+                      <li class="add-country__letter">Е</li>
+                      <li class="add-country__letter">З</li>
+                      <li class="add-country__letter">И</li>
+                      <li class="add-country__letter">К</li>
+                      <li class="add-country__letter">Л</li>
+                      <li class="add-country__letter">М</li>
+                      <li class="add-country__letter">Н</li>
+                      <li class="add-country__letter">О</li>
+                      <li class="add-country__letter">П</li>
+                      <li class="add-country__letter">Р</li>
+                      <li class="add-country__letter">С</li>
+                      <li class="add-country__letter">Т</li>
+                      <li class="add-country__letter">У</li>
+                      <li class="add-country__letter">Ф</li>
+                      <li class="add-country__letter">Х</li>
+                      <li class="add-country__letter">Ч</li>
+                      <li class="add-country__letter">Ш</li>
+                      <li class="add-country__letter">Э</li>
+                      <li class="add-country__letter">Ю</li>
+                      <li class="add-country__letter">Я</li>
+                    </ul>
+                    <ul class="add-country__countries">
+                      <li class="add-country__country">Австралия</li>
+                      <li class="add-country__country">Австрия</li>
+                      <li class="add-country__country">Азербайджан</li>
+                      <li class="add-country__country">Албания</li>
+                      <li class="add-country__country">Алжир</li>
+                      <li class="add-country__country">Ангола</li>
+                      <li class="add-country__country">Андорра</li>
+                      <li class="add-country__country">Антигуа и Барбуда</li>
+                      <li class="add-country__country">Аргентина</li>
+                      <li class="add-country__country">Армения</li>
+                      <li class="add-country__country">Афганистан</li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="countries__item countries__item--add">
                   <p class="countries__country">Добавить страну</p>
-                  <div class="countries__list add-country">
-                    <h3 class="add-country__title">Выберите страну:</h3>
-                    <ul class="add-country__letters">
-                      <li class="add-country__current-letter">А</li>
-                      <li>Б</li>
-                      <li>В</li>
-                      <li>Г</li>
-                      <li>Д</li>
-                      <li>Е</li>
-                      <li>З</li>
-                      <li>И</li>
-                      <li>К</li>
-                      <li>Л</li>
-                      <li>М</li>
-                      <li>Н</li>
-                      <li>О</li>
-                      <li>П</li>
-                      <li>Р</li>
-                      <li>С</li>
-                      <li>Т</li>
-                      <li>У</li>
-                      <li>Ф</li>
-                      <li>Х</li>
-                      <li>Ч</li>
-                      <li>Ш</li>
-                      <li>Э</li>
-                      <li>Ю</li>
-                      <li>Я</li>
-                    </ul>
-                    <ul class="add-country__countries">
-                      <li>Австралия</li>
-                      <li>Австрия</li>
-                      <li>Азербайджан</li>
-                      <li>Албания</li>
-                      <li>Алжир</li>
-                      <li>Ангола</li>
-                      <li>Андорра</li>
-                      <li>Антигуа и Барбуда</li>
-                      <li>Аргентина</li>
-                      <li>Армения</li>
-                      <li>Афганистан</li>
-                    </ul>
-                  </div>
                 </li>
               </ul>
               <div class="fieldset__controls">
@@ -374,16 +422,28 @@
             </fieldset>
 
             <fieldset class="add-plan__fieldset fieldset fieldset--stepthree" id="stepthree">
-              <h2 class="fieldset__title">Шаг 3. Развлечения</h2>
+              <h2 class="fieldset__title">Шаг 3. <br>Развлечения</h2>
               <p class="fieldset__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
               <ul class="fieldset__fun fun">
                 <li class="fun__item">
-                  <label for="fun1">Босния и Герцегови</label>
-                  <textarea name="country1-fun" id="fun1" placeholder="План действий"></textarea>
+                  <div class="fun__road"></div>
+                  <div class="fun__wrapper">
+                    <label class="fun__title" for="bosnia-fun"><span>Босния и Герцеговина</span></label>
+                    <svg class="fun__flag" width="35" height="24">
+                      <use xlink:href="./img/sprite.svg#flag-bosnia">
+                    </svg>
+                  </div>
+                  <textarea class="fun__text" name="bosnia-fun" id="bosnia-fun" placeholder="План действий"></textarea>
                 </li>
                 <li class="fun__item">
-                  <label for="fun2">Чехия</label>
-                  <textarea name="country2-fun" id="fun2">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  <div class="fun__wrapper">
+                    <div class="fun__road"></div>
+                    <label class="fun__title" for="bosnia-fun"><span>Чехия</span></label>
+                    <svg class="fun__flag" width="35" height="24">
+                      <use xlink:href="./img/sprite.svg#flag-czech">
+                    </svg>
+                  </div>
+                  <textarea class="fun__text" name="czech-fun" id="czech-fun">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </li>
               </ul>
               <div class="fieldset__controls">
