@@ -17,6 +17,7 @@
 .add-plan__title {
   position: relative;
   margin-bottom: 29px;
+  color: $color-darkslateblue;
 }
 
 .add-plan__title::after {
@@ -45,4 +46,36 @@
 
 .add-plan__form {
   padding-bottom: 65px;
+}
+
+@media (min-width: $tablet-width) {
+  .add-plan__wrapper {
+    padding-top: 6px;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+
+  .add-plan__title {
+    margin-bottom: 52px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.39;
+  }
+
+  .add-plan__title::after {
+    top: 23px;
+    right: -5px;
+  }
+
+  .add-plan__title--stepone::after {
+    box-shadow: -5px 0 0 $color-steelgrey-30, -39px 0 0 $color-steelgrey-30, -73px 0 0 $color-darkslateblue;
+  }
+
+  .add-plan__title--steptwo::after {
+    box-shadow: -5px 0 0 $color-steelgrey-30, -39px 0 0 $color-darkslateblue, -73px 0 0 $color-steelgrey-30;
+  }
+
+  .add-plan__title--stepthree::after {
+    box-shadow: -5px 0 0 $color-darkslateblue, -39px 0 0 $color-steelgrey-30, -73px 0 0 $color-steelgrey-30;
+  }
 }

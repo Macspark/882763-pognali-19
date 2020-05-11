@@ -170,3 +170,21 @@
 .countries__item--expanded .countries__remove {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .countries__item {
+    margin-bottom: 15px;
+    height: 70px;
+  }
+
+  .countries__country {
+    padding: 25px;
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .countries__flag {
+    border: none;
+  }
+}

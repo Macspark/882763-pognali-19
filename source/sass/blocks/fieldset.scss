@@ -46,7 +46,74 @@
   color: $color-blackish;
 }
 
+.fieldset__text br {
+  display: none;
+}
+
 .fieldset__calendar {
   margin-top: 21px;
   margin-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset {
+    margin-bottom: 40px;
+    padding: 15px 43px 50px;
+    border-radius: 30px;
+  }
+
+  .fieldset__title {
+    margin-bottom: 35px;
+    font-size: 36px;
+  }
+
+  .fieldset__text {
+    margin-bottom: 64px;
+    padding-right: 5px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .fieldset__text br {
+    display: block;
+  }
+
+  .fieldset__controls {
+    display: flex;
+    align-items: center;
+  }
+
+  .fieldset__next {
+    margin-right: auto;
+    padding: 0 34px;
+
+    width: 285px;
+    height: 81px;
+
+    font-size: 24px;
+    text-transform: none;
+
+    justify-content: flex-start;
+    background-image: url("../img/sprite.svg#triangle-arrow-right");
+    background-repeat: no-repeat;
+    background-size: 14px 18px;
+    background-position: 88% center;
+  }
+
+  .fieldset__prev {
+    padding-left: 34px;
+    margin-bottom: 5px;
+    width: auto;
+    font-size: 24px;
+    text-transform: none;
+    background-image: url("../img/sprite.svg#triangle-arrow-left");
+    background-repeat: no-repeat;
+    background-size: 14px 18px;
+    background-position: 0 center;
+  }
+
+  .fieldset .fieldset__countries {
+    margin-top: 77px;
+    margin-bottom: 48px;
+  }
 }
