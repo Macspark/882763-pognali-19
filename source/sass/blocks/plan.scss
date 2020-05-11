@@ -43,3 +43,62 @@
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
 }
+
+@media (min-width: $tablet-width) {
+  .plan {
+    position: relative;
+    padding: 26px 32px 18px;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 54px;
+
+      content: "";
+      width: 100%;
+      height: 1px;
+
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .plan__title {
+    position: relative;
+    margin-bottom: 41px;
+    padding: 0 3px;
+    font-size: 24px;
+    line-height: 2.08;
+  }
+
+  .plan__title span {
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    font-size: 20px;
+  }
+
+  .plan__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plan__details {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plan__text {
+    margin-right: 45px;
+    min-width: 142px;
+  }
+
+  .plan__text,
+  .plan__button {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+}

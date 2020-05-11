@@ -139,7 +139,11 @@
 @media (min-width: $tablet-width) {
   .page-header {
     padding-top: 40px;
-    background-color: $color-darkbluegrey;
+    background-color: $color-darkblue;
+
+    &--index {
+      background-color: $color-darkbluegrey;
+    }
 
     &--toggled {
       background-color: #ffffff;
@@ -177,7 +181,7 @@
     justify-content: space-between;
   }
 
-  .page-header__toggle {
+  .page-header .page-header__toggle {
     position: relative;
     top: 5px;
     left: 12px;

@@ -10,6 +10,7 @@
 .profile__wrapper {
   @include container-padding;
   @include container-size;
+  position: relative;
 }
 
 .profile__block {
@@ -33,13 +34,17 @@
 .profile__title {
   position: absolute;
   top: -9px;
+
   margin: 0;
+  padding: 0 5px;
 
   font-size: 16px;
   line-height: 1.13;
   text-transform: uppercase;
   text-align: center;
   color: $color-darkslateblue;
+
+  background-color: $color-palegrey;
 }
 
 .profile__tags {
@@ -52,4 +57,57 @@
   font-size: 16px;
   line-height: 1.38;
   color: $color-blackish;
+}
+
+@media (min-width: $tablet-width) {
+  .profile {
+    margin-top: -61px;
+    padding-top: 125px;
+    padding-bottom: 65px;
+  }
+
+  .profile__wrapper {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .profile__avatar {
+    margin-bottom: 51px;
+  }
+
+  .profile__block {
+    padding-top: 20px;
+    padding-bottom: 12px;
+  }
+
+  .profile__block--transport {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    padding-top: 22px;
+
+    width: 40%;
+    min-height: 94px;
+  }
+
+  .profile__title {
+    top: auto;
+    bottom: -9px;
+    padding: 0 20px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .profile__tags {
+    padding: 12px 16px 0;
+
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }

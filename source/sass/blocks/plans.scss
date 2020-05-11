@@ -21,3 +21,20 @@
   font-size: 24px;
   color: $color-darkslateblue;
 }
+
+@media (min-width: $tablet-width) {
+  .plans {
+    padding-top: 47px;
+  }
+
+  .plans__wrapper {
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+
+  .plans__title {
+    margin-bottom: 44px;
+    font-size: 36px;
+    line-height: 1.39;
+  }
+}

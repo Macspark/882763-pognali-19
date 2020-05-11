@@ -13,47 +13,9 @@
   }
 }
 
-.fun__road {
-  position: absolute;
-  top: 8px;
-  left: -3px;
-
-  width: 6px;
-  height: 6px;
-
-  border-radius: 50%;
-  background-color: $color-darkslateblue;
-}
-
-.fun__road::before {
-  position: absolute;
-  top: 2px;
-  left: -11px;
-
-  content: "";
-  width: 15px;
-  height: 2px;
-
-  background-color: $color-darkslateblue;
-}
-
-.fun__road::after {
-  position: absolute;
-  top: 4px;
-  left: -11px;
-
-  content: "";
-  width: 2px;
-  height: 281px;
-
-  background-color: $color-darkslateblue;
-}
-
-.fun__item:last-child .fun__road::after {
-  display: none;
-}
 
 .fun__wrapper {
+  position: relative;
   margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
@@ -89,6 +51,47 @@
   height: 100%;
 
   background-image: linear-gradient(to left, #ffffff 0, #ffffff 65%, transparent 100%);
+}
+
+.fun__title::before {
+  position: absolute;
+  top: 10px;
+  left: -14px;
+
+  content: "";
+  width: 15px;
+  height: 2px;
+
+  background-color: $color-darkslateblue;
+}
+
+.fun__wrapper::before {
+  position: absolute;
+  top: 8px;
+  left: -3px;
+
+  content: "";
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+  background-color: $color-darkslateblue;
+}
+
+.fun__wrapper::after {
+  position: absolute;
+  top: 11px;
+  left: -14px;
+
+  content: "";
+  width: 2px;
+  height: 281px;
+
+  background-color: $color-darkslateblue;
+}
+
+.fun__item:last-child .fun__wrapper::after {
+  display: none;
 }
 
 .fun__text {

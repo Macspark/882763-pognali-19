@@ -10,10 +10,14 @@
   .page-main--scrolled {
     padding-top: 133px;
   }
+
+  .page-main--index.page-main--scrolled {
+    padding-top: 134px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main--scrolled {
+  .page-main.page-main--scrolled {
     padding-top: 143px;
   }
 }

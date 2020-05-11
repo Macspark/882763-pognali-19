@@ -14,7 +14,6 @@
   left: 17px;
 }
 
-
 .companion-card__desc {
   position: relative;
   margin-top: -4px;
@@ -67,6 +66,7 @@
 }
 
 .companion-card__tags {
+  margin-bottom: 9px;
   width: 100%;
   font-size: 16px;
   line-height: 1.13;
@@ -113,7 +113,7 @@
 
   .companion-card__tags {
     min-height: 48px;
-    margin-bottom: 27px;
+    margin-bottom: 18px;
     font-size: 20px;
     line-height: 1.2;
   }

@@ -3,12 +3,12 @@
   display: flex;
 }
 
-.transport__item svg {
+.transport__img {
   fill: $color-darkslateblue;
   opacity: 0.15;
 }
 
-.transport__item--checked svg {
+.transport__item--checked .transport__img {
   opacity: 1;
 }
 
@@ -21,4 +21,33 @@
   height: 33px;
   background-color: #ffffff;
   border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .profile .transport__item {
+    width: 43px;
+    height: 43px;
+  }
+
+  .profile .transport__img {
+    &--plane {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bus {
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike {
+      width: 24px;
+      height: 21px;
+    }
+
+    &--run {
+      width: 20px;
+      height: 21px;
+    }
+  }
 }

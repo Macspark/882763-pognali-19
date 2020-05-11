@@ -77,3 +77,29 @@
     line-height: 1.22;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .profile .level {
+    width: 94px;
+    height: 94px;
+  }
+
+  .profile .level__number {
+    padding-top: 4px;
+    font-size: 38px;
+    color: $color-darktwo;
+
+    &::before {
+      left: -3px;
+      bottom: 36px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &::after {
+      left: 5px;
+      bottom: 14px;
+      font-size: 18px;
+      line-height: 1.22;
+    }
+  }
+}
