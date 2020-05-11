@@ -130,11 +130,11 @@
 
 .countries__item--add {
   border-radius: 4px;
-  background-color: $color-palegrey;
 }
 
 .countries__item--add .countries__country {
   border-color: $color-palegrey;
+  background-color: $color-palegrey;
 }
 
 .countries__item--add .countries__country::before {
@@ -172,19 +172,113 @@
 }
 
 @media (min-width: $tablet-width) {
+  .countries {
+    position: relative;
+  }
+
+  .countries::before {
+    position: absolute;
+    top: -42px;
+    left: 0;
+
+    content: "";
+    width: 100%;
+    height: 1px;
+
+    background-color: $color-lightbluegreytwo;
+  }
+
+  .countries::after {
+    position: absolute;
+    top: -42px;
+    right: 136px;
+
+    content: "";
+    width: 1px;
+    height: calc(100% + 72px);
+
+    background-image: linear-gradient(to top, transparent 0, $color-lightbluegreytwo 25px);
+  }
+
   .countries__item {
     margin-bottom: 15px;
+    align-items: center;
     height: 70px;
   }
 
+  .countries__item::before {
+    display: none;
+  }
+
+  .countries__item::after {
+    top: 26px;
+    right: 129px;
+
+    width: 15px;
+    height: 15px;
+
+    z-index: 10;
+  }
+
   .countries__country {
+    margin-right: 54px;
     padding: 25px;
     font-size: 20px;
     line-height: 0.9;
     letter-spacing: 2px;
   }
 
+  .countries__country::before {
+    top: 0;
+    right: 5px;
+    width: 90px;
+  }
+
+  .countries__country::after {
+    top: 30px;
+    right: 26px;
+
+    width: 17px;
+    height: 9px;
+
+    background-image: url("../img/sprite.svg#dropdown-form");
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .countries__item--add .countries__country {
+    margin-right: 163px;
+  }
+
+  .countries__item--add .countries__country::after {
+    top: 24px;
+    right: 26px;
+
+    width: 18px;
+    height: 18px;
+    opacity: 0.2;
+  }
+
+  .countries__item--new .countries__country {
+    margin-right: 123px;
+  }
+
   .countries__flag {
+    padding: 0;
+    width: 70px;
+    height: 47px;
     border: none;
+  }
+
+  .countries__remove {
+    position: static;
+    margin-left: 19px;
+    opacity: 0.3;
+  }
+
+  .countries__remove svg {
+    position: static;
+    width: 17px;
+    height: 17px;
   }
 }

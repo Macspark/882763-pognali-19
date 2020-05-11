@@ -60,6 +60,15 @@
     margin-bottom: 40px;
     padding: 15px 43px 50px;
     border-radius: 30px;
+
+    &--steptwo {
+      margin-bottom: 51px;
+      padding-bottom: 48px;
+    }
+
+    &--stepthree {
+      padding-bottom: 45px;
+    }
   }
 
   .fieldset__title {
@@ -83,7 +92,8 @@
     align-items: center;
   }
 
-  .fieldset__next {
+  .fieldset__next,
+  .fieldset__submit {
     margin-right: auto;
     padding: 0 34px;
 
