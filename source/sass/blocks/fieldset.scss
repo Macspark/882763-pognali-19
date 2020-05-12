@@ -138,6 +138,11 @@
     margin-bottom: 44px;
     padding: 65px 160px 101px;
     border-radius: 60px;
+
+    &--stepthree {
+      margin-bottom: 47px;
+      padding-bottom: 99px;
+    }
   }
 
   .fieldset__title,
@@ -194,5 +199,9 @@
 
   .fieldset__step--current::before {
     background-color: $color-darkslateblue;
+  }
+
+  .fieldset__prev {
+    margin-right: 3px;
   }
 }

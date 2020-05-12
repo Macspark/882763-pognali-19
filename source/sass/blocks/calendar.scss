@@ -40,6 +40,8 @@
   line-height: 1.29;
   font-size: 14px;
   color: $color-blackish;
+
+  cursor: pointer;
 }
 
 .calendar__slot--new-month span {
@@ -52,6 +54,7 @@
 
 .calendar__weekday .calendar__slot {
   font-size: 0;
+  pointer-events: none;
 
   &:nth-last-child(1) {
     color: $color-orangered;
