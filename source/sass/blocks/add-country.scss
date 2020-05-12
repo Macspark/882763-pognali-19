@@ -45,6 +45,8 @@
 
   background-color: transparent;
   fill: #ffffff;
+
+  cursor: pointer;
 }
 
 .add-country__letters {
@@ -98,15 +100,26 @@
   color: $color-blackish;
 }
 
+.add-country__letter:hover {
+  cursor: pointer;
+}
+
+.add-country__country:hover {
+  cursor: pointer;
+}
+
 @media (min-width: $tablet-width) {
   .add-country {
-    width: 369px;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    top: 70px;
+    width: 575px;
     border-bottom-right-radius: 0;
   }
 
   .add-country__title {
+    position: absolute;
+    top: -70px;
     padding: 27px 25px;
+    width: 369px;
     height: 70px;
     font-size: 20px;
     line-height: 0.9;
@@ -114,13 +127,19 @@
   }
 
   .add-country__close {
-    top: 26px;
-    right: 37px;
+    top: -45px;
+    right: auto;
+    left: 320px;
   }
 
   .add-country__close svg {
     width: 17px;
     height: 17px;
+  }
+
+  .add-country__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 
   .add-country__letters {
@@ -142,21 +161,60 @@
   }
 
   .add-country__countries {
-    position: absolute;
-    right: -1px;
-    bottom: 0;
-    transform: translateX(100%);
-
     padding: 30px 25px 55px;
 
     border: none;
-    box-shadow: 10px 20px 50px 0 $color-darkslateblue-10;
     border-radius: 0;
+    border-left: 1px solid $color-darkslateblue-10;
     background-color: #ffffff;
   }
 
   .add-country__country {
     font-size: 20px;
     line-height: 1.5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-country {
+    top: 0;
+    width: 730px;
+  }
+
+  .add-country__wrapper {
+    padding-right: 35px;
+  }
+
+  .add-country__title {
+    position: static;
+    width: 100%;
+  }
+
+  .add-country__close {
+    top: 25px;
+    right: 38px;
+    left: auto;
+  }
+
+  .add-country__close svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .add-country__letters {
+    margin-bottom: 20px;
+    width: 370px;
+  }
+
+  .add-country .add-country__letter {
+    margin-right: 16px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 70px;
+    border: 1px solid $color-cloudyblue;
+
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
   }
 }
