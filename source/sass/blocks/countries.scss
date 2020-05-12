@@ -246,9 +246,6 @@
     background-size: 100%;
   }
 
-  .countries__item--add .countries__country {
-    margin-right: 163px;
-  }
 
   .countries__item--add .countries__country::after {
     top: 24px;
@@ -261,6 +258,11 @@
 
   .countries__item--new .countries__country {
     margin-right: 123px;
+  }
+
+  .countries__item--add .countries__country,
+  .countries__item--expanded .countries__country {
+    margin-right: 163px;
   }
 
   .countries__flag {
