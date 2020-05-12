@@ -56,3 +56,13 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .routes-header {
+    margin-bottom: 9px;
+  }
+
+  .routes-header__wrapper {
+    padding: 60px 127px 54px;
+  }
+}

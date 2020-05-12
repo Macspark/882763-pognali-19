@@ -102,3 +102,41 @@
     letter-spacing: 2px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .plan {
+    margin-bottom: 15px;
+    padding: 24px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .plan__title {
+    margin: 0;
+  }
+
+  .plan__title span {
+    position: static;
+    margin-right: 34px;
+  }
+
+  .plan__details {
+    width: 380px;
+    margin-right: 102px;
+    justify-content: flex-start;
+  }
+
+  .plan__text {
+    margin-right: 35px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

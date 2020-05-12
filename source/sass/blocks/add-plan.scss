@@ -83,3 +83,24 @@
     box-shadow: -5px 0 0 $color-darkslateblue, -39px 0 0 $color-steelgrey-30, -73px 0 0 $color-steelgrey-30;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .add-plan {
+    margin-top: -61px;
+    padding-top: 10px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+
+  .add-plan__wrapper {
+    @include container-padding;
+  }
+
+  .add-plan__title {
+    padding-left: 70px;
+
+    &::after {
+      display: none;
+    }
+  }
+}

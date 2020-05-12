@@ -139,7 +139,7 @@
                 </picture>
               </div>
             </div>
-            <a href="#" class="button avatar__button">Сменить фото</a>
+            <a href="#" class="button avatar__button"><span>Сменить </span>фото</a>
           </div>
 
           <div class="profile__block">
@@ -189,7 +189,7 @@
             </div>
           </div>
           <div class="plans__plan plan">
-            <p class="plan__title"><span>2.</span>Тайланд, Индонезия</p>
+            <p class="plan__title"><span>2.</span>Таиланд, Индонезия</p>
             <div class="plan__wrapper">
               <div class="plan__details">
                 <p class="plan__text"><span>1<span> попутчик</p>
@@ -207,7 +207,12 @@
           <form class="add-plan__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="add-plan__fieldset fieldset fieldset--stepone" id="stepone">
               <h2 class="fieldset__title">Шаг 1. <br>Даты пребывания</h2>
-              <p class="fieldset__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <p class="fieldset__text">Укажите предпочтительное количество попутчиков, которых <br> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <ul class="fieldset__steps">
+                <li class="fieldset__step fieldset__step--current">Даты</li>
+                <li class="fieldset__step fieldset__step">Маршрут</li>
+                <li class="fieldset__step fieldset__step">Развлечения</li>
+              </ul>
               <ul class="fieldset__base-info base-info">
                 <li class="base-info__item base-info__item--comp">
                   <label class="base-info__label base-info__label--comp" for="companions">Ищу попутчиков:</label>
@@ -226,7 +231,7 @@
                   </div>
                 </li>
                 <li class="base-info__item base-info__item--days">
-                  <label class="base-info__label base-info__label--days" for="days">Длительность</label>
+                  <label class="base-info__label base-info__label--days" for="days">Длительность:</label>
                   <div class="base-info__wrapper">
                     <button class="base-info__button" type="button">
                       <svg width="14" height="2">
@@ -277,7 +282,7 @@
                     <td class="calendar__slot calendar__slot--disabled">26</td>
                     <td class="calendar__slot calendar__slot--disabled">27</td>
                     <td class="calendar__slot calendar__slot--disabled">28</td>
-                    <td class="calendar__slot calendar__slot--disabled">1</td>
+                    <td class="calendar__slot calendar__slot--disabled calendar__slot--new-month">1<span> мар</span></td>
                   </tr>
                   <tr class="calendar__day">
                     <td class="calendar__slot calendar__slot--disabled">2</td>
@@ -310,15 +315,15 @@
                     <td class="calendar__slot calendar__slot--disabled">23</td>
                     <td class="calendar__slot calendar__slot--disabled">24</td>
                     <td class="calendar__slot calendar__slot--disabled">25</td>
-                    <td class="calendar__slot calendar__slot--checked">26</td>
+                    <td class="calendar__slot calendar__slot--checked calendar__slot--in">26</td>
                     <td class="calendar__slot calendar__slot--checked">27</td>
-                    <td class="calendar__slot calendar__slot--checked">28</td>
+                    <td class="calendar__slot calendar__slot--checked calendar__slot--out">28</td>
                     <td class="calendar__slot">29</td>
                   </tr>
                   <tr class="calendar__day">
                     <td class="calendar__slot">30</td>
                     <td class="calendar__slot">31</td>
-                    <td class="calendar__slot">1</td>
+                    <td class="calendar__slot calendar__slot--new-month">1<span> апр</span></td>
                     <td class="calendar__slot">2</td>
                     <td class="calendar__slot">3</td>
                     <td class="calendar__slot">4</td>
@@ -332,6 +337,11 @@
             <fieldset class="add-plan__fieldset fieldset fieldset--steptwo" id="steptwo">
               <h2 class="fieldset__title">Шаг 2. <br>Маршрут</h2>
               <p class="fieldset__text">Укажите страны, которые вы хотели посетить. <br>Это может быть одна или сразу несколько.</p>
+              <ul class="fieldset__steps">
+                <li class="fieldset__step fieldset__step">Даты</li>
+                <li class="fieldset__step fieldset__step--current">Маршрут</li>
+                <li class="fieldset__step fieldset__step">Развлечения</li>
+              </ul>
               <ul class="fieldset__countries countries">
                 <li class="countries__item">
                   <p class="countries__country"><span>Босния и Герцеговина<span></p>
@@ -423,7 +433,12 @@
 
             <fieldset class="add-plan__fieldset fieldset fieldset--stepthree" id="stepthree">
               <h2 class="fieldset__title">Шаг 3. <br>Развлечения</h2>
-              <p class="fieldset__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+              <p class="fieldset__text">Наконец, расскажите о своих планах времяпровождения. <br>Можно писать в свободной форме и ставить тэги.</p>
+              <ul class="fieldset__steps">
+                <li class="fieldset__step fieldset__step">Даты</li>
+                <li class="fieldset__step fieldset__step">Маршрут</li>
+                <li class="fieldset__step fieldset__step--current">Развлечения</li>
+              </ul>
               <ul class="fieldset__fun fun">
                 <li class="fun__item">
                   <div class="fun__wrapper">

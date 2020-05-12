@@ -42,6 +42,14 @@
   color: $color-blackish;
 }
 
+.calendar__slot--new-month span {
+  display: none;
+}
+
+.calendar__mark {
+  display: none;
+}
+
 .calendar__weekday .calendar__slot {
   font-size: 0;
 
@@ -85,7 +93,7 @@
   pointer-events: none;
 }
 
-.calendar__day .calendar__slot:hover::after {
+.calendar__day .calendar__slot:hover::before {
   position: absolute;
   top: -1px;
   left: -1px;
@@ -141,7 +149,7 @@
     font-weight: normal;
   }
 
-  .calendar__day .calendar__slot:hover::after {
+  .calendar__day .calendar__slot:hover::before {
     top: -1px;
     left: -1px;
     width: 78px;
@@ -151,5 +159,62 @@
 
   .calendar__table {
     margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .calendar {
+    margin-bottom: 55px;
+  }
+
+  .calendar__block {
+    margin-bottom: 7px;
+  }
+
+  .calendar__button {
+    margin: 0;
+  }
+
+  .calendar__slot {
+    position: relative;
+    padding-left: 16px;
+    padding-bottom: 29px;
+    text-align: left;
+    width: 144px;
+    height: 71px;
+
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.67;
+    letter-spacing: 1.8px;
+  }
+
+  .calendar__day .calendar__slot:hover::before {
+    width: 144px;
+    height: 72px;
+  }
+
+  .calendar__slot--new-month span {
+    display: inline;
+  }
+
+  .calendar__slot--in::after,
+  .calendar__slot--out::after {
+    position: absolute;
+    left: 15px;
+    bottom: 8px;
+  }
+
+  .calendar__slot--in::after {
+    content: "Заезд";
+  }
+
+  .calendar__slot--out::after {
+    content: "Выезд";
+  }
+
+  .calendar__weekday .calendar__slot {
+    height: 48px;
+    padding-bottom: 12px;
   }
 }

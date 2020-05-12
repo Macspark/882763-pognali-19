@@ -103,3 +103,17 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .profile .level__number {
+    padding-top: 4px;
+    font-size: 38px;
+    color: #ffffff;
+
+    &::before {
+      left: -3px;
+      bottom: 36px;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}

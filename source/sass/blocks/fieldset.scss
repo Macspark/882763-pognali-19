@@ -40,6 +40,10 @@
   color: $color-darkslateblue;
 }
 
+.fieldset__steps {
+  display: none;
+}
+
 .fieldset__text {
   font-size: 16px;
   line-height: 1.38;
@@ -125,5 +129,70 @@
   .fieldset .fieldset__countries {
     margin-top: 77px;
     margin-bottom: 48px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset {
+    position: relative;
+    margin-bottom: 44px;
+    padding: 65px 160px 101px;
+    border-radius: 60px;
+  }
+
+  .fieldset__title,
+  .fieldset__text {
+    width: 590px;
+  }
+
+  .fieldset__text {
+    margin-bottom: 88px;
+  }
+
+  .fieldset__title br {
+    display: none;
+  }
+
+  .fieldset__text br {
+    display: block;
+  }
+
+  .fieldset__steps {
+    @include reset-list;
+    position: absolute;
+    top: 110px;
+    right: 205px;
+    display: block;
+  }
+
+  .fieldset__step {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 0.69;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+
+    &--current {
+      color: #000000;
+    }
+  }
+
+  .fieldset__step::before {
+    position: absolute;
+    top: 5px;
+    left: -42px;
+
+    content: "";
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+    background-color: $color-steelgrey;
+  }
+
+  .fieldset__step--current::before {
+    background-color: $color-darkslateblue;
   }
 }

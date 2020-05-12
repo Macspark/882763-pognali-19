@@ -39,3 +39,21 @@
     line-height: 1.39;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .plans {
+    padding-bottom: 110px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+
+  .plans__wrapper {
+    padding-right: 60px;
+    padding-left: 124px;
+  }
+
+  .plans__title {
+    margin-bottom: 42px;
+    padding-left: 7px;
+  }
+}

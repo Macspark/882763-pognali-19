@@ -24,6 +24,10 @@
   background-color: $color-palegreyfive;
 }
 
+.avatar__button span {
+  white-space: pre;
+}
+
 
 @media (min-width: $tablet-width) {
   .avatar__wrapper {
@@ -49,5 +53,49 @@
     line-height: 0.9;
     letter-spacing: 2px;
     color: $color-darkslateblue;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .avatar {
+    position: absolute;
+    z-index: 150;
+    top: -263px;
+    right: 155px;
+  }
+
+  .avatar__wrapper {
+    margin: 0;
+    align-items: center;
+    width: 329px;
+  }
+
+  .avatar__img {
+    margin: 0;
+    width: 190px;
+    height: 190px;
+  }
+
+  .avatar__img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .avatar__level {
+    margin-bottom: 8px;
+  }
+
+  .avatar__button {
+    margin-left: auto;
+    width: 190px;
+    height: 47px;
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .avatar__button span {
+    display: none;
   }
 }

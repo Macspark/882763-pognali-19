@@ -111,3 +111,40 @@
     line-height: 1.2;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .profile {
+    padding-bottom: 97px;
+    z-index: auto;
+  }
+
+  .profile__wrapper {
+    padding-left: 124px;
+    padding-right: 60px;
+    display: flex;
+  }
+
+  .profile__block {
+    position: relative;
+    margin: 0;
+    margin-right: 142px;
+
+    width: 730px;
+    justify-content: flex-start;
+
+    &--transport {
+      margin: 0;
+      width: 384px;
+    }
+  }
+
+  .profile__title {
+    left: 18px;
+    bottom: -11px;
+    margin: 0;
+  }
+
+  .profile__block--transport .profile__title {
+    left: auto;
+  }
+}
