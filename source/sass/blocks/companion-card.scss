@@ -66,12 +66,23 @@
 }
 
 .companion-card__tags {
+  @include reset-list;
+  margin-top: 14px;
   margin-bottom: 9px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
+
   font-size: 16px;
   line-height: 1.13;
   text-align: center;
   color: $color-blackish;
+}
+
+.companion-card__tag {
+  margin: 0 2px;
 }
 
 @media (min-width: $tablet-width) {
@@ -112,16 +123,26 @@
   }
 
   .companion-card__tags {
-    min-height: 48px;
+    margin-top: 19px;
     margin-bottom: 18px;
+
+    min-height: 48px;
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .companion-card {
+    width: 285px;
+  }
+
   .companion-card__level {
     top: 23px;
     left: 23px;
+  }
+
+  .companion-card__desc {
+    padding-top: 32px;
   }
 }
