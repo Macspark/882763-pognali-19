@@ -6,6 +6,10 @@
 .transport__img {
   fill: $color-darkslateblue;
   opacity: 0.15;
+
+  &--plane {
+    margin-right: 3px;
+  }
 }
 
 .transport__item--checked .transport__img {
@@ -21,6 +25,19 @@
   height: 33px;
   background-color: #ffffff;
   border-radius: 50%;
+}
+
+.catalog .transport__img {
+  margin-top: 4px;
+  opacity: 1;
+}
+
+.transport__label {
+  opacity: 0.15;
+}
+
+.transport__checkbox:checked + .transport__label {
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {

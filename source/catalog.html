@@ -455,86 +455,86 @@
           <form class="catalog__search search" action="https://echo.htmlacademy.ru" method="get">
             <h2 class="search__title">Подберите идеального попутчика</h2>
             <fieldset class="search__fieldset">
-              <h3 class="search__toggle">Хобби</h3>
+              <button class="search__toggle" type="button">Хобби</button>
               <ul class="search__list">
                 <li class="search__item">
-                  <input class="search__checkbox" name="sports" type="checkbox" id="sports" checked>
+                  <input class="visually-hidden search__checkbox" name="sports" type="checkbox" id="sports" checked>
                   <label class="search__label" for="sports">Спортзал</label>
                 </li>
                 <li class="search__item">
-                  <input class="search__checkbox" name="hookah" type="checkbox" id="hookah">
+                  <input class="visually-hidden search__checkbox" name="hookah" type="checkbox" id="hookah">
                   <label class="search__label" for="hookah">Кальян</label>
                 </li>
                 <li class="search__item">
-                  <input class="search__checkbox" name="sofa" type="checkbox" id="sofa">
+                  <input class="visually-hidden search__checkbox" name="sofa" type="checkbox" id="sofa">
                   <label class="search__label" for="sofa">Диван</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="search__fieldset">
-              <h3 class="search__toggle">Музыка</h3>
+              <button class="search__toggle" type="button">Музыка</button>
               <ul class="search__list">
                 <li class="search__item">
-                  <input class="search__checkbox" name="rock" type="checkbox" id="rock" checked>
+                  <input class="visually-hidden search__checkbox" name="rock" type="checkbox" id="rock" checked>
                   <label class="search__label" for="rock">Тяжелый рок</label>
                 </li>
                 <li class="search__item">
-                  <input class="search__checkbox" name="rap" type="checkbox" id="rap">
+                  <input class="visually-hidden search__checkbox" name="rap" type="checkbox" id="rap">
                   <label class="search__label" for="rap">Русский рэп</label>
                 </li>
                 <li class="search__item">
-                  <input class="search__checkbox" name="eurodance" type="checkbox" id="eurodance">
+                  <input class="visually-hidden search__checkbox" name="eurodance" type="checkbox" id="eurodance">
                   <label class="search__label" for="eurodance">Евроденс</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="search__fieldset">
-              <h3 class="search__toggle">Еда</h3>
+              <button class="search__toggle" type="button">Еда</button>
               <ul class="search__list">
                 <li class="search__item">
-                  <input class="search__checkbox" name="meat" type="checkbox" id="meat" checked>
+                  <input class="visually-hidden search__checkbox" name="meat" type="checkbox" id="meat" checked>
                   <label class="search__label" for="meat">Мясоед</label>
                 </li>
                 <li class="search__item">
-                  <input class="search__checkbox" name="healthy" type="checkbox" id="healthy">
+                  <input class="visually-hidden search__checkbox" name="healthy" type="checkbox" id="healthy">
                   <label class="search__label" for="healthy">Сидит на ПП</label>
                 </li>
                 <li class="search__item">
-                  <input class="search__checkbox" name="cheese" type="checkbox" id="cheese">
+                  <input class="visually-hidden search__checkbox" name="cheese" type="checkbox" id="cheese">
                   <label class="search__label" for="cheese">Веган-сыроед</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="search__fieldset">
-              <h3 class="search__toggle">Транспорт</h3>
+              <button class="search__toggle" type="button">Транспорт</button>
               <ul class="search__transport transport">
                 <li class="transport__item">
-                  <input type="checkbox" name="transport" id="plane" checked>
-                  <label for="plane">
+                  <input class="visually-hidden transport__checkbox" type="checkbox" name="plane" id="plane" checked>
+                  <label class="transport__label" for="plane">
                     <svg class="transport__img transport__img--plane" width="14" height="16">
                       <use xlink:href="./img/sprite.svg#plane" />
                     </svg>
                   </label>
                 </li>
                 <li class="transport__item">
-                  <input type="checkbox" name="transport" id="bus" checked>
-                  <label for="bus">
+                  <input class="visually-hidden transport__checkbox" type="checkbox" name="bus" id="bus" checked>
+                  <label class="transport__label" for="bus">
                     <svg class="transport__img transport__img--bus" width="13" height="16">
                       <use xlink:href="./img/sprite.svg#bus" />
                     </svg>
                   </label>
                 </li>
                 <li class="transport__item">
-                  <input type="checkbox" name="transport" id="bike">
-                  <label for="bike">
+                  <input class="visually-hidden transport__checkbox" type="checkbox" name="bike" id="bike">
+                  <label class="transport__label" for="bike">
                     <svg class="transport__img transport__img--bike" width="19" height="17">
                       <use xlink:href="./img/sprite.svg#bike" />
                     </svg>
                   </label>
                 </li>
                 <li class="transport__item">
-                  <input type="checkbox" name="transport" id="run" checked>
-                  <label for="run">
+                  <input class="visually-hidden transport__checkbox" type="checkbox" name="run" id="run" checked>
+                  <label class="transport__label" for="run">
                     <svg class="transport__img transport__img--run" width="15" height="17">
                       <use xlink:href="./img/sprite.svg#run" />
                     </svg>
@@ -543,11 +543,11 @@
               </ul>
             </fieldset>
             <fieldset class="search__fieldset">
-              <h3 class="search__toggle">Левел</h3>
-              <div class="search__wrapper">
+              <button class="search__toggle" type="button">Левел</button>
+              <div class="search__level-wrapper">
                 <div class="search__level">
-                  <input type="number" name="level-min" value="30">
-                  <input type="number" name="level-max" value="100">
+                  <input type="number" name="level-min" min="0" max="100" value="30">
+                  <input type="number" name="level-max" min="0" max="100" value="100">
                 </div>
                 <div class="search__level-bar">
                   <div class="search__level-bar-value">
@@ -725,5 +725,6 @@
 
     <script src="./js/menu.js"></script>
     <script src="./js/filter.js"></script>
+    <script src="./js/search.js"></script>
   </body>
 </html>
