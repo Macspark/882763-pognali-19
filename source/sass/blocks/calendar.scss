@@ -79,7 +79,8 @@
   color: #ffffff;
 }
 
-.calendar__day .calendar__slot:hover {
+.calendar__day .calendar__slot:hover,
+.calendar__slot--hover {
   background-color: $color-darkslateblue;
   color: #ffffff;
 }
@@ -96,7 +97,8 @@
   pointer-events: none;
 }
 
-.calendar__day .calendar__slot:hover::before {
+.calendar__day .calendar__slot:hover::before,
+.calendar__slot--hover::before {
   position: absolute;
   top: -1px;
   left: -1px;
@@ -152,7 +154,8 @@
     font-weight: normal;
   }
 
-  .calendar__day .calendar__slot:hover::before {
+  .calendar__day .calendar__slot:hover::before,
+  .calendar__slot--hover::before {
     top: -1px;
     left: -1px;
     width: 78px;
@@ -192,7 +195,8 @@
     letter-spacing: 1.8px;
   }
 
-  .calendar__day .calendar__slot:hover::before {
+  .calendar__day .calendar__slot:hover::before,
+  .calendar__slot--hover::before {
     width: 144px;
     height: 72px;
   }

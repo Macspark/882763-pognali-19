@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header class="page-header page-header--nojs page-header--index">
+    <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
 
         <a href="index.html" class="page-header__logo-wrapper">
@@ -121,7 +121,7 @@
           <a class="companions-header__button" href="index.html">
             На главную
             <svg width="32" height="16">
-              <use xlink:href="./img/sprite.svg#return">
+              <use xlink:href="./img/sprite.svg#return" />
             </svg>
           </a>
         </div>
@@ -130,17 +130,24 @@
       <section class="filter">
         <div class="filter__wrapper">
           <div class="filter__header">
-            <div class="filter__continents">
+            <div class="filter__by-continents">
               <h3 class="filter__title">Фильтрация по странам</h3>
               <ul class="filter__continents">
-                <li>Европа</li>
-                <li>Азия</li>
-                <li>Америка</li>
-                <li>Острова</li>
+                <li class="filter__continent filter__continent--current">Европа</li>
+                <li class="filter__continent">Азия</li>
+                <li class="filter__continent">Америка</li>
+                <li class="filter__continent">Острова</li>
               </ul>
             </div>
             <div class="filter__controls">
-              <button class="filter__button" type="button"></button>
+              <button class="filter__button" type="button">
+                <svg class="filter__button-img filter__button-img--dots" width="17" height="3">
+                  <use xlink:href="./img/sprite.svg#dots" />
+                </svg>
+                <svg class="filter__button-img filter__button-img--close" width="12" height="12">
+                  <use xlink:href="./img/sprite.svg#close" />
+                </svg>
+              </button>
             </div>
           </div>
           <ul class="filter__table">
@@ -436,7 +443,7 @@
           </ul>
           <button class="button filter__close">
             <svg width="12" height="12">
-              <use xlink:href="./img/sprite.svg#close">
+              <use xlink:href="./img/sprite.svg#close" />
             </svg>
             Свернуть
           </button>
@@ -579,7 +586,7 @@
                   <li class="catalog-card__wish">
                     <a href="#">
                       <svg width="26" height="18">
-                        <use xlink:href="./img/sprite.svg#flag-sri-lanka">
+                        <use xlink:href="./img/sprite.svg#flag-sri-lanka" />
                       </svg>
                       Шри-Ланка
                     </a>
@@ -587,7 +594,7 @@
                   <li class="catalog-card__wish">
                     <a href="#">
                       <svg width="26" height="18">
-                        <use xlink:href="./img/sprite.svg#flag-thailand">
+                        <use xlink:href="./img/sprite.svg#flag-thailand" />
                       </svg>
                       Тайланд
                     </a>
@@ -595,7 +602,7 @@
                   <li class="catalog-card__wish">
                     <a href="#">
                       <svg width="26" height="18">
-                        <use xlink:href="./img/sprite.svg#flag-seisheli">
+                        <use xlink:href="./img/sprite.svg#flag-seisheli" />
                       </svg>
                       Сейшелы
                     </a>
@@ -656,14 +663,14 @@
                 <li class="catalog__arrow">
                   <a href="#">
                     <svg width="10" height="20">
-                      <use xlink:href="./img/sprite.svg#">
+                      <use xlink:href="./img/sprite.svg#" />
                     </svg>
                   </a>
                 </li>
                 <li class="catalog__arrow">
                   <a href="#">
                     <svg width="10" height="20">
-                      <use xlink:href="./img/sprite.svg#">
+                      <use xlink:href="./img/sprite.svg#" />
                     </svg>
                   </a>
                 </li>
@@ -716,9 +723,7 @@
     </footer>
 
 
-    <script src="https://api-maps.yandex.ru/2.1?bab3bdb3-8438-46cd-a063-248910568936&load=package.full&lang=ru_RU"></script>
     <script src="./js/menu.js"></script>
-    <script src="./js/business.js"></script>
-    <script src="./js/map.js"></script>
+    <script src="./js/filter.js"></script>
   </body>
 </html>
