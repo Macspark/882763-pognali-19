@@ -27,7 +27,7 @@
   border-radius: 50%;
 }
 
-.catalog .transport__img {
+.search .transport__img {
   margin-top: 4px;
   opacity: 1;
 }
@@ -38,6 +38,10 @@
 
 .transport__checkbox:checked + .transport__label {
   opacity: 1;
+}
+
+.catalog-card .transport__item {
+  background-color: $color-palegrey;
 }
 
 @media (min-width: $tablet-width) {

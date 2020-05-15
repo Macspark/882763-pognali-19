@@ -471,7 +471,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="search__fieldset">
+            <fieldset class="search__fieldset search__fieldset--toggled">
               <button class="search__toggle" type="button">Музыка</button>
               <ul class="search__list">
                 <li class="search__item">
@@ -505,7 +505,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="search__fieldset">
+            <fieldset class="search__fieldset search__fieldset--toggled">
               <button class="search__toggle" type="button">Транспорт</button>
               <ul class="search__transport transport">
                 <li class="transport__item">
@@ -542,7 +542,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="search__fieldset">
+            <fieldset class="search__fieldset search__fieldset--toggled">
               <button class="search__toggle" type="button">Левел</button>
               <div class="search__level-wrapper">
                 <div class="search__level">
@@ -571,9 +571,8 @@
                       <img src="./img/firsova-mobile@1x.jpg" srcset="./img/firsova-mobile@2x.jpg 2x" width="270" height="270" alt="Таня Фирсова">
                     </picture>
                   </a>
-                  <h3 class="catalog-card__name"><a href="#">Таня Фирсова</a></h3>
+                  <h3 class="catalog-card__name"><a href="#">Таня<br> Фирсова</a></h3>
                   <ul class="catalog-card__tags">
-                    <li class="catalog-card__tag"><a href="#">#ЗОЖ</a></li>
                     <li class="catalog-card__tag"><a href="#">#ЗОЖ</a></li>
                     <li class="catalog-card__tag"><a href="#">#ПП</a></li>
                     <li class="catalog-card__tag"><a href="#">#Фитнес</a></li>
@@ -582,32 +581,35 @@
                     <li class="catalog-card__tag"><a href="#">#смузи</a></li>
                   </ul>
                 </div>
-                <ul class="catalog-card__wishes">
-                  <li class="catalog-card__wish">
+                <div class="catalog-card__wishes-wrapper">
+                  <small class="catalog-card__small">Хочет посетить:</small>
+                  <ul class="catalog-card__wishes">
+                    <li class="catalog-card__wish">
                     <a href="#">
-                      <svg width="26" height="18">
-                        <use xlink:href="./img/sprite.svg#flag-sri-lanka" />
-                      </svg>
-                      Шри-Ланка
-                    </a>
-                  </li>
-                  <li class="catalog-card__wish">
-                    <a href="#">
-                      <svg width="26" height="18">
-                        <use xlink:href="./img/sprite.svg#flag-thailand" />
-                      </svg>
-                      Тайланд
-                    </a>
-                  </li>
-                  <li class="catalog-card__wish">
-                    <a href="#">
-                      <svg width="26" height="18">
-                        <use xlink:href="./img/sprite.svg#flag-seisheli" />
-                      </svg>
-                      Сейшелы
-                    </a>
-                  </li>
-                </ul>
+                        <svg class="catalog-card__flag" width="26" height="18">
+                          <use xlink:href="./img/sprite.svg#flag-sri-lanka" />
+                        </svg>
+                        Шри-Ланка
+                      </a>
+                    </li>
+                    <li class="catalog-card__wish">
+                      <a href="#">
+                        <svg class="catalog-card__flag" width="26" height="18">
+                          <use xlink:href="./img/sprite.svg#flag-thailand" />
+                        </svg>
+                        Тайланд
+                      </a>
+                    </li>
+                    <li class="catalog-card__wish">
+                      <a href="#">
+                        <svg class="catalog-card__flag" width="26" height="18">
+                          <use xlink:href="./img/sprite.svg#flag-seychelles" />
+                        </svg>
+                        Сейшелы
+                      </a>
+                    </li>
+                  </ul>
+                </div>
                 <div class="catalog-card__misc-info">
                   <ul class="catalog-card__transport transport">
                     <li class="transport__item transport__item--checked">
@@ -641,17 +643,284 @@
                 <div class="catalog-card__controls">
                   <a class="button catalog-card__invite" href="#">Позвать!</a>
                   <div class="catalog-card__likes">
-                    <button class="button catalog-card__like-button" type="button">
-                      <svg class="transport__img transport__img--run" width="13" height="11">
+                    <button class="button catalog-card__like-button catalog-card__like-button--liked" type="button">
+                      <svg width="13" height="11">
                         <use xlink:href="./img/sprite.svg#heart" />
+                      </svg>
+                      <svg width="13" height="11">
+                        <use xlink:href="./img/sprite.svg#heart-active" />
                       </svg>
                     </button>
                     <p class="catalog-card__likes-amount">1,5 М</p>
                   </div>
                 </div>
               </li>
+              <li class="catalog__card catalog-card">
+                <div class="catalog-card__base-info">
+                  <a class="catalog-card__photo" href="#">
+                    <picture>
+                      <source srcset="./img/demin-desktop@1x.jpg 1x, ./img/demin-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                      <source srcset="./img/demin-tablet@1x.jpg 1x, ./img/demin-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                      <img src="./img/demin-mobile@1x.jpg" srcset="./img/demin-mobile@2x.jpg 2x" width="270" height="270" alt="Петя Демин">
+                    </picture>
+                  </a>
+                  <h3 class="catalog-card__name"><a href="#">Петя<br> Демин</a></h3>
+                  <ul class="catalog-card__tags">
+                    <li class="catalog-card__tag"><a href="#">#бургер</a></li>
+                    <li class="catalog-card__tag"><a href="#">#бар</a></li>
+                    <li class="catalog-card__tag"><a href="#">#футбол</a></li>
+                    <li class="catalog-card__tag"><a href="#">#концерт</a></li>
+                    <li class="catalog-card__tag"><a href="#">#крафт</a></li>
+                  </ul>
+                </div>
+                <div class="catalog-card__wishes-wrapper">
+                  <small class="catalog-card__small">Хочет посетить:</small>
+                  <ul class="catalog-card__wishes">
+                    <li class="catalog-card__wish">
+                    <a href="#">
+                        <svg class="catalog-card__flag" width="26" height="18">
+                          <use xlink:href="./img/sprite.svg#flag-belgium" />
+                        </svg>
+                        Бельгия
+                      </a>
+                    </li>
+                    <li class="catalog-card__wish">
+                      <a href="#">
+                        <svg class="catalog-card__flag" width="26" height="18">
+                          <use xlink:href="./img/sprite.svg#flag-czech" />
+                        </svg>
+                        Чехия
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog-card__misc-info">
+                  <ul class="catalog-card__transport transport">
+                    <li class="transport__item transport__item--checked">
+                      <svg class="transport__img transport__img--plane" width="14" height="16">
+                        <use xlink:href="./img/sprite.svg#plane" />
+                      </svg>
+                    </li>
+                    <li class="transport__item transport__item--checked">
+                      <svg class="transport__img transport__img--bus" width="13" height="16">
+                        <use xlink:href="./img/sprite.svg#bus" />
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__img transport__img--bike" width="19" height="16">
+                        <use xlink:href="./img/sprite.svg#bike" />
+                      </svg>
+                    </li>
+                    <li class="transport__item transport__item--checked">
+                      <svg class="transport__img transport__img--run" width="15" height="16">
+                        <use xlink:href="./img/sprite.svg#run" />
+                      </svg>
+                    </li>
+                  </ul>
+                  <div class="catalog-card__level level">
+                    <svg class="level__circle" viewBox="0 0 60 60">
+                      <circle cx="30" cy="30" r="29" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="158, 1000"></circle>
+                    </svg>
+                    <p class="level__number">80</p>
+                  </div>
+                </div>
+                <div class="catalog-card__controls">
+                  <a class="button catalog-card__invite" href="#">Позвать!</a>
+                  <div class="catalog-card__likes">
+                    <button class="button catalog-card__like-button" type="button">
+                      <svg width="13" height="11">
+                        <use xlink:href="./img/sprite.svg#heart" />
+                      </svg>
+                      <svg width="13" height="11">
+                        <use xlink:href="./img/sprite.svg#heart-active" />
+                      </svg>
+                    </button>
+                    <p class="catalog-card__likes-amount">1500</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__card catalog-card">
+                <div class="catalog-card__base-info">
+                  <a class="catalog-card__photo" href="#">
+                    <picture>
+                      <source srcset="./img/smolov-desktop@1x.jpg 1x, ./img/smolov-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                      <source srcset="./img/smolov-tablet@1x.jpg 1x, ./img/smolov-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                      <img src="./img/smolov-mobile@1x.jpg" srcset="./img/smolov-mobile@2x.jpg 2x" width="270" height="270" alt="Петя Демин">
+                    </picture>
+                  </a>
+                  <h3 class="catalog-card__name"><a href="#">Марк<br> Смолов</a></h3>
+                  <ul class="catalog-card__tags">
+                    <li class="catalog-card__tag"><a href="#">#рэп</a></li>
+                    <li class="catalog-card__tag"><a href="#">#тату</a></li>
+                    <li class="catalog-card__tag"><a href="#">#хайпбист</a></li>
+                    <li class="catalog-card__tag"><a href="#">#кроссовки</a></li>
+                    <li class="catalog-card__tag"><a href="#">#суприм</a></li>
+                  </ul>
+                </div>
+                <div class="catalog-card__wishes-wrapper">
+                  <small class="catalog-card__small">Хочет посетить:</small>
+                  <ul class="catalog-card__wishes">
+                    <li class="catalog-card__wish">
+                    <a href="#">
+                        <svg class="catalog-card__flag" width="26" height="18">
+                          <use xlink:href="./img/sprite.svg#flag-usa" />
+                        </svg>
+                        США
+                      </a>
+                    </li>
+                    <li class="catalog-card__wish">
+                      <a href="#">
+                        <svg class="catalog-card__flag" width="26" height="18">
+                          <use xlink:href="./img/sprite.svg#flag-australia" />
+                        </svg>
+                        Австралия
+                      </a>
+                    </li>
+                    <li class="catalog-card__wish">
+                      <a href="#">
+                        <svg class="catalog-card__flag" width="26" height="18">
+                          <use xlink:href="./img/sprite.svg#flag-dominica" />
+                        </svg>
+                        Доминика
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog-card__misc-info">
+                  <ul class="catalog-card__transport transport">
+                    <li class="transport__item transport__item--checked">
+                      <svg class="transport__img transport__img--plane" width="14" height="16">
+                        <use xlink:href="./img/sprite.svg#plane" />
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__img transport__img--bus" width="13" height="16">
+                        <use xlink:href="./img/sprite.svg#bus" />
+                      </svg>
+                    </li>
+                    <li class="transport__item transport__item--checked">
+                      <svg class="transport__img transport__img--bike" width="19" height="16">
+                        <use xlink:href="./img/sprite.svg#bike" />
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__img transport__img--run" width="15" height="16">
+                        <use xlink:href="./img/sprite.svg#run" />
+                      </svg>
+                    </li>
+                  </ul>
+                  <div class="catalog-card__level level">
+                    <svg class="level__circle" viewBox="0 0 60 60">
+                      <circle cx="30" cy="30" r="29" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="45, 1000"></circle>
+                    </svg>
+                    <p class="level__number">25</p>
+                  </div>
+                </div>
+                <div class="catalog-card__controls">
+                  <a class="button catalog-card__invite" href="#">Позвать!</a>
+                  <div class="catalog-card__likes">
+                    <button class="button catalog-card__like-button" type="button">
+                      <svg width="13" height="11">
+                        <use xlink:href="./img/sprite.svg#heart" />
+                      </svg>
+                      <svg width="13" height="11">
+                        <use xlink:href="./img/sprite.svg#heart-active" />
+                      </svg>
+                    </button>
+                    <p class="catalog-card__likes-amount">170</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__card catalog-card catalog-card--online">
+                <div class="catalog-card__base-info">
+                  <a class="catalog-card__photo" href="#">
+                    <picture>
+                      <source srcset="./img/rogovaya-desktop@1x.jpg 1x, ./img/rogovaya-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+                      <source srcset="./img/rogovaya-tablet@1x.jpg 1x, ./img/rogovaya-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                      <img src="./img/rogovaya-mobile@1x.jpg" srcset="./img/rogovaya-mobile@2x.jpg 2x" width="270" height="270" alt="Лариса Роговая">
+                    </picture>
+                  </a>
+                  <h3 class="catalog-card__name"><a href="#">Лариса<br> Роговая</a></h3>
+                  <ul class="catalog-card__tags">
+                    <li class="catalog-card__tag"><a href="#">#образование</a></li>
+                    <li class="catalog-card__tag"><a href="#">#карьера</a></li>
+                    <li class="catalog-card__tag"><a href="#">#учеба</a></li>
+                    <li class="catalog-card__tag"><a href="#">#линкедин</a></li>
+                  </ul>
+                </div>
+                <div class="catalog-card__wishes-wrapper">
+                  <small class="catalog-card__small">Хочет посетить:</small>
+                  <ul class="catalog-card__wishes">
+                    <li class="catalog-card__wish">
+                    <a href="#">
+                        <svg class="catalog-card__flag" width="26" height="18">
+                          <use xlink:href="./img/sprite.svg#flag-united-kingdom" />
+                        </svg>
+                        Великобритания
+                      </a>
+                    </li>
+                    <li class="catalog-card__wish">
+                      <a href="#">
+                        <svg class="catalog-card__flag" width="26" height="18">
+                          <use xlink:href="./img/sprite.svg#flag-germany" />
+                        </svg>
+                        Германия
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog-card__misc-info">
+                  <ul class="catalog-card__transport transport">
+                    <li class="transport__item transport__item--checked">
+                      <svg class="transport__img transport__img--plane" width="14" height="16">
+                        <use xlink:href="./img/sprite.svg#plane" />
+                      </svg>
+                    </li>
+                    <li class="transport__item transport__item--checked">
+                      <svg class="transport__img transport__img--bus" width="13" height="16">
+                        <use xlink:href="./img/sprite.svg#bus" />
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__img transport__img--bike" width="19" height="16">
+                        <use xlink:href="./img/sprite.svg#bike" />
+                      </svg>
+                    </li>
+                    <li class="transport__item">
+                      <svg class="transport__img transport__img--run" width="15" height="16">
+                        <use xlink:href="./img/sprite.svg#run" />
+                      </svg>
+                    </li>
+                  </ul>
+                  <div class="catalog-card__level level">
+                    <svg class="level__circle" viewBox="0 0 60 60">
+                      <circle cx="30" cy="30" r="29" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="89, 1000"></circle>
+                    </svg>
+                    <p class="level__number">50</p>
+                  </div>
+                </div>
+                <div class="catalog-card__controls">
+                  <a class="button catalog-card__invite" href="#">Позвать!</a>
+                  <div class="catalog-card__likes">
+                    <button class="button catalog-card__like-button" type="button">
+                      <svg width="13" height="11">
+                        <use xlink:href="./img/sprite.svg#heart" />
+                      </svg>
+                      <svg width="13" height="11">
+                        <use xlink:href="./img/sprite.svg#heart-active" />
+                      </svg>
+                    </button>
+                    <p class="catalog-card__likes-amount">23</p>
+                  </div>
+                </div>
+              </li>
             </ul>
-            <a class="catalog__more" href="#">Показать еще</a>
+            <a class="catalog__more" href="#">
+              <svg width="18" height="18">
+                <use xlink:href="./img/sprite.svg#qty-plus" />
+              </svg>
+              Показать еще
+            </a>
             <div class="catalog__pages">
               <ul class="catalog__digits">
                 <li class="catalog__page catalog__page--current"><a href="#">1</a></li>
@@ -663,14 +932,14 @@
                 <li class="catalog__arrow">
                   <a href="#">
                     <svg width="10" height="20">
-                      <use xlink:href="./img/sprite.svg#" />
+                      <use xlink:href="./img/sprite.svg#triangle-arrow-left" />
                     </svg>
                   </a>
                 </li>
                 <li class="catalog__arrow">
                   <a href="#">
                     <svg width="10" height="20">
-                      <use xlink:href="./img/sprite.svg#" />
+                      <use xlink:href="./img/sprite.svg#triangle-arrow-right" />
                     </svg>
                   </a>
                 </li>

@@ -78,6 +78,24 @@
   }
 }
 
+.catalog .level {
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+}
+
+.catalog .level__number {
+  color: $color-darkslateblue;
+
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .profile .level {
     width: 94px;

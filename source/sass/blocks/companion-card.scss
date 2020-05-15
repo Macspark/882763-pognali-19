@@ -61,7 +61,7 @@
   background-color: $color-offline;
 }
 
-.companion-card__name--online::before {
+.companion-card--online .companion-card__name::before {
   background-color: $color-online;
 }
 

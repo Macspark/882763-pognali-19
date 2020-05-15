@@ -1,9 +1,75 @@
 .catalog {
   padding-top: 75px;
+  padding-bottom: 78px;
   background-color: $color-palegrey;
 }
 
 .catalog__wrapper {
   @include container-padding;
   @include container-size;
+}
+
+.catalog__search {
+  margin-bottom: 27px;
+}
+
+.catalog__list {
+  @include reset-list;
+  margin-bottom: 19px;
+}
+
+.catalog__card {
+  margin-bottom: 10px;
+}
+
+.catalog__more {
+  margin-bottom: 21px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.76;
+  text-transform: uppercase;
+  color: $color-darkslateblue;
+
+  fill: $color-darkslateblue;
+}
+
+.catalog__more svg {
+  margin-right: 15px;
+  margin-bottom: 2px;
+}
+
+.catalog__digits {
+  display: none;
+}
+
+.catalog__arrows {
+  @include reset-list;
+  margin: 0 auto;
+  display: flex;
+  width: 270px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.catalog__arrow {
+  padding-top: 2px;
+  width: 50%;
+}
+
+.catalog__arrow a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.catalog__arrow svg {
+  transform: scaleY(1.5);
 }
