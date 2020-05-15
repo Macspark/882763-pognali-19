@@ -92,8 +92,8 @@
 .filter__continents {
   @include reset-list;
   position: absolute;
-  left: 25px;
   top: 54px;
+  left: 25px;
 
   display: none;
 
@@ -322,8 +322,7 @@
   .filter__countries {
     @include reset-list;
     top: -12px;
-    right: -180px;
-    left: auto;
+    left: calc(100% + 25px);
   }
 
   .filter__country-link {

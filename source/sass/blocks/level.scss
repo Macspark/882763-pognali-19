@@ -120,6 +120,27 @@
       line-height: 1.22;
     }
   }
+
+  .catalog .level {
+    width: 60px;
+    height: 60px;
+  }
+
+  .catalog .level__number {
+    color: $color-darkslateblue;
+
+    &::before {
+      display: block;
+      background-color: $color-blackish;
+      opacity: 0.4;
+    }
+
+    &::after {
+      display: block;
+      color: $color-blackish;
+      opacity: 0.4;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

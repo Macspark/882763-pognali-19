@@ -14,6 +14,9 @@
 .catalog-card__name {
   margin: 0;
   width: 50%;
+}
+
+.catalog-card__name a {
   font-size: 20px;
   line-height: 1;
   color: $color-darkslateblue;
@@ -184,6 +187,8 @@
   height: 40px;
   border-radius: 20px;
   background-color: $color-lightgold;
+
+  color: $color-darktwo;
 }
 
 .catalog-card__likes {
@@ -232,5 +237,171 @@
   &:last-child {
     display: block;
     fill: red;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-card {
+    padding: 30px 35px 1px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-card__base-info {
+    padding-left: 223px;
+  }
+
+  .catalog-card__photo {
+    position: absolute;
+    top: 34px;
+    left: 35px;
+  }
+
+  .catalog-card__photo img {
+    width: 190px;
+    height: 190px;
+    border-radius: 18px;
+  }
+
+  .catalog-card__name {
+    position: relative;
+    margin-bottom: 16px;
+    width: auto;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .catalog-card__name a {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .catalog-card__name br {
+    display: none;
+  }
+
+  .catalog-card__name::before {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: $color-offline;
+  }
+
+  .catalog-card__tags {
+    margin-bottom: 23px;
+    padding-right: 135px;
+    padding-left: 3px;
+    width: 100%;
+  }
+
+  .catalog-card__tag {
+    margin-right: 6px;
+  }
+
+  .catalog-card__tag a {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .catalog-card__misc-info {
+    position: absolute;
+    top: 27px;
+    right: 24px;
+
+    flex-direction: column;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .catalog-card__transport {
+    margin-left: 11px;
+    margin-bottom: 6px;
+    flex-direction: column;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .catalog-card__level {
+    &::before {
+      display: none;
+    }
+  }
+
+  .catalog-card__controls {
+    order: 1;
+
+    margin-left: -3px;
+    margin-bottom: 12px;
+    padding-left: 223px;
+    display: flex;
+    align-items: center;
+  }
+
+  .catalog-card__invite {
+    margin: 0;
+    width: 148px;
+    height: 50px;
+    border-radius: 25px;
+
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  .catalog-card__likes {
+    position: static;
+  }
+
+  .catalog-card__like-button {
+    margin: 0;
+    margin-right: 7px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .catalog-card__like-button svg {
+    width: 20px;
+    height: 17px;
+  }
+
+  .catalog-card__likes-amount {
+    font-size: 20px;
+  }
+
+  .catalog-card__wishes-wrapper {
+    order: 2;
+    padding: 0;
+  }
+
+  .catalog-card__small {
+    margin-left: 33px;
+  }
+
+  .catalog-card__wishes {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog-card__wish {
+    margin-right: 27px;
+  }
+
+  .catalog-card__wish a {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .catalog-card__flag {
+    width: 35px;
+    height: 24px;
   }
 }
