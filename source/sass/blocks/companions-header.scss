@@ -14,6 +14,8 @@
   @include container-padding;
   @include container-size;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .companions-header__title {
@@ -40,4 +42,39 @@
 
 .companions-header__button {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .companions-header {
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .companions-header__wrapper {
+    padding: 70px 75px 55px;
+  }
+
+  .companions-header__title {
+    font-size: 60px;
+    line-height: 1.17;
+
+    &::after {
+      bottom: -71px;
+      height: 8px;
+    }
+  }
+
+  .companions-header__button {
+    margin-top: 8px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .companions-header__button svg {
+    margin-left: 22px;
+  }
 }

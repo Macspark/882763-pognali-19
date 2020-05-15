@@ -171,6 +171,7 @@
 
 .filter__close svg {
   margin-right: 6px;
+  fill: $color-darkbluegrey;
 }
 
 .filter__countries {
@@ -188,11 +189,162 @@
 }
 
 .filter--expanded .filter__continents,
-.filter--expanded .filter__close,
 .filter__item--current .filter__countries {
   display: block;
 }
 
-.filter--expanded .filter__table {
+.filter--expanded .filter__table,
+.filter--expanded .filter__close {
   display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .filter {
+    margin-top: -61px;
+    padding-top: 118px;
+    padding-bottom: 48px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+
+    &--expanded {
+      padding-bottom: 27px;
+    }
+  }
+
+  .filter__wrapper {
+    padding-right: 72px;
+    padding-left: 72px;
+  }
+
+  .filter__title {
+    display: none;
+  }
+
+  .filter .filter__continents {
+    position: static;
+    display: flex;
+
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: $color-darkbluegrey;
+  }
+
+  .filter__continent {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .filter__button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+
+  .filter--expanded .filter__button {
+    width: 26px;
+    height: 26px;
+  }
+
+  .filter__button::before {
+    position: absolute;
+    top: 0;
+    left: -150px;
+
+    content: "Показать все";
+    min-width: 170px;
+
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    text-transform: uppercase;
+    color: $color-darkbluegrey;
+  }
+
+  .filter--expanded .filter__button::before {
+    content: "Свернуть";
+  }
+
+  .filter__button-img {
+    &--dots {
+      margin-right: 0;
+      margin-bottom: 6px;
+      width: 27px;
+      height: 5px;
+    }
+
+    &--close {
+      margin-bottom: 7px;
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  .filter__table {
+    margin: 0;
+    margin-top: -10px;
+    padding-left: 0;
+
+    width: 421px;
+  }
+
+
+  .filter__item {
+    margin-top: 0;
+    margin-right: 32px;
+    margin-left: 0;
+    margin-bottom: 41px;
+    border: none;
+    background-color: transparent;
+    opacity: 0.2;
+
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
+
+    &--current {
+      opacity: 1;
+    }
+  }
+
+  .filter__item .filter__letter {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 0.4;
+    color: $color-darkbluegrey;
+  }
+
+  .filter__countries {
+    @include reset-list;
+    top: -12px;
+    right: -180px;
+    left: auto;
+  }
+
+  .filter__country-link {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .filter__close {
+    align-items: center;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: $color-darkslateblue;
+  }
+
+  .filter__close svg {
+    margin-bottom: 2px;
+    margin-right: 22px;
+    width: 19px;
+    height: 19px;
+    fill: $color-darkbluegrey;
+  }
 }

@@ -14,7 +14,17 @@ filterToggle.addEventListener('click', function() {
   } else {
     filter.classList.add(filterToggled);
     filterHeader.style.marginBottom = 43 + filterContinents.offsetHeight + 'px';
-    filterTable.style.marginBottom = 42 + filterCurrentCountries.offsetHeight + 'px';
+
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      filterTable.style.marginBottom = 42 + filterCurrentCountries.offsetHeight + 'px';
+    } else if (window.matchMedia("(max-width: 1439px)").matches) {
+      if (filterCurrentCountries.offsetHeight <= filterTable.offsetHeight) {
+        filterTable.style.marginBottom = 35 + 'px';
+      } else {
+        filterTable.style.marginBottom = 35 + filterCurrentCountries.offsetHeight - filterTable.offsetHeight + 'px';
+      }
+    }
+
   }
 });
 

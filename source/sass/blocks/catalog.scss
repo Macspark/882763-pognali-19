@@ -73,3 +73,10 @@
 .catalog__arrow svg {
   transform: scaleY(1.5);
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 182px;
+    padding-bottom: 78px;
+  }
+}
