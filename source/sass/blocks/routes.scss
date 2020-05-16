@@ -127,10 +127,13 @@
     width: 90%;
     height: 81px;
     border-radius: 20px;
-    background-position: 94.4% center;
 
     font-size: 24px;
     line-height: 1;
+
+    &::before {
+      right: 35px;
+    }
   }
 
   .routes__item {
@@ -190,7 +193,10 @@
   .routes__button {
     margin: 0;
     width: 274px;
-    background-position: 88% center;
+
+    &::before {
+      right: 32px;
+    }
 
     &--top {
       display: flex;

@@ -120,7 +120,9 @@
     display: flex;
     font-size: 24px;
 
-    background-position: 87% center;
+    &::before {
+      right: 35px;
+    }
   }
 }
 

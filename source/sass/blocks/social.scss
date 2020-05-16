@@ -17,13 +17,38 @@
   margin: 0;
   padding-top: 2px;
   padding-left: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: $color-lightgold;
+}
+
+.social__link {
+  padding-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.social__item {
+  transition: 200ms ease;
+}
+
+.page-header .social__item:hover,
+.page-header .social__item:focus {
+  opacity: 0.6;
+}
+
+.page-footer .social__item:hover,
+.page-footer .social__item:focus {
+  background-color: $color-mangothree;
+}
+
+.social__item:active svg {
+  opacity: 0.3;
+  transition: 200ms ease;
 }
 
 .page-footer .social__img {

@@ -32,6 +32,12 @@
   color: $color-darkslateblue;
 
   cursor: pointer;
+  transition: 200ms ease;
+
+  &:hover,
+  &:focus {
+    border-color: $color-blueygrey;
+  }
 }
 
 .countries__item::before {
@@ -126,6 +132,18 @@
   border-radius: 50%;
   background-color: $color-palegrey;
   fill: rgba(0, 0, 0, 0.3);
+
+  transition: 200ms ease;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: rgba(0, 0, 0, 0.8);
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.2);
+  }
 }
 
 .countries__item--add {
@@ -135,6 +153,16 @@
 .countries__item--add .countries__country {
   border-color: $color-palegrey;
   background-color: $color-palegrey;
+
+  &:hover,
+  &:focus {
+    border-color: $color-cloudyblue;
+    background-color: $color-cloudyblue;
+  }
+
+  &:active {
+    color: $color-darkslateblue-30;
+  }
 }
 
 .countries__item--add .countries__country::before {
@@ -151,6 +179,12 @@
   background-position: center;
   background-size: 100%;
   opacity: 0.3;
+
+  transition: 200ms ease;
+}
+
+.countries__item--add .countries__country:active::after {
+  opacity: 0.1;
 }
 
 .countries__item--add::before {

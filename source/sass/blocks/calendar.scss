@@ -16,6 +16,17 @@
   outline: none;
   background-color: transparent;
   opacity: 0.3;
+  transition: 200ms ease;
+}
+
+.calendar__button:hover,
+.calendar__button:focus {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.calendar__button:active {
+  opacity: 0.1;
 }
 
 .calendar__month {
@@ -72,6 +83,7 @@
 .calendar__day .calendar__slot {
   border: 1px solid $color-cloudyblue;
   background-color: $color-palegrey;
+  transition: 200ms ease;
 }
 
 .calendar__day .calendar__slot--checked {

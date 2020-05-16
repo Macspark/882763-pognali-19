@@ -30,6 +30,16 @@
   justify-content: space-between;
   width: 100%;
   color: $color-blackish;
+  transition: 200ms ease;
+}
+
+.page-footer__copyright:hover,
+.page-footer__copyright:focus {
+  opacity: 0.6;
+}
+
+.page-footer__copyright:active {
+  opacity: 0.3;
 }
 
 .page-footer__copyright svg {

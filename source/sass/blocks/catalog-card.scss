@@ -5,6 +5,13 @@
   background-color: #ffffff;
 }
 
+.catalog-card__photo-wrapper {
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
 .catalog-card__base-info {
   margin-bottom: 14px;
   display: flex;
@@ -14,6 +21,16 @@
 .catalog-card__name {
   margin: 0;
   width: 50%;
+  transition: 200ms ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog-card__name a {
@@ -44,9 +61,9 @@
 }
 
 .catalog-card__photo img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  transition: 200ms ease;
 }
 
 .catalog-card__tags {
@@ -236,8 +253,39 @@
 
   &:last-child {
     display: block;
-    fill: red;
+    fill: $color-tomato;
   }
+}
+
+.catalog-card__like-button:hover,
+.catalog-card__like-button:focus {
+  background-color: $color-palegreythree;
+}
+
+.catalog-card__like-button:hover svg,
+.catalog-card__like-button:focus svg {
+  transition: 200ms ease;
+  fill: $color-darkbluegrey;
+  opacity: 0.5;
+}
+
+.catalog-card__like-button:active svg {
+  opacity: 0.1;
+}
+
+.catalog-card__like-button--liked:hover,
+.catalog-card__like-button--liked:focus {
+  background-color: $color-lighttan;
+}
+
+.catalog-card__like-button--liked:hover svg,
+.catalog-card__like-button--liked:focus svg {
+  fill: $color-tomato;
+  opacity: 1;
+}
+
+.catalog-card__like-button--liked:active svg {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -257,11 +305,13 @@
     left: 35px;
   }
 
-  .catalog-card__photo img {
+  .catalog-card__photo-wrapper {
+    overflow: hidden;
     width: 190px;
     height: 190px;
     border-radius: 18px;
   }
+
 
   .catalog-card__name {
     position: relative;
@@ -403,5 +453,110 @@
   .catalog-card__flag {
     width: 35px;
     height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-card {
+    padding: 43px 35px 105px;
+
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: 285px;
+  }
+
+  .catalog-card__base-info {
+    margin-left: 310px;
+    margin-right: 80px;
+    padding: 0;
+    width: 250px;
+  }
+
+  .catalog-card__wishes {
+    position: relative;
+    padding-top: 3px;
+    width: 242px;
+    flex-direction: column;
+
+    &::before {
+      top: 30px;
+      left: -43px;
+
+      width: 1px;
+      height: 187px;
+
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.1) 75%, transparent 100%);
+    }
+  }
+
+  .catalog-card__flag {
+    margin-right: 19px;
+  }
+
+  .catalog-card__wish {
+    margin-bottom: 7px;
+  }
+
+  .catalog-card__photo {
+    top: -2px;
+    left: 0;
+  }
+
+  .catalog-card__photo-wrapper {
+    width: 285px;
+    height: 285px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .catalog-card__name {
+    padding: 0;
+    width: 100%;
+  }
+
+  .catalog-card__name::before {
+    position: absolute;
+    top: 15px;
+    right: auto;
+    left: -26px;
+  }
+
+  .catalog-card__tags {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .catalog-card__controls {
+    position: absolute;
+    left: 121px;
+    bottom: 26px;
+  }
+
+  .catalog-card__small {
+    display: none;
+  }
+
+  .catalog-card__misc-info {
+    top: auto;
+    right: 44px;
+    bottom: 30px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .catalog-card__transport {
+    margin-top: 15px;
+    margin-right: 45px;
+    flex-direction: row;
+  }
+
+  .catalog-card:hover {
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .catalog-card:hover img {
+    transform: scale(1.1);
   }
 }

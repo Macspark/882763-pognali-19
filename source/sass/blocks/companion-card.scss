@@ -2,14 +2,22 @@
   position: relative;
 }
 
+.companion-card__img-wrapper {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
 .companion-card__img img {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: 200ms ease;
 }
 
 .companion-card__level {
   position: absolute;
+  z-index: 2;
   top: 16px;
   left: 17px;
 }
@@ -37,6 +45,73 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+
+  cursor: pointer;
+}
+
+.companion-card__country {
+  position: relative;
+}
+
+.companion-card__country:hover::before,
+.companion-card__country:focus::before {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  bottom: -3px;
+  transform: translateX(-50%) translateY(100%);
+
+  content: "";
+  width: 0;
+  height: 0;
+
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid $color-darkbluegreythree;
+}
+
+.companion-card__country:hover::after,
+.companion-card__country:focus::after {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  bottom: -9px;
+  transform: translateX(-50%) translateY(100%);
+
+  padding: 15px 20px;
+
+  content: "tooltip";
+  white-space: pre;
+  background-color: $color-darkbluegreythree;
+
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.companion-card__country--sri-lanka:hover::after,
+.companion-card__country--sri-lanka:focus::after {
+  content: "Шри-Ланка";
+}
+
+.companion-card__country--thailand:hover::after,
+.companion-card__country--thailand:focus::after {
+  content: "Тайланд";
+}
+
+.companion-card__country--seychelles:hover::after,
+.companion-card__country--seychelles:focus::after {
+  content: "Сейшелы";
+}
+
+.companion-card__country--belgium:hover::after,
+.companion-card__country--belgium:focus::after {
+  content: "Бельгия";
+}
+
+.companion-card__country--czech:hover::after,
+.companion-card__country--czech:focus::after {
+  content: "Чехия";
 }
 
 .companion-card__countries li {
@@ -48,6 +123,16 @@
   font-size: 21px;
   font-weight: bold;
   color: $color-darkslateblue;
+  transition: 200ms ease;
+}
+
+.companion-card__name:hover,
+.companion-card__name:focus {
+  opacity: 0.7;
+}
+
+.companion-card__name:active {
+  opacity: 0.3;
 }
 
 .companion-card__name::before {
@@ -88,6 +173,11 @@
 @media (min-width: $tablet-width) {
   .companion-card {
     width: 50%;
+  }
+
+  .companion-card__img-wrapper {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   .companion-card__img {
@@ -135,6 +225,14 @@
 @media (min-width: $desktop-width) {
   .companion-card {
     width: 285px;
+  }
+
+  .companion-card:hover {
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .companion-card:hover img {
+    transform: scale(1.1);
   }
 
   .companion-card__level {

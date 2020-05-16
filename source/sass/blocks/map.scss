@@ -59,6 +59,25 @@
   border: solid 3px $color-darkbluegrey;
 }
 
+.map__button:hover,
+.map__button:focus {
+  background-color: $color-darkbluegrey;
+  color: #ffffff;
+
+  &::before {
+    background-image: url("../img/sprite.svg#triangle-arrow-right-white");
+    transition: 200ms ease;
+  }
+}
+
+.map__button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  &::before {
+    opacity: 0.3;
+  }
+}
+
 .map__container {
   position: relative;
   margin-top: -36px;
@@ -114,7 +133,10 @@
     border-radius: 20px;
 
     font-size: 24px;
-    background-position: 94.5% center;
+
+    &::before {
+      right: 32px;
+    }
   }
 
   .map__container {

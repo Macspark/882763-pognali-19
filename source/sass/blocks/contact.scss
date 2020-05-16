@@ -32,6 +32,16 @@
 .contact__link {
   text-decoration: underline;
   color: $color-lightgold;
+  transition: 200ms ease;
+}
+
+.contact__link:hover,
+.contact__link:focus {
+  color: $color-mango;
+}
+
+.contact__link:active {
+  opacity: 0.3;
 }
 
 .contact__form {
@@ -46,12 +56,36 @@
 
   width: 100%;
   height: 62px;
+
+  outline: none;
   border: none;
   border-radius: 10px;
 
   font-size: 18px;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.3);
+  color: $color-blackish-30;
+
+  transition: color, background-color 200ms ease;
+}
+
+.contact__form input:hover {
+  background-color: $color-palegrey;
+  color: $color-blackish-50;
+}
+
+.contact__form input:active,
+.contact__form input:focus {
+  border: 4px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+
+  padding: 20px;
+  padding-right: 66px;
+}
+
+.contact__form input:focus:invalid {
+  background-color: $color-lightpink;
+  color: #ff0000;
 }
 
 .contact__form button {
@@ -81,13 +115,33 @@
   color: $color-lightgold;
 }
 
-.contact__list li {
+.contact__item {
   position: relative;
   padding-left: 60px;
 
   display: flex;
   align-items: center;
   min-height: 45px;
+}
+
+.contact__item:hover a,
+.contact__item:focus a {
+  color: $color-mangothree;
+  transition: 200ms ease;
+}
+
+.contact__item:hover svg,
+.contact__item:focus svg {
+  fill: $color-mangothree;
+  transition: 200ms ease;
+}
+
+.contact__item:active a {
+  color: $color-mangothree-30;
+}
+
+.contact__item:active svg {
+  fill: $color-mangothree-30;
 }
 
 .contact__img {
@@ -140,23 +194,37 @@
   .contact__form {
     margin-top: 68px;
     margin-bottom: 55px;
+    display: flex;
   }
 
   .contact__form input {
-    padding: 35px;
-    padding-right: 100px;
+    padding: 35px 32px;
+    width: auto;
+    flex-grow: 1;
     height: 81px;
-    border-radius: 20px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     font-size: 24px;
     line-height: 1;
   }
 
+  .contact__form input:active,
+  .contact__form input:focus {
+    padding: 35px 28px;
+  }
+
   .contact__form button {
+    position: static;
     width: 82px;
     height: 81px;
     border-radius: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+
+    &::before {
+      right: 35px;
+    }
   }
 
   .contact__list {

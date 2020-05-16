@@ -40,8 +40,18 @@
   }
 }
 
+.companions-header__button:hover,
+.companions-header__button:focus {
+  opacity: 0.6;
+}
+
+.companions-header__button:active {
+  opacity: 0.3;
+}
+
 .companions-header__button {
   display: none;
+  transition: 200ms ease;
 }
 
 @media (min-width: $tablet-width) {

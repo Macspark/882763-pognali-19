@@ -35,6 +35,15 @@
   color: $color-darkbluegrey;
 }
 
+.main-nav__menu a:hover,
+.main-nav__menu a:focus {
+  color: $color-lightgold;
+}
+
+.main-nav__menu a:active {
+  opacity: 0.3;
+}
+
 .main-nav__button {
   margin: 0 auto;
   margin-bottom: 51px;
@@ -63,6 +72,19 @@
   display: flex;
   align-items: center;
   min-height: 45px;
+}
+
+.main-nav__contact-method:hover a,
+.main-nav__contact-method:focus a {
+  color: $color-lightgold;
+}
+
+.main-nav__contact-method:active svg {
+  opacity: 0.3;
+}
+
+.main-nav__contact-method:active a {
+  color: $color-lightgold-30;
 }
 
 .main-nav__img {
@@ -182,6 +204,7 @@
 
   .main-nav__menu a {
     color: #ffffff;
+    transition: 200ms ease;
   }
 
   .main-nav .main-nav__contact,

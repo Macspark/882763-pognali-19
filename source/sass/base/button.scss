@@ -1,12 +1,17 @@
 .button {
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
   width: 280px;
   height: 81px;
-  border-radius: 20px;
   background-color: $color-lightgold;
+
+  outline: none;
+  border: none;
+  border-radius: 20px;
 
   font-size: 17px;
   font-weight: bold;
@@ -14,22 +19,41 @@
   text-transform: uppercase;
   color: $color-darkslateblue;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    background-color: $color-mangothree;
     cursor: pointer;
     transition: 200ms ease-out;
   }
 
-  &:active,
-  &:focus {
+  &:active {
+    color: $color-darkslateblue-30;
     transition: 200ms ease-out;
   }
+}
 
-  &--arrow {
-    justify-content: flex-start;
-    text-transform: none;
-    background-image: url("../img/sprite.svg#triangle-arrow-right");
-    background-repeat: no-repeat;
-    background-size: 14px 18px;
-    background-position: 91.7% center;
-  }
+.button--arrow {
+  justify-content: flex-start;
+  text-transform: none;
+}
+
+.button--arrow::before {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+
+  content: "";
+  width: 14px;
+  height: 18px;
+
+
+  background-image: url("../img/sprite.svg#triangle-arrow-right");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.button:active::before {
+  opacity: 0.3;
+  transition: 200ms ease-out;
 }

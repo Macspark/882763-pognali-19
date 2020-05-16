@@ -6,17 +6,22 @@
 .transport__img {
   fill: $color-darkslateblue;
   opacity: 0.15;
+  transition: 200ms ease;
+  pointer-events: none;
 
   &--plane {
     margin-right: 3px;
   }
 }
 
-.transport__item--checked .transport__img {
+.transport__item--checked .transport__img,
+.transport__item--toggled .transport__img {
   opacity: 1;
 }
 
 .transport__item {
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,6 +30,92 @@
   height: 33px;
   background-color: #ffffff;
   border-radius: 50%;
+
+  transition: 200ms ease;
+  cursor: pointer;
+}
+
+.transport__item:hover::before,
+.transport__item:focus::before {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  bottom: -3px;
+  transform: translateX(-50%) translateY(100%);
+
+  content: "";
+  width: 0;
+  height: 0;
+
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid $color-darkbluegreythree;
+}
+
+.transport__item:hover::after,
+.transport__item:focus::after {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  bottom: -9px;
+  transform: translateX(-50%) translateY(100%);
+
+  padding: 15px 20px;
+
+  content: "tooltip";
+  background-color: $color-darkbluegreythree;
+
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.transport__item--plane:hover::after,
+.transport__item--plane:focus::after {
+  content: "Авиаперелет";
+}
+
+.transport__item--bus:hover::after,
+.transport__item--bus:focus::after {
+  content: "Автотранспорт";
+}
+
+.transport__item--bike:hover::after,
+.transport__item--bike:focus::after {
+  content: "Велосипед";
+}
+
+.transport__item--run:hover::after,
+.transport__item--run:focus::after {
+  content: "Пешком";
+}
+
+.transport__item--toggle:hover,
+.transport__item--toggle:focus {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.transport__item--toggle:active {
+  background-color: $color-palegreythree;
+}
+
+.transport__item--toggle:hover .transport__img,
+.transport__item--toggle:focus .transport__img {
+  opacity: 0.3;
+}
+
+.transport__item--toggle:active .transport__img {
+  opacity: 0.1;
+}
+
+.transport__item--toggled:hover .transport__img,
+.transport__item--toggled:focus .transport__img {
+  fill: $color-darkslatebluetwo;
+  opacity: 0.7;
+}
+
+.transport__item--toggled:active .transport__img {
+  opacity: 0.3;
 }
 
 .search .transport__img {

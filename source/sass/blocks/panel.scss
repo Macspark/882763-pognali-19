@@ -40,6 +40,47 @@
   }
 }
 
+.panel__item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.panel__item svg {
+  margin-bottom: 5px;
+}
+
+.panel__item--phone:hover,
+.panel__item--phone:focus {
+  background-color: $color-dustyorange;
+  transition: 200ms ease;
+}
+
+.panel__item--mail:hover,
+.panel__item--mail:focus {
+  background-color: $color-mango;
+  transition: 200ms ease;
+}
+
+.panel__item--phone:active svg,
+.panel__item--mail:active svg {
+  opacity: 0.3;
+  transition: 200ms ease;
+}
+
+.panel__item--button:hover,
+.panel__item--button:focus {
+  background-color: $color-mangothree;
+  transition: 200ms ease;
+}
+
+.panel__item--button:active a {
+  color: $color-darktwo-30;
+  transition: 200ms ease;
+}
+
 @media (min-width: $tablet-width) {
   .panel {
     width: auto;

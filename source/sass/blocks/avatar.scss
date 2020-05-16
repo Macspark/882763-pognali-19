@@ -24,6 +24,15 @@
   background-color: $color-palegreyfive;
 }
 
+.avatar__button:hover,
+.avatar__button:focus {
+  background-color: $color-lightbluegrey;
+}
+
+.avatar__button:active {
+  color: $color-darkslateblue-30;
+}
+
 .avatar__button span {
   white-space: pre;
 }

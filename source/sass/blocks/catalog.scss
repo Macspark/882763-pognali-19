@@ -36,6 +36,17 @@
   color: $color-darkslateblue;
 
   fill: $color-darkslateblue;
+
+  transition: 200ms ease;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__more svg {
@@ -60,6 +71,16 @@
 .catalog__arrow {
   padding-top: 2px;
   width: 50%;
+  transition: 200ms ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__arrow a {
@@ -89,8 +110,8 @@
   }
 
   .catalog__more {
-    margin-bottom: 51px;
     margin-right: 9px;
+    margin-bottom: 51px;
     font-size: 20px;
     line-height: 1.5;
   }
@@ -121,12 +142,22 @@
   .catalog__page {
     width: 50px;
     height: 50px;
+    transition: 200ms ease;
 
     border-radius: 50%;
 
     &--current {
       background-color: $color-lightgold;
     }
+  }
+
+  .catalog__page:hover a,
+  .catalog__page:focus a {
+    opacity: 0.6;
+  }
+
+  .catalog__page:active {
+    background-color: $color-lightgold;
   }
 
   .catalog__page a {
@@ -140,6 +171,8 @@
     font-weight: bold;
     line-height: 1.5;
     color: $color-darktwo;
+
+    transition: 200ms ease;
   }
 
   .catalog__arrows {
@@ -169,5 +202,23 @@
   .catalog__companions {
     order: 1;
     width: 950px;
+  }
+
+  .catalog__card {
+    margin-bottom: 30px;
+  }
+
+  .catalog__list {
+    margin-bottom: 64px;
+  }
+
+  .catalog__more {
+    margin-right: 75px;
+    margin-bottom: 68px;
+  }
+
+  .catalog__pages {
+    margin-bottom: 60px;
+    padding-right: 27px;
   }
 }

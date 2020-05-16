@@ -15,6 +15,7 @@ filterToggle.addEventListener('click', function() {
     filterHeader.style.marginBottom = '0';
   } else {
     filter.classList.add(filterToggled);
+    filterHeader.style.marginBottom = 43 + filterContinents.offsetHeight + 'px';
     setMargin();
   }
 });
@@ -35,10 +36,12 @@ for (var i = 0; i < filterLetter.length; i++) {
     });
 }
 
+window.addEventListener('resize', function () {
+  setMargin();
+});
+
 function setMargin () {
   var filterCurrentCountries = document.querySelector('.filter__item--current .filter__countries');
-
-  filterHeader.style.marginBottom = 43 + filterContinents.offsetHeight + 'px';
 
   if (window.matchMedia("(max-width: 767px)").matches) {
     filterTable.style.marginBottom = 42 + filterCurrentCountries.offsetHeight + 'px';

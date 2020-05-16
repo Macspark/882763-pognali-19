@@ -27,6 +27,16 @@
 
 .fieldset__prev {
   background: none;
+
+  &:hover,
+  &:focus {
+    background: none;
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .fieldset__submit {
@@ -98,32 +108,58 @@
 
   .fieldset__next,
   .fieldset__submit {
+    position: relative;
+
     margin-right: auto;
     padding: 0 34px;
 
+    justify-content: flex-start;
     width: 285px;
     height: 81px;
 
     font-size: 24px;
     text-transform: none;
 
-    justify-content: flex-start;
-    background-image: url("../img/sprite.svg#triangle-arrow-right");
-    background-repeat: no-repeat;
-    background-size: 14px 18px;
-    background-position: 88% center;
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 33px;
+      transform: translateY(-50%);
+
+      content: "";
+      width: 14px;
+      height: 18px;
+
+      background-image: url("../img/sprite.svg#triangle-arrow-right");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
   }
 
   .fieldset__prev {
+    position: relative;
+
     padding-left: 34px;
     margin-bottom: 5px;
     width: auto;
     font-size: 24px;
     text-transform: none;
-    background-image: url("../img/sprite.svg#triangle-arrow-left");
-    background-repeat: no-repeat;
-    background-size: 14px 18px;
-    background-position: 0 center;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: auto;
+      left: 0;
+      transform: translateY(-50%);
+
+      content: "";
+      width: 14px;
+      height: 18px;
+
+      background-image: url("../img/sprite.svg#triangle-arrow-left");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
   }
 
   .fieldset .fieldset__countries {

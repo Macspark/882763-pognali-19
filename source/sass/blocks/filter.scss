@@ -63,6 +63,17 @@
   outline: none;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  transition: opacity 200ms ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .filter__button-img {
@@ -111,10 +122,20 @@
 .filter__continent {
   margin-bottom: 5px;
   opacity: 0.3;
+  transition: 200ms ease;
 
   &--current {
     opacity: 1;
   }
+}
+
+.filter__continent:hover,
+.filter__continent:focus {
+  opacity: 0.6;
+}
+
+.filter__continent:active {
+  opacity: 1;
 }
 
 .filter__table {
@@ -140,7 +161,6 @@
   background-color: #ffffff;
 
   &--current {
-    border-color: $color-darkslateblue;
     background-color: $color-darkslateblue;
   }
 }
@@ -157,10 +177,38 @@
   line-height: 1.29;
   letter-spacing: 1.4px;
   color: $color-darkslateblue;
+  transition: 200ms ease;
+
+  &:hover,
+  &:focus {
+    background-color: $color-blueygrey;
+  }
+
+  &:active {
+    background-color: $color-darkslateblue;
+    color: #ffffff;
+  }
 }
 
 .filter__item--current .filter__letter {
   color: #ffffff;
+}
+
+.filter__country-link {
+  font-size: 16px;
+  line-height: 1.38;
+  color: $color-blackish;
+
+  transition: 200ms ease;
+
+  &:hover,
+  &:focus {
+    color: $color-darkslateblue;
+  }
+
+  &:active {
+    color: $color-darkslateblue-30;
+  }
 }
 
 .filter__close {
@@ -171,11 +219,25 @@
   border: none;
   border-radius: 20px;
   background-color: $color-periwinkle;
+
+  &:hover,
+  &:focus {
+    background-color: $color-lightbluegreythree;
+  }
+
+  &:active {
+    color: $color-darkslateblue-30;
+  }
+}
+
+.filter__close:active svg {
+  opacity: 0.3;
 }
 
 .filter__close svg {
   margin-right: 6px;
   fill: $color-darkbluegrey;
+  transition: 200ms ease;
 }
 
 .filter__countries {
@@ -186,11 +248,6 @@
   display: none;
 }
 
-.filter__country-link {
-  font-size: 16px;
-  line-height: 1.38;
-  color: $color-blackish;
-}
 
 .filter--expanded .filter__continents,
 .filter__item--current .filter__countries {
@@ -324,6 +381,17 @@
     font-weight: bold;
     line-height: 0.4;
     color: $color-darkbluegrey;
+
+    &:hover,
+    &:focus {
+      background: none;
+      opacity: 0.6;
+    }
+
+    &:active {
+      background: none;
+      opacity: 0.3;
+    }
   }
 
   .filter__countries {
@@ -436,6 +504,7 @@
     padding: 0;
     width: auto;
     height: auto;
+    pointer-events: none;
   }
 
   .filter__countries {

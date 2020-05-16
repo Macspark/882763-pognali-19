@@ -42,6 +42,16 @@
   letter-spacing: 1.4px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
+  transition: 200ms ease;
+}
+
+.plan__button:hover,
+.plan__button:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.plan__button:active {
+  color: rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: $tablet-width) {

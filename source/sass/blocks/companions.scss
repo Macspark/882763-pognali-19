@@ -163,10 +163,13 @@
 
     height: 81px;
     border-radius: 20px;
-    background-position: 94.5% center;
 
     font-size: 24px;
     line-height: 1;
+
+    &::before {
+      right: 35px;
+    }
   }
 }
 
