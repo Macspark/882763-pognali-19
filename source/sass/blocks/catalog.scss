@@ -147,3 +147,27 @@
     width: 85px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    margin-top: -61px;
+    padding-top: 137px;
+    padding-bottom: 78px;
+  }
+
+  .catalog__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .catalog .catalog__search {
+    margin: 0;
+    order: 2;
+  }
+
+  .catalog__companions {
+    order: 1;
+    width: 950px;
+  }
+}

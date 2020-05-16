@@ -78,3 +78,13 @@
     margin-left: 22px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .companions-header {
+    margin-bottom: 9px;
+  }
+
+  .companions-header__wrapper {
+    padding: 60px 122px 54px 127px;
+  }
+}

@@ -52,6 +52,10 @@
   }
 }
 
+.filter__title span {
+  display: none;
+}
+
 .filter__button {
   width: 25px;
   height: 25px;
@@ -223,7 +227,10 @@
 
   .filter .filter__continents {
     position: static;
+    padding-right: 150px;
+
     display: flex;
+    flex-wrap: wrap;
 
     font-size: 20px;
     font-weight: bold;
@@ -323,6 +330,7 @@
     @include reset-list;
     top: -12px;
     left: calc(100% + 25px);
+    width: 50%;
   }
 
   .filter__country-link {
@@ -337,6 +345,109 @@
     font-weight: bold;
     line-height: 1.5;
     color: $color-darkslateblue;
+  }
+
+  .filter__close svg {
+    margin-bottom: 2px;
+    margin-right: 22px;
+    width: 19px;
+    height: 19px;
+    fill: $color-darkbluegrey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter {
+    position: relative;
+
+    margin-top: -61px;
+    padding-top: 108px;
+    padding-bottom: 48px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+
+    &--expanded {
+      padding-bottom: 74px;
+    }
+  }
+
+  .filter__wrapper {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .filter__header {
+    padding: 0 63px 0 20px;
+  }
+
+  .filter__by-continents {
+    display: flex;
+  }
+
+  .filter__title {
+    margin-right: 34px;
+    padding-left: 43px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+
+    &::before {
+      position: absolute;
+      top: -1px;
+      left: 0;
+
+      content: "";
+      width: 23px;
+      height: 25px;
+
+      background-image: url("../img/sprite.svg#filter");
+      background-size: 100% 100%;
+    }
+  }
+
+  .filter__title span {
+    display: inline;
+  }
+
+  .filter__table {
+    padding: 22px 35px 0;
+    width: auto;
+  }
+
+  .filter__item {
+    margin-right: 51px;
+    margin-bottom: 69px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    height: auto;
+    opacity: 1;
+
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
+  }
+
+  .filter__letter {
+    margin-bottom: 50px;
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .filter__countries {
+    position: static;
+    display: block;
+    width: 100%;
+  }
+
+  .filter__close {
+    margin-top: -4px;
+    align-items: center;
+    height: 100px;
   }
 
   .filter__close svg {
