@@ -86,13 +86,16 @@
   border: 1px solid $color-cloudyblue;
   border-bottom: none;
 
-  &:hover,
-  &:focus {
+  cursor: pointer;
+  transition: 200ms ease;
+
+  &:hover {
     z-index: 1;
     border: 1px solid $color-blueygrey;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background-color: $color-darkslateblue;
     color: #ffffff;
   }
@@ -120,22 +123,17 @@
   line-height: 1.38;
   color: $color-blackish;
 
-  &:hover,
-  &:focus {
+  cursor: pointer;
+  transition: 200ms ease;
+
+  &:hover {
     color: $color-darkslateblue;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     color: $color-darkslateblue-30;
   }
-}
-
-.add-country__letter:hover {
-  cursor: pointer;
-}
-
-.add-country__country:hover {
-  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

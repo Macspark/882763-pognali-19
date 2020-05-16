@@ -179,12 +179,12 @@
   color: $color-darkslateblue;
   transition: 200ms ease;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: $color-blueygrey;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background-color: $color-darkslateblue;
     color: #ffffff;
   }

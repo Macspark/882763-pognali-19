@@ -68,6 +68,7 @@
 
 .catalog-card__tags {
   @include reset-list;
+  margin-top: 4px;
   padding-left: 8px;
   display: flex;
   flex-wrap: wrap;
@@ -342,6 +343,7 @@
   }
 
   .catalog-card__tags {
+    margin-top: 0;
     margin-bottom: 23px;
     padding-right: 135px;
     padding-left: 3px;
