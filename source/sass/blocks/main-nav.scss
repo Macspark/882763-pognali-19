@@ -12,6 +12,11 @@
   z-index: 100;
 }
 
+.page-header--nojs .main-nav {
+  position: relative;
+  transform: translateY(30px);
+}
+
 .page-header--toggled .main-nav__wrapper,
 .page-header--nojs .main-nav__wrapper {
   display: block;
@@ -158,6 +163,10 @@
 
 
 @media (min-width: $desktop-width) {
+  .page-header--nojs .main-nav {
+    position: absolute;
+  }
+
   .main-nav {
     top: 30px;
     left: -66px;
