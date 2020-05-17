@@ -101,6 +101,11 @@
     background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position: 91.7% 10px;
+    background-size: 289px 575px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/flags-back@2x.png");
+    }
   }
 
   .routes__desc {
@@ -159,7 +164,6 @@
     display: flex;
     padding-top: 92px;
     padding-left: 95px;
-    background-image: url("../img/flags-back@1x.png");
     background-position: 94.7% 20px;
 
     &::before {

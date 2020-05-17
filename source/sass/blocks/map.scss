@@ -95,6 +95,12 @@
   background-size:
     41px 41px,
     100% 450px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/sprite.svg#map-marker"),
+      url("../img/map-mobile@2x.jpg");
+  }
 }
 
 
@@ -150,6 +156,12 @@
     background-size:
       57px 56px,
       100% 560px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/sprite.svg#map-marker"),
+        url("../img/map-tablet@2x.jpg");
+    }
   }
 }
 
@@ -206,5 +218,11 @@
     background-size:
       57px 56px,
       100% 494px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/sprite.svg#map-marker"),
+        url("../img/map-desktop@2x.jpg");
+    }
   }
 }

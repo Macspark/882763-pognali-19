@@ -118,6 +118,7 @@
   background-size: 9px;
 }
 
+.search__checkbox:focus + .search__label,
 .search__checkbox + .search__label:hover,
 .search__checkbox + .search__label:focus {
   color: $color-blackish-60;

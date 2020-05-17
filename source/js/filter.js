@@ -52,6 +52,6 @@ function setMargin () {
       filterTable.style.marginBottom = 35 + filterCurrentCountries.offsetHeight - filterTable.offsetHeight + 'px';
     }
   } else {
-    filterTable.style.marginBottom = 35 + 'px';
+    filterTable.style.marginBottom = 0;
   }
 }

@@ -21,8 +21,13 @@
 .about__background {
   position: relative;
   background-image: url("../img/about-mobile@1x.png");
-  background-position: center top;
   background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 292px 352px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/about-mobile@2x.png");
+  }
 }
 
 .about__wrapper {
@@ -76,6 +81,11 @@
   .about__background {
     background-image: url("../img/about-tablet@1x.png");
     background-position: 98% 40px;
+    background-size: 376px 548px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about-tablet@2x.png");
+    }
   }
 
   .about__wrapper {
@@ -161,6 +171,10 @@
       height: 213px;
       border-radius: 20px;
       background-color: $color-darkbluegreytwo;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about-desktop@2x.png");
     }
   }
 

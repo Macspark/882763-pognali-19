@@ -79,6 +79,7 @@
   background-color: $color-palegreythree;
 }
 
+.transport__checkbox:focus + .transport__label,
 .transport__item--toggle:hover .transport__img,
 .transport__item--toggle:focus .transport__img {
   opacity: 0.3;
@@ -88,6 +89,7 @@
   opacity: 0.1;
 }
 
+.transport__checkbox:checked:focus + .transport__label,
 .transport__item--toggled:hover .transport__img,
 .transport__item--toggled:focus .transport__img {
   fill: $color-darkslatebluetwo;
