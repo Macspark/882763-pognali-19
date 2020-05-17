@@ -164,6 +164,7 @@
 
   .fun__title {
     padding: 0;
+    margin-bottom: 12px;
     height: 30px;
     font-size: 30px;
     font-weight: bold;
@@ -171,11 +172,12 @@
   }
 
   .fun__title::after {
-    width: 65px;
+    right: 5px;
+    width: 20%;
   }
 
   .fun__title span {
-    padding-top: 3px;
+    padding-top: 8px;
     display: block;
     height: 100%;
   }

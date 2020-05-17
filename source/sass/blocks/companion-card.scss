@@ -225,6 +225,7 @@
 @media (min-width: $desktop-width) {
   .companion-card {
     width: 285px;
+    min-width: 285px;
   }
 
   .companion-card:hover {
