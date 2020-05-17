@@ -35,6 +35,10 @@
   color: $color-darkbluegrey;
 }
 
+.main-nav__menu a {
+  transition: 200ms ease;
+}
+
 .main-nav__menu a:hover,
 .main-nav__menu a:focus {
   color: $color-lightgold;
@@ -200,11 +204,28 @@
 
   .main-nav__menu li {
     margin-right: 34px;
+    overflow: hidden;
   }
 
   .main-nav__menu a {
+    position: relative;
+    display: block;
     color: #ffffff;
-    transition: 200ms ease;
+    transition: 500ms ease;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      transform: translateY(-100%);
+    }
+
+    &::before {
+      position: absolute;
+      top: 100%;
+
+      content: attr(data-hover);
+      color: $color-lightgold;
+    }
   }
 
   .main-nav .main-nav__contact,
