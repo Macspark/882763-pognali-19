@@ -62,32 +62,12 @@
 
   padding: 15px 20px;
 
-  content: "tooltip";
+  content: attr(data-transport);
   background-color: $color-darkbluegreythree;
 
   font-size: 20px;
   line-height: 1.2;
   color: #ffffff;
-}
-
-.transport__item--plane:hover::after,
-.transport__item--plane:focus::after {
-  content: "Авиаперелет";
-}
-
-.transport__item--bus:hover::after,
-.transport__item--bus:focus::after {
-  content: "Автотранспорт";
-}
-
-.transport__item--bike:hover::after,
-.transport__item--bike:focus::after {
-  content: "Велосипед";
-}
-
-.transport__item--run:hover::after,
-.transport__item--run:focus::after {
-  content: "Пешком";
 }
 
 .transport__item--toggle:hover,

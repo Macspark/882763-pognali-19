@@ -223,7 +223,7 @@
       position: absolute;
       top: 100%;
 
-      content: attr(data-hover);
+      content: attr(data-title);
       color: $color-lightgold;
     }
   }
