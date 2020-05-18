@@ -6,8 +6,11 @@ var filterContinents = document.querySelector('.filter__continents');
 var filterTable = document.querySelector('.filter__table');
 var filterLetter = document.querySelectorAll('.filter__letter');
 var filterItem = document.querySelectorAll('.filter__item');
+var filterContinent = document.querySelectorAll('.filter__continent');
+var filterContinentLink = document.querySelectorAll('.filter__continent-link');
 var filterToggled = 'filter--expanded';
-var filterCurrentLetter = 'filter__item--current'
+var filterCurrentLetter = 'filter__item--current';
+var filterCurrentContinent = 'filter__continent--current';
 
 filterToggle.addEventListener('click', function() {
   if (filter.classList.contains(filterToggled)) {
@@ -25,6 +28,16 @@ filterClose.addEventListener('click', function() {
   filterHeader.style.marginBottom = '0';
 });
 
+for (var i = 0; i < filterContinentLink.length; i++) {
+    filterContinentLink[i].addEventListener('click', function(event) {
+      event.preventDefault();
+      for (var i = 0; i < filterContinent.length; i++) {
+        filterContinent[i].classList.remove(filterCurrentContinent);
+      }
+      event.target.parentElement.classList.add(filterCurrentContinent);
+    });
+}
+
 for (var i = 0; i < filterLetter.length; i++) {
     filterLetter[i].addEventListener('click', function(event) {
       event.preventDefault();
@@ -34,7 +47,7 @@ for (var i = 0; i < filterLetter.length; i++) {
       event.target.parentElement.classList.add(filterCurrentLetter);
       setMargin();
     });
-}
+};
 
 window.addEventListener('resize', function () {
   setMargin();
@@ -54,4 +67,4 @@ function setMargin () {
   } else {
     filterTable.style.marginBottom = 0;
   }
-}
+};

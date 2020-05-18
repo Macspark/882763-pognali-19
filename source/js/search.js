@@ -1,5 +1,5 @@
 var searchBtn = document.querySelectorAll('.search__toggle');
-var searchToggled = 'search__fieldset--toggled'
+var searchToggled = 'search__fieldset--toggled';
 
 for (var i = 0; i < searchBtn.length; i++) {
     searchBtn[i].addEventListener('click', function(event) {
@@ -9,4 +9,4 @@ for (var i = 0; i < searchBtn.length; i++) {
         event.target.parentElement.classList.add(searchToggled);
       }
     });
-}
+};

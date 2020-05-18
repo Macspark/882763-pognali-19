@@ -10,4 +10,4 @@ for (var i = 0; i < profileTransportItem.length; i++) {
         event.target.classList.add(profileTransportItemToggle);
       }
     });
-}
+};
