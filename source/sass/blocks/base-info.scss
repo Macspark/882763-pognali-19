@@ -4,8 +4,8 @@
 }
 
 .base-info__item {
-  margin: 0;
-  padding: 0;
+  @include reset-margin;
+  @include reset-padding;
 }
 
 .base-info__label {
@@ -43,11 +43,11 @@
 }
 
 .base-info__wrapper {
+  @include reset-padding;
   position: relative;
 
   margin-top: 8px;
   margin-bottom: 18px;
-  padding: 0;
 
   display: flex;
   align-items: center;
@@ -56,10 +56,16 @@
 }
 
 .base-info__input {
-  padding: 0 30px;
+  padding-top: 0;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 0;
   width: 100%;
   height: 100%;
-  border-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border: 1px solid $color-cloudyblue;
   outline: none;
   background-color: #ffffff;
@@ -69,12 +75,12 @@
 }
 
 .base-info__input:hover {
-  border-color: $color-blueygrey;
+  border: 1px solid $color-blueygrey;
 }
 
 .base-info__input:active,
 .base-info__input:focus {
-  border-color: $color-darktwo;
+  border: 1px solid $color-darktwo;
 }
 
 .base-info__input:hover ~ .base-info__button {
@@ -87,10 +93,10 @@
 }
 
 .base-info .base-info__button {
+  @include reset-padding;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 0;
 
   display: flex;
   align-items: center;
@@ -147,7 +153,10 @@
   height: 26px;
 
   border: 1px solid $color-cloudyblue;
-  border-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .base-info__checkbox:checked + .base-info__label--kids::after {
@@ -170,12 +179,12 @@
 .base-info__checkbox:focus + .base-info__label--kids::before,
 .base-info__label--kids:hover::before,
 .base-info__label--kids:focus::before {
-  border-color: $color-blueygrey;
+  border: 1px solid $color-blueygrey;
   transition: 200ms ease;
 }
 
 .base-info__label--kids:active::before {
-  border-color: $color-palegreythree;
+  border: 1px solid $color-palegreythree;
   background-color: $color-palegreythree;
   transition: 200ms ease;
 }
@@ -203,8 +212,8 @@
   }
 
   .base-info__wrapper {
+    @include reset-margin;
     position: relative;
-    margin: 0;
     height: 70px;
   }
 
@@ -240,7 +249,10 @@
   }
 
   .base-info__input {
-    padding: 0 60px;
+    padding-top: 0;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 0;
     font-size: 20px;
     font-weight: 500;
     line-height: 0.9;
@@ -248,7 +260,10 @@
   }
 
   .base-info .base-info__button {
-    margin: 0 8px;
+    margin-top: 0;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 0;
 
     &--minus {
       left: 16px;
@@ -325,8 +340,8 @@
   }
 
   .base-info__label {
-    margin: 0;
-    padding: 0;
+    @include reset-margin;
+    @include reset-padding;
     width: auto;
 
     &::after {

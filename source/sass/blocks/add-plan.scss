@@ -29,7 +29,10 @@
   width: 5px;
   height: 5px;
 
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .add-plan__title--stepone::after {

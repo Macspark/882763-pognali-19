@@ -103,7 +103,7 @@
             </li>
           </ul>
 
-          <ul class="main-nav__social social">
+          <ul class="main-nav__social social social--header">
             <li class="social__item">
               <a class="social__link" href="https://facebook.com" target="_blank" aria-label="Мы на Фейсбуке">
                 <svg class="social__img social__img--fb" width="11" height="21">
@@ -142,8 +142,8 @@
         <div class="profile__wrapper">
           <div class="profile__avatar avatar">
             <div class="avatar__wrapper">
-              <div class="avatar__level level">
-                <svg class="level__circle" viewBox="0 0 60 60">
+              <div class="avatar__level level level--profile">
+                <svg class="level__circle" viewBox="0 0 60 60" width="94" height="94">
                   <circle cx="30" cy="30" r="29" fill="transparent" stroke="#ff8d30" stroke-width="2" stroke-dasharray="152, 1000"></circle>
                 </svg>
                 <p class="level__number">80</p>
@@ -170,7 +170,7 @@
 
           <div class="profile__transport-wrapper">
             <h3 class="profile__title">Транспорт</h3>
-            <ul class="profile__transport transport">
+            <ul class="profile__transport transport transport--profile">
               <li class="transport__item transport__item--toggle transport__item--toggled" data-transport="Авиаперелет">
                 <svg class="transport__img transport__img--plane" width="14" height="16">
                   <use xlink:href="./img/sprite.svg#plane" />
@@ -297,58 +297,58 @@
                     <td class="calendar__slot calendar__slot--disabled"><span>В</span>с</td>
                   </tr>
                   <tr class="calendar__day">
-                    <td class="calendar__slot calendar__slot--disabled">23</td>
-                    <td class="calendar__slot calendar__slot--disabled">24</td>
-                    <td class="calendar__slot calendar__slot--disabled">25</td>
-                    <td class="calendar__slot calendar__slot--disabled">26</td>
-                    <td class="calendar__slot calendar__slot--disabled">27</td>
-                    <td class="calendar__slot calendar__slot--disabled">28</td>
-                    <td class="calendar__slot calendar__slot--disabled calendar__slot--new-month">1<span> мар</span></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">23</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">24</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">25</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">26</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">27</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">28</a></td>
+                    <td class="calendar__slot calendar__slot--disabled calendar__slot--new-month"><a class="calendar__link" href="#">1<span> мар</span></a></td>
                   </tr>
                   <tr class="calendar__day">
-                    <td class="calendar__slot calendar__slot--disabled">2</td>
-                    <td class="calendar__slot calendar__slot--disabled">3</td>
-                    <td class="calendar__slot calendar__slot--disabled">4</td>
-                    <td class="calendar__slot calendar__slot--disabled">5</td>
-                    <td class="calendar__slot calendar__slot--disabled">6</td>
-                    <td class="calendar__slot calendar__slot--disabled">7</td>
-                    <td class="calendar__slot calendar__slot--disabled">8</td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">2</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">3</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">4</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">5</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">6</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">7</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">8</a></td>
                   </tr>
                   <tr class="calendar__day">
-                    <td class="calendar__slot calendar__slot--disabled">9</td>
-                    <td class="calendar__slot calendar__slot--disabled">10</td>
-                    <td class="calendar__slot calendar__slot--disabled">11</td>
-                    <td class="calendar__slot calendar__slot--disabled">12</td>
-                    <td class="calendar__slot calendar__slot--disabled">13</td>
-                    <td class="calendar__slot calendar__slot--disabled">14</td>
-                    <td class="calendar__slot calendar__slot--disabled">15</td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">9</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">10</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">11</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">12</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">13</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">14</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">15</a></td>
                   </tr>
                   <tr class="calendar__day">
-                    <td class="calendar__slot calendar__slot--disabled">16</td>
-                    <td class="calendar__slot calendar__slot--disabled">17</td>
-                    <td class="calendar__slot calendar__slot--disabled">18</td>
-                    <td class="calendar__slot calendar__slot--disabled">19</td>
-                    <td class="calendar__slot calendar__slot--disabled">20</td>
-                    <td class="calendar__slot calendar__slot--disabled">21</td>
-                    <td class="calendar__slot calendar__slot--disabled">22</td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">16</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">17</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">18</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">19</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">20</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">21</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">22</a></td>
                   </tr>
                   <tr class="calendar__day">
-                    <td class="calendar__slot calendar__slot--disabled">23</td>
-                    <td class="calendar__slot calendar__slot--disabled">24</td>
-                    <td class="calendar__slot calendar__slot--disabled">25</td>
-                    <td class="calendar__slot calendar__slot--checked calendar__slot--in calendar__slot--hover">26</td>
-                    <td class="calendar__slot calendar__slot--checked">27</td>
-                    <td class="calendar__slot calendar__slot--checked calendar__slot--out">28</td>
-                    <td class="calendar__slot">29</td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">23</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">24</a></td>
+                    <td class="calendar__slot calendar__slot--disabled"><a class="calendar__link" href="#">25</a></td>
+                    <td class="calendar__slot calendar__slot--checked calendar__slot--in calendar__slot--hover"><a class="calendar__link" href="#">26</a></td>
+                    <td class="calendar__slot calendar__slot--checked"><a class="calendar__link" href="#">27</a></td>
+                    <td class="calendar__slot calendar__slot--checked calendar__slot--out"><a class="calendar__link" href="#">28</a></td>
+                    <td class="calendar__slot"><a class="calendar__link" href="#">29</a></td>
                   </tr>
                   <tr class="calendar__day">
-                    <td class="calendar__slot">30</td>
-                    <td class="calendar__slot">31</td>
-                    <td class="calendar__slot calendar__slot--new-month">1<span> апр</span></td>
-                    <td class="calendar__slot">2</td>
-                    <td class="calendar__slot">3</td>
-                    <td class="calendar__slot">4</td>
-                    <td class="calendar__slot">5</td>
+                    <td class="calendar__slot"><a class="calendar__link" href="#">30</a></td>
+                    <td class="calendar__slot"><a class="calendar__link" href="#">31</a></td>
+                    <td class="calendar__slot calendar__slot--new-month"><a class="calendar__link" href="#">1<span> апр</span></a></td>
+                    <td class="calendar__slot"><a class="calendar__link" href="#">2</a></td>
+                    <td class="calendar__slot"><a class="calendar__link" href="#">3</a></td>
+                    <td class="calendar__slot"><a class="calendar__link" href="#">4</a></td>
+                    <td class="calendar__slot"><a class="calendar__link" href="#">5</a></td>
                   </tr>
                 </table>
               </div>
@@ -365,7 +365,7 @@
               </ul>
               <ul class="fieldset__countries countries">
                 <li class="countries__item">
-                  <p class="countries__country"><span>Босния и Герцеговина</span></p>
+                  <a class="countries__country" href="#"><span>Босния и Герцеговина</span></a>
                   <svg class="countries__flag" width="35" height="24">
                     <use xlink:href="./img/sprite.svg#flag-bosnia" />
                   </svg>
@@ -376,7 +376,7 @@
                   </button>
                 </li>
                 <li class="countries__item">
-                  <p class="countries__country"><span>Чехия</span></p>
+                  <a class="countries__country" href="#"><span>Чехия</span></a>
                   <svg class="countries__flag" width="35" height="24">
                     <use xlink:href="./img/sprite.svg#flag-czech" />
                   </svg>
@@ -387,14 +387,14 @@
                   </button>
                 </li>
                 <li class="countries__item countries__item--new">
-                  <p class="countries__country">Выберите страну</p>
+                  <a class="countries__country" href="#">Выберите страну</a>
                   <button class="countries__remove" type="button">
                     <svg width="9" height="9">
                       <use xlink:href="./img/sprite.svg#close" />
                     </svg>
                   </button>
                   <div class="countries__list add-country">
-                    <h3 class="add-country__title">Выберите страну</h3>
+                    <a class="add-country__title" href="#">Выберите страну</a>
                     <button class="add-country__close" type="button">
                       <svg width="9" height="9">
                         <use xlink:href="./img/sprite.svg#close" />
@@ -402,50 +402,50 @@
                     </button>
                     <div class="add-country__wrapper">
                       <ul class="add-country__letters">
-                        <li class="add-country__letter add-country__letter--current">А</li>
-                        <li class="add-country__letter">Б</li>
-                        <li class="add-country__letter">В</li>
-                        <li class="add-country__letter">Г</li>
-                        <li class="add-country__letter">Д</li>
-                        <li class="add-country__letter">Е</li>
-                        <li class="add-country__letter">З</li>
-                        <li class="add-country__letter">И</li>
-                        <li class="add-country__letter">К</li>
-                        <li class="add-country__letter">Л</li>
-                        <li class="add-country__letter">М</li>
-                        <li class="add-country__letter">Н</li>
-                        <li class="add-country__letter">О</li>
-                        <li class="add-country__letter">П</li>
-                        <li class="add-country__letter">Р</li>
-                        <li class="add-country__letter">С</li>
-                        <li class="add-country__letter">Т</li>
-                        <li class="add-country__letter">У</li>
-                        <li class="add-country__letter">Ф</li>
-                        <li class="add-country__letter">Х</li>
-                        <li class="add-country__letter">Ч</li>
-                        <li class="add-country__letter">Ш</li>
-                        <li class="add-country__letter">Э</li>
-                        <li class="add-country__letter">Ю</li>
-                        <li class="add-country__letter">Я</li>
+                        <li class="add-country__letter add-country__letter--current"><a href="#">А</a></li>
+                        <li class="add-country__letter"><a href="#">Б</a></li>
+                        <li class="add-country__letter"><a href="#">В</a></li>
+                        <li class="add-country__letter"><a href="#">Г</a></li>
+                        <li class="add-country__letter"><a href="#">Д</a></li>
+                        <li class="add-country__letter"><a href="#">Е</a></li>
+                        <li class="add-country__letter"><a href="#">З</a></li>
+                        <li class="add-country__letter"><a href="#">И</a></li>
+                        <li class="add-country__letter"><a href="#">К</a></li>
+                        <li class="add-country__letter"><a href="#">Л</a></li>
+                        <li class="add-country__letter"><a href="#">М</a></li>
+                        <li class="add-country__letter"><a href="#">Н</a></li>
+                        <li class="add-country__letter"><a href="#">О</a></li>
+                        <li class="add-country__letter"><a href="#">П</a></li>
+                        <li class="add-country__letter"><a href="#">Р</a></li>
+                        <li class="add-country__letter"><a href="#">С</a></li>
+                        <li class="add-country__letter"><a href="#">Т</a></li>
+                        <li class="add-country__letter"><a href="#">У</a></li>
+                        <li class="add-country__letter"><a href="#">Ф</a></li>
+                        <li class="add-country__letter"><a href="#">Х</a></li>
+                        <li class="add-country__letter"><a href="#">Ч</a></li>
+                        <li class="add-country__letter"><a href="#">Ш</a></li>
+                        <li class="add-country__letter"><a href="#">Э</a></li>
+                        <li class="add-country__letter"><a href="#">Ю</a></li>
+                        <li class="add-country__letter"><a href="#">Я</a></li>
                       </ul>
                       <ul class="add-country__countries add-country__countries--a">
-                        <li class="add-country__country">Австралия</li>
-                        <li class="add-country__country">Австрия</li>
-                        <li class="add-country__country">Азербайджан</li>
-                        <li class="add-country__country">Албания</li>
-                        <li class="add-country__country">Алжир</li>
-                        <li class="add-country__country">Ангола</li>
-                        <li class="add-country__country">Андорра</li>
-                        <li class="add-country__country">Антигуа и Барбуда</li>
-                        <li class="add-country__country">Аргентина</li>
-                        <li class="add-country__country">Армения</li>
-                        <li class="add-country__country">Афганистан</li>
+                        <li class="add-country__country"><a href="#">Австралия</a></li>
+                        <li class="add-country__country"><a href="#">Австрия</a></li>
+                        <li class="add-country__country"><a href="#">Азербайджан</a></li>
+                        <li class="add-country__country"><a href="#">Албания</a></li>
+                        <li class="add-country__country"><a href="#">Алжир</a></li>
+                        <li class="add-country__country"><a href="#">Ангола</a></li>
+                        <li class="add-country__country"><a href="#">Андорра</a></li>
+                        <li class="add-country__country"><a href="#">Антигуа и Барбуда</a></li>
+                        <li class="add-country__country"><a href="#">Аргентина</a></li>
+                        <li class="add-country__country"><a href="#">Армения</a></li>
+                        <li class="add-country__country"><a href="#">Афганистан</a></li>
                       </ul>
                     </div>
                   </div>
                 </li>
                 <li class="countries__item countries__item--add">
-                  <p class="countries__country">Добавить страну</p>
+                  <a class="countries__country" href="#">Добавить страну</a>
                 </li>
               </ul>
               <div class="fieldset__controls">
@@ -505,7 +505,7 @@
             <img src="./img/logo-mobile-blue@1x.png" srcset="./img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Погнали!">
           </picture>
         </a>
-        <ul class="page-footer__social social">
+        <ul class="page-footer__social social social--footer">
           <li class="social__item">
             <a class="social__link" href="https://facebook.com" target="_blank" aria-label="Мы на Фейсбуке">
               <svg class="social__img social__img--fb" width="11" height="21">

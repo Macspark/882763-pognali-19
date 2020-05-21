@@ -103,7 +103,7 @@
             </li>
           </ul>
 
-          <ul class="main-nav__social social">
+          <ul class="main-nav__social social social--header">
             <li class="social__item">
               <a class="social__link" href="https://facebook.com" target="_blank" aria-label="Мы на Фейсбуке">
                 <svg class="social__img social__img--fb" width="11" height="21">
@@ -458,7 +458,7 @@
               </ul>
             </li>
           </ul>
-          <button class="button filter__close">
+          <button class="button filter__close" type="button">
             <svg width="12" height="12">
               <use xlink:href="./img/sprite.svg#close" />
             </svg>
@@ -531,7 +531,7 @@
             <fieldset class="search__fieldset">
               <div class="search__wrapper">
                 <button class="search__toggle" type="button">Транспорт<span>:</span></button>
-                <ul class="search__transport transport">
+                <ul class="search__transport transport transport--search transport--catalog">
                   <li class="transport__item transport__item--toggle" data-transport="Авиаперелет">
                     <input class="visually-hidden transport__checkbox" type="checkbox" name="plane" id="plane" aria-label="Авиаперелет" checked>
                     <label class="transport__label" for="plane">
@@ -644,7 +644,7 @@
                   </ul>
                 </div>
                 <div class="catalog-card__misc-info">
-                  <ul class="catalog-card__transport transport">
+                  <ul class="catalog-card__transport transport transport--catalog transport--catalogcard">
                     <li class="transport__item transport__item--checked" data-transport="Авиаперелет">
                       <svg class="transport__img transport__img--plane" width="14" height="16">
                         <use xlink:href="./img/sprite.svg#plane" />
@@ -666,8 +666,8 @@
                       </svg>
                     </li>
                   </ul>
-                  <div class="catalog-card__level level">
-                    <svg class="level__circle" viewBox="0 0 60 60">
+                  <div class="catalog-card__level level level--catalog">
+                    <svg class="level__circle" viewBox="0 0 60 60" width="60" height="60">
                       <circle cx="30" cy="30" r="29" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="177, 1000"></circle>
                     </svg>
                     <p class="level__number">99</p>
@@ -734,7 +734,7 @@
                   </ul>
                 </div>
                 <div class="catalog-card__misc-info">
-                  <ul class="catalog-card__transport transport">
+                  <ul class="catalog-card__transport transport transport--catalog transport--catalogcard">
                     <li class="transport__item transport__item--checked" data-transport="Авиаперелет">
                       <svg class="transport__img transport__img--plane" width="14" height="16">
                         <use xlink:href="./img/sprite.svg#plane" />
@@ -756,8 +756,8 @@
                       </svg>
                     </li>
                   </ul>
-                  <div class="catalog-card__level level">
-                    <svg class="level__circle" viewBox="0 0 60 60">
+                  <div class="catalog-card__level level level--catalog">
+                    <svg class="level__circle" viewBox="0 0 60 60" width="60" height="60">
                       <circle cx="30" cy="30" r="29" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="158, 1000"></circle>
                     </svg>
                     <p class="level__number">80</p>
@@ -832,7 +832,7 @@
                   </ul>
                 </div>
                 <div class="catalog-card__misc-info">
-                  <ul class="catalog-card__transport transport">
+                  <ul class="catalog-card__transport transport transport--catalog transport--catalogcard">
                     <li class="transport__item transport__item--checked" data-transport="Авиаперелет">
                       <svg class="transport__img transport__img--plane" width="14" height="16">
                         <use xlink:href="./img/sprite.svg#plane" />
@@ -854,8 +854,8 @@
                       </svg>
                     </li>
                   </ul>
-                  <div class="catalog-card__level level">
-                    <svg class="level__circle" viewBox="0 0 60 60">
+                  <div class="catalog-card__level level level--catalog">
+                    <svg class="level__circle" viewBox="0 0 60 60" width="60" height="60">
                       <circle cx="30" cy="30" r="29" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="45, 1000"></circle>
                     </svg>
                     <p class="level__number">25</p>
@@ -921,7 +921,7 @@
                   </ul>
                 </div>
                 <div class="catalog-card__misc-info">
-                  <ul class="catalog-card__transport transport">
+                  <ul class="catalog-card__transport transport transport--catalog transport--catalogcard">
                     <li class="transport__item transport__item--checked" data-transport="Авиаперелет">
                       <svg class="transport__img transport__img--plane" width="14" height="16">
                         <use xlink:href="./img/sprite.svg#plane" />
@@ -943,8 +943,8 @@
                       </svg>
                     </li>
                   </ul>
-                  <div class="catalog-card__level level">
-                    <svg class="level__circle" viewBox="0 0 60 60">
+                  <div class="catalog-card__level level level--catalog">
+                    <svg class="level__circle" viewBox="0 0 60 60" width="60" height="60">
                       <circle cx="30" cy="30" r="29" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="89, 1000"></circle>
                     </svg>
                     <p class="level__number">50</p>
@@ -1014,7 +1014,7 @@
             <img src="./img/logo-mobile-blue@1x.png" srcset="./img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Погнали!">
           </picture>
         </a>
-        <ul class="page-footer__social social">
+        <ul class="page-footer__social social social--footer">
           <li class="social__item">
             <a class="social__link" href="https://facebook.com" target="_blank" aria-label="Мы на Фейсбуке">
               <svg class="social__img social__img--fb" width="11" height="21">

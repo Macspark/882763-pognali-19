@@ -7,12 +7,15 @@
   height: 60px;
 
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .level__number {
+  @include reset-margin;
   position: relative;
-  margin: 0;
   margin-top: 11px;
   font-size: 24px;
   font-weight: bold;
@@ -44,20 +47,22 @@
   position: absolute;
   top: 0;
   left: 0;
-
   transform: rotate(270deg);
+
+  width: 100%;
+  height: 100%;
 }
 
-.profile .level {
+.level--profile {
+  @include reset-bg;
   position: relative;
   top: auto;
   left: auto;
   width: 100px;
   height: 100px;
-  background: none;
 }
 
-.profile .level__number {
+.level--profile .level__number {
   padding-top: 6px;
   font-size: 38px;
   color: $color-darktwo;
@@ -78,13 +83,13 @@
   }
 }
 
-.catalog .level {
+.level--catalog {
   width: 45px;
   height: 45px;
   background-color: #ffffff;
 }
 
-.catalog .level__number {
+.level--catalog .level__number {
   color: $color-darkslateblue;
 
   &::before {
@@ -97,12 +102,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .profile .level {
+  .level.level--profile {
     width: 94px;
     height: 94px;
   }
 
-  .profile .level__number {
+  .level--profile .level__number {
     padding-top: 4px;
     font-size: 38px;
     color: $color-darktwo;
@@ -121,12 +126,12 @@
     }
   }
 
-  .catalog .level {
+  .level.level--catalog {
     width: 60px;
     height: 60px;
   }
 
-  .catalog .level__number {
+  .level--catalog .level__number {
     color: $color-darkslateblue;
 
     &::before {
@@ -144,7 +149,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .profile .level__number {
+  .level--profile .level__number {
     padding-top: 4px;
     font-size: 38px;
     color: #ffffff;

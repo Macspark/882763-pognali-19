@@ -1,31 +1,22 @@
 .main-nav {
   @include container-padding;
+  @include centralize;
   position: absolute;
   bottom: 2px;
   left: auto;
   right: auto;
-  margin: 0 auto;
 
+  display: none;
   width: 100%;
+
   transform: translateY(100%);
   background-color: #ffffff;
   z-index: 100;
 }
 
-.page-header--nojs .main-nav {
-  position: relative;
-  transform: translateY(30px);
-}
-
-.page-header--toggled .main-nav__wrapper,
-.page-header--nojs .main-nav__wrapper {
-  display: block;
-}
-
 .main-nav__wrapper {
   padding-top: 25px;
   padding-bottom: 37px;
-  display: none;
 }
 
 .main-nav__menu {
@@ -54,12 +45,15 @@
 }
 
 .main-nav__button {
-  margin: 0 auto;
+  @include centralize;
   margin-bottom: 51px;
 
   width: 270px;
   height: 50px;
-  border-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   color: $color-darktwo;
 }
 
@@ -110,7 +104,10 @@
   height: 45px;
   background-color: $dark-blue-grey-two;
 
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
   fill: $color-lightgold;
 }
 
@@ -163,18 +160,17 @@
 
 
 @media (min-width: $desktop-width) {
-  .page-header--nojs .main-nav {
-    position: absolute;
-  }
-
   .main-nav {
     top: 30px;
     left: -66px;
     right: 0;
     bottom: auto;
+
+    display: flex;
     max-width: 800px;
 
     background-color: transparent;
+    color: #ffffff;
 
     &::before {
       position: absolute;
@@ -190,19 +186,19 @@
   }
 
   .main-nav__wrapper {
-    display: flex;
     padding-top: 0;
     padding-bottom: 0;
   }
 
   .main-nav__menu {
+    @include reset-margin;
     position: relative;
-    margin: 0;
 
     display: flex;
     flex-wrap: wrap;
     font-size: 20px;
     line-height: 1.5;
+    color: inherit;
 
     &::before {
       position: absolute;
@@ -219,7 +215,7 @@
   .main-nav__menu a {
     position: relative;
     display: block;
-    color: #ffffff;
+    color: inherit;
     transition: 500ms ease;
 
     &:hover,
@@ -240,17 +236,5 @@
   .main-nav .main-nav__contact,
   .main-nav .main-nav__social {
     display: none;
-  }
-
-  .page-header--scrolled .main-nav {
-    top: 5px;
-
-    &::before {
-      background-color: $color-darkbluegrey;
-    }
-  }
-
-  .page-header--scrolled a {
-    color: $color-darkbluegrey;
   }
 }

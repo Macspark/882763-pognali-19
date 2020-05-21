@@ -29,7 +29,10 @@
   width: 33px;
   height: 33px;
   background-color: #ffffff;
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 
   transition: 200ms ease;
   cursor: pointer;
@@ -60,7 +63,10 @@
   bottom: -9px;
   transform: translateX(-50%) translateY(100%);
 
-  padding: 15px 20px;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
 
   content: attr(data-transport);
   background-color: $color-darkbluegreythree;
@@ -100,7 +106,7 @@
   opacity: 0.3;
 }
 
-.search .transport__img {
+.transport--search .transport__img {
   margin-top: 4px;
   opacity: 1;
 }
@@ -114,17 +120,18 @@
   opacity: 1;
 }
 
-.catalog-card .transport__item {
+.transport--catalogcard .transport__item {
   background-color: $color-palegrey;
 }
 
 @media (min-width: $tablet-width) {
-  .profile .transport__item {
+  .transport--profile .transport__item {
     width: 43px;
     height: 43px;
   }
 
-  .profile .transport__img {
+  .transport--profile .transport__img,
+  .transport--catalog .transport__img {
     &--plane {
       width: 19px;
       height: 21px;
@@ -146,32 +153,12 @@
     }
   }
 
-  .search .transport__item {
+  .transport--search .transport__item {
     width: 43px;
     height: 43px;
   }
 
-  .catalog .transport__img--plane {
-    width: 19px;
-    height: 21px;
-  }
-
-  .catalog .transport__img--bus {
-    width: 17px;
-    height: 21px;
-  }
-
-  .catalog .transport__img--bike {
-    width: 24px;
-    height: 21px;
-  }
-
-  .catalog .transport__img--run {
-    width: 20px;
-    height: 21px;
-  }
-
-  .catalog-card .transport__item {
+  .transport--catalogcard .transport__item {
     background-color: transparent;
   }
 }

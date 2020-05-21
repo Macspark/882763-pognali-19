@@ -24,8 +24,11 @@
 }
 
 .promo__title {
-  margin: 0;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 11px;
+  width: 260px;
   font-size: 36px;
   font-weight: bold;
   line-height: 1.15;
@@ -46,7 +49,10 @@
 }
 
 .promo__text {
-  padding: 0 25px;
+  padding-top: 0;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 0;
 
   max-width: 80%;
 
@@ -71,10 +77,16 @@
 .promo__item {
   position: relative;
   margin-bottom: -15px;
-  padding: 20px 25px;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 20px;
 
   min-height: 95px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
   background-color: $color-lightgold;
 
@@ -94,6 +106,10 @@
     margin-bottom: 0;
     min-height: 80px;
   }
+}
+
+.promo__item p {
+  width: 80%;
 }
 
 .promo__item::after {
@@ -124,7 +140,7 @@
 }
 
 .promo__list p {
-  margin: 0;
+  @include reset-margin;
 }
 
 @media (min-width: $tablet-width) {
@@ -144,6 +160,7 @@
 
   .promo__title {
     margin-bottom: 87px;
+    width: 400px;
     font-size: 60px;
     line-height: 1.17;
   }
@@ -190,14 +207,14 @@
   }
 
   .promo__item {
-    margin: 0;
+    @include reset-margin;
+    @include reset-radius;
     padding-top: 27px;
     padding-left: 33px;
     padding-bottom: 60px;
 
     width: 50%;
     min-height: 140px;
-    border-radius: 0;
 
     &:nth-child(1) {
       width: 55%;
@@ -220,6 +237,10 @@
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
     }
+  }
+
+  .promo__item p {
+    width: 75%;
   }
 
   .promo__item::after {
@@ -252,8 +273,11 @@
   }
 
   .promo__title {
+    margin-right: 0;
+    margin-left: 0;
     margin-top: 37px;
     padding-left: 68px;
+    width: 505px;
     text-align: left;
   }
 
@@ -274,12 +298,16 @@
   }
 
   .promo .promo__item {
-    margin: 0;
+    @include reset-margin;
+    @include reset-radius;
     margin-right: -53px;
-    padding: 27px 32px;
+    padding-top: 27px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 27px;
+
     width: 28%;
     min-height: 107px;
-    border-radius: 0;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 

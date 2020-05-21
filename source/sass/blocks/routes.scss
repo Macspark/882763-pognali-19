@@ -16,18 +16,21 @@
 
 .routes__desc {
   margin-bottom: 61px;
-  padding: 0 25px;
+  padding-top: 0;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 0;
 }
 
 .routes__title {
-  margin: 0;
+  @include reset-margin;
   margin-bottom: 18px;
   font-size: 24px;
   color: $color-mango;
 }
 
 .routes__text {
-  margin: 0;
+  @include reset-margin;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.38;
@@ -60,12 +63,18 @@
 }
 
 .routes__button {
-  padding: 24px;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
 
   justify-content: flex-start;
   width: 100%;
   height: 62px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
   font-size: 18px;
   text-transform: none;
@@ -91,7 +100,10 @@
       content: "";
       width: 141px;
       height: 141px;
-      border-radius: 20px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
       background-color: $color-palegreythree;
     }
   }
@@ -126,12 +138,18 @@
   }
 
   .routes__button {
-    margin: 0 auto;
-    padding: 0 34px;
+    @include centralize;
+    padding-top: 0;
+    padding-right: 34px;
+    padding-left: 34px;
+    padding-bottom: 0;
 
     width: 90%;
     height: 81px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     font-size: 24px;
     line-height: 1;
@@ -173,14 +191,17 @@
       content: "";
       width: 141px;
       height: 141px;
-      border-radius: 20px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
       background-color: $color-palegreythree;
     }
   }
 
   .routes__desc {
+    @include reset-padding;
     order: 2;
-    padding: 0;
     width: 350px;
   }
 
@@ -195,7 +216,7 @@
   }
 
   .routes__button {
-    margin: 0;
+    @include reset-margin;
     width: 274px;
 
     &::before {

@@ -18,6 +18,34 @@
   margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: -3px;
+
+    content: "";
+    width: 6px;
+    height: 6px;
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: $color-darkslateblue;
+  }
+
+  &::after {
+    position: absolute;
+    top: 11px;
+    left: -14px;
+
+    content: "";
+    width: 2px;
+    height: 281px;
+
+    background-color: $color-darkslateblue;
+  }
 }
 
 .fun__title {
@@ -31,6 +59,30 @@
   font-size: 18px;
   font-weight: 500;
   color: $color-darkslateblue;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    content: "";
+    width: 45px;
+    height: 100%;
+
+    background-image: linear-gradient(to left, #ffffff 0, #ffffff 65%, transparent 100%);
+  }
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: -14px;
+
+    content: "";
+    width: 15px;
+    height: 2px;
+
+    background-color: $color-darkslateblue;
+  }
 }
 
 .fun__title span {
@@ -40,82 +92,42 @@
   overflow: hidden;
 }
 
-.fun__title::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  content: "";
-  width: 45px;
-  height: 100%;
-
-  background-image: linear-gradient(to left, #ffffff 0, #ffffff 65%, transparent 100%);
-}
-
-.fun__title::before {
-  position: absolute;
-  top: 10px;
-  left: -14px;
-
-  content: "";
-  width: 15px;
-  height: 2px;
-
-  background-color: $color-darkslateblue;
-}
-
-.fun__wrapper::before {
-  position: absolute;
-  top: 8px;
-  left: -3px;
-
-  content: "";
-  width: 6px;
-  height: 6px;
-
-  border-radius: 50%;
-  background-color: $color-darkslateblue;
-}
-
-.fun__wrapper::after {
-  position: absolute;
-  top: 11px;
-  left: -14px;
-
-  content: "";
-  width: 2px;
-  height: 281px;
-
-  background-color: $color-darkslateblue;
-}
-
-.fun__item:last-child .fun__wrapper::after {
-  display: none;
+.fun__item:last-child .fun__wrapper {
+  &::after {
+    display: none;
+  }
 }
 
 .fun__text {
-  padding: 7px 13px;
+  padding-top: 7px;
+  padding-right: 13px;
+  padding-left: 13px;
+  padding-bottom: 7px;
   width: 100%;
   height: 220px;
   resize: none;
-  border-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   outline: none;
+  border: 1px solid $color-cloudyblue;
   font-size: 16px;
   line-height: 1.38;
   color: $color-blackish;
   transition: 200ms ease;
 
   &:hover {
-    border-color: $color-blueygrey;
+    border: 1px solid $color-blueygrey;
   }
 
   &:focus,
   &:active {
-    border-color: $color-darktwo;
+    border: 1px solid $color-darktwo;
   }
 
   &:focus:invalid {
-    border-color: $color-blush;
+    border: 1px solid $color-blush;
   }
 }
 
@@ -129,51 +141,54 @@
   .fun__wrapper {
     margin-bottom: 27px;
     align-items: center;
-  }
 
-  .fun__title::before {
-    display: none;
-  }
+    &::before {
+      position: absolute;
+      top: 15px;
+      right: -35px;
+      left: auto;
 
-  .fun__wrapper::before {
-    position: absolute;
-    top: 15px;
-    right: -35px;
-    left: auto;
+      content: "";
+      width: 15px;
+      height: 15px;
 
-    content: "";
-    width: 15px;
-    height: 15px;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      background-color: $color-darkslateblue;
+    }
 
-    border-radius: 50%;
-    background-color: $color-darkslateblue;
-  }
+    &::after {
+      position: absolute;
+      top: 30px;
+      right: -29px;
+      left: auto;
 
-  .fun__wrapper::after {
-    position: absolute;
-    top: 30px;
-    right: -29px;
-    left: auto;
+      content: "";
+      width: 3px;
+      height: 247px;
 
-    content: "";
-    width: 3px;
-    height: 247px;
-
-    background-color: $color-darkslateblue;
+      background-color: $color-darkslateblue;
+    }
   }
 
   .fun__title {
-    padding: 0;
+    @include reset-padding;
     margin-bottom: 12px;
     height: 30px;
     font-size: 30px;
     font-weight: bold;
     line-height: 0.6;
-  }
 
-  .fun__title::after {
-    right: 5px;
-    width: 20%;
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      right: 5px;
+      width: 20%;
+    }
   }
 
   .fun__title span {
@@ -188,9 +203,12 @@
   }
 
   .fun__text {
-    padding: 14px 18px;
-    padding-right: 30px;
     margin-bottom: 20px;
+    padding-top: 14px;
+    padding-right: 30px;
+    padding-left: 18px;
+    padding-bottom: 14px;
+
     height: 142px;
     font-size: 20px;
     line-height: 1.2;
@@ -202,29 +220,29 @@
     position: relative;
     padding-top: 43px;
     margin-bottom: 30px;
-  }
 
-  .fun::before {
-    position: absolute;
-    top: -31px;
-    left: 0;
+    &::before {
+      position: absolute;
+      top: -31px;
+      left: 0;
 
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: $color-lightbluegreytwo;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $color-lightbluegreytwo;
+    }
   }
 
   .fun__wrapper {
     padding-right: 85px;
-  }
 
-  .fun__wrapper::before {
-    right: 186px;
-  }
+    &::before {
+      right: 186px;
+    }
 
-  .fun__wrapper::after {
-    right: 192px;
+    &::after {
+      right: 192px;
+    }
   }
 
   .fun__title {
@@ -233,7 +251,10 @@
   }
 
   .fun__text {
-    padding: 22px 15px 20px 25px;
+    padding-top: 22px;
+    padding-right: 15px;
+    padding-left: 25px;
+    padding-bottom: 20px;
     width: 730px;
   }
 }

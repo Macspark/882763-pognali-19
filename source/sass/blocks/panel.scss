@@ -15,7 +15,12 @@
 
   min-width: 40px;
   min-height: 40px;
-  border-radius: 20px;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
   background-color: $color-lightgold;
 
   font-size: 17px;
@@ -88,7 +93,12 @@
 
   .panel__item {
     height: 50px;
-    border-radius: 25px;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
     font-size: 20px;
     line-height: 1.5;
 

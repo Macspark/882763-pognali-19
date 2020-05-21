@@ -1,14 +1,14 @@
-var header = document.querySelector('.page-header');
-var main = document.querySelector('.page-main');
-var navBtn = document.querySelector('.page-header__toggle');
-var headerToggled = 'page-header--toggled';
-var headerScrolled ='page-header--scrolled';
-var mainScrolled = 'page-main--scrolled';
+var header = document.querySelector(".page-header");
+var main = document.querySelector(".page-main");
+var navBtn = document.querySelector(".page-header__toggle");
+var headerToggled = "page-header--toggled";
+var headerScrolled ="page-header--scrolled";
+var mainScrolled = "page-main--scrolled";
 var offset = main.offsetTop;
 
-header.classList.remove('page-header--nojs');
+header.classList.remove("page-header--nojs");
 
-navBtn.addEventListener('click', function() {
+navBtn.addEventListener("click", function() {
   if (header.classList.contains(headerToggled)) {
     header.classList.remove(headerToggled);
   } else {

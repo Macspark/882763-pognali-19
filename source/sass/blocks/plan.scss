@@ -1,13 +1,20 @@
 .plan {
   margin-bottom: 9px;
-  padding: 22px 24px 24px;
+  padding-top: 22px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
 
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
   background-color: #ffffff;
 }
 
 .plan__title {
-  margin: 0;
+  @include reset-margin;
   margin-bottom: 18px;
   font-size: 16px;
   font-weight: bold;
@@ -26,7 +33,7 @@
 }
 
 .plan__text {
-  margin: 0;
+  @include reset-margin;
   margin-bottom: 3px;
   font-size: 14px;
   font-weight: 500;
@@ -57,7 +64,10 @@
 @media (min-width: $tablet-width) {
   .plan {
     position: relative;
-    padding: 26px 32px 18px;
+    padding-top: 26px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 18px;
 
     &::after {
       position: absolute;
@@ -75,7 +85,10 @@
   .plan__title {
     position: relative;
     margin-bottom: 41px;
-    padding: 0 3px;
+    padding-top: 0;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 0;
     font-size: 24px;
     line-height: 2.08;
   }
@@ -93,7 +106,7 @@
   }
 
   .plan__details {
-    margin: 0;
+    @include reset-margin;
     display: flex;
     justify-content: space-between;
   }
@@ -116,7 +129,10 @@
 @media (min-width: $desktop-width) {
   .plan {
     margin-bottom: 15px;
-    padding: 24px 40px;
+    padding-top: 24px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 24px;
 
     display: flex;
     align-items: center;
@@ -128,7 +144,7 @@
   }
 
   .plan__title {
-    margin: 0;
+    @include reset-margin;
   }
 
   .plan__title span {
@@ -146,7 +162,7 @@
     margin-right: 35px;
 
     &:last-child {
-      margin: 0;
+      @include reset-margin;
     }
   }
 }

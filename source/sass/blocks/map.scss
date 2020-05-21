@@ -15,8 +15,8 @@
 }
 
 .map__address {
+  @include reset-margin;
   position: relative;
-  margin: 0;
   margin-bottom: 30px;
   padding-left: 60px;
 
@@ -37,7 +37,10 @@
   width: 45px;
   height: 45px;
 
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
   background-color: $color-darkbluegrey;
   background-image: url("../img/sprite.svg#contacts-location");
   background-repeat: no-repeat;
@@ -46,7 +49,10 @@
 }
 
 .map__button {
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 
   justify-content: flex-start;
   width: 100%;
@@ -55,7 +61,10 @@
   font-size: 18px;
   text-transform: none;
 
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   border: solid 3px $color-darkbluegrey;
 }
 
@@ -132,11 +141,17 @@
   }
 
   .map__button {
-    margin: 0 auto;
-    padding: 0 34px;
+    @include centralize;
+    padding-top: 0;
+    padding-right: 34px;
+    padding-left: 34px;
+    padding-bottom: 0;
     width: 90%;
     height: 81px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     font-size: 24px;
 
@@ -200,7 +215,7 @@
   }
 
   .map__button {
-    margin: 0;
+    @include reset-margin;
     padding-bottom: 2px;
     width: 324px;
 

@@ -25,7 +25,10 @@
 .companion-card__desc {
   position: relative;
   margin-top: -4px;
-  padding: 23px 45px 17px;
+  padding-top: 23px;
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-bottom: 17px;
 
   display: flex;
   align-items: center;
@@ -78,7 +81,10 @@
   bottom: -9px;
   transform: translateX(-50%) translateY(100%);
 
-  padding: 15px 20px;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
 
   content: attr(data-country);
   white-space: pre;
@@ -90,7 +96,10 @@
 }
 
 .companion-card__countries li {
-  margin: 0 9px;
+  margin-top: 0;
+  margin-right: 9px;
+  margin-left: 9px;
+  margin-bottom: 0;
 }
 
 .companion-card__name {
@@ -117,7 +126,10 @@
   content: "";
   width: 5px;
   height: 5px;
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
   background-color: $color-offline;
 }
 
@@ -142,7 +154,10 @@
 }
 
 .companion-card__tag {
-  margin: 0 2px;
+  margin-top: 0;
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -166,7 +181,10 @@
   }
 
   .companion-card__desc {
-    padding: 30px 30px 25px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 25px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }

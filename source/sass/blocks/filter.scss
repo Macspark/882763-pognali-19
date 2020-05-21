@@ -30,8 +30,8 @@
 }
 
 .filter__title {
+  @include reset-margin;
   position: relative;
-  margin: 0;
   padding-left: 27px;
   font-size: 16px;
   line-height: 1.38;
@@ -57,9 +57,9 @@
 }
 
 .filter__button {
+  @include reset-padding;
   width: 25px;
   height: 25px;
-  padding: 0;
   outline: none;
   border: none;
   background-color: transparent;
@@ -140,8 +140,8 @@
 
 .filter__table {
   @include reset-list;
+  @include centralize;
   position: relative;
-  margin: 0 auto;
   padding-left: 1px;
 
   display: none;
@@ -150,9 +150,9 @@
 }
 
 .filter__item {
+  @include reset-padding;
   margin-top: -1px;
   margin-left: -1px;
-  padding: 0;
 
   width: 45px;
   height: 42px;
@@ -217,7 +217,10 @@
   height: 40px;
 
   border: none;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   background-color: $color-periwinkle;
 
   &:hover,
@@ -350,7 +353,7 @@
   }
 
   .filter__table {
-    margin: 0;
+    @include reset-margin;
     margin-top: -10px;
     padding-left: 0;
 
@@ -384,12 +387,12 @@
 
     &:hover,
     &:focus {
-      background: none;
+      @include reset-bg;
       opacity: 0.6;
     }
 
     &:active {
-      background: none;
+      @include reset-bg;
       opacity: 0.3;
     }
   }
@@ -446,7 +449,10 @@
   }
 
   .filter__header {
-    padding: 0 63px 0 20px;
+    padding-top: 0;
+    padding-right: 63px;
+    padding-left: 20px;
+    padding-bottom: 0;
   }
 
   .filter__by-continents {
@@ -480,7 +486,10 @@
   }
 
   .filter__table {
-    padding: 22px 35px 0;
+    padding-top: 22px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 0;
     width: auto;
   }
 
@@ -500,8 +509,8 @@
   }
 
   .filter__letter {
+    @include reset-padding;
     margin-bottom: 50px;
-    padding: 0;
     width: auto;
     height: auto;
     pointer-events: none;

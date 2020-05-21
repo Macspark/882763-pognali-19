@@ -16,7 +16,7 @@
 }
 
 .plans__title {
-  margin: 0;
+  @include reset-margin;
   margin-bottom: 28px;
   font-size: 24px;
   color: $color-darkslateblue;

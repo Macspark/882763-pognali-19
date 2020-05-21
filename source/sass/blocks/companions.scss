@@ -25,7 +25,10 @@
     content: "";
     width: 133px;
     height: 132px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     background-color: $color-darkbluegreytwo;
   }
 
@@ -55,18 +58,21 @@
 }
 
 .companions__desc {
-  padding: 0 24px;
+  padding-top: 0;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 0;
 }
 
 .companions__title {
-  margin: 0;
+  @include reset-margin;
   margin-bottom: 18px;
   font-size: 24px;
   color: $color-mango;
 }
 
 .companions__text {
-  margin: 0;
+  @include reset-margin;
   margin-bottom: 21px;
   font-size: 16px;
   font-weight: 300;
@@ -88,12 +94,18 @@
 }
 
 .companions__button {
-  padding: 24px;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
 
   justify-content: flex-start;
   width: 100%;
   height: 62px;
-  border-radius: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 
   font-size: 18px;
   text-transform: none;
@@ -133,7 +145,7 @@
   }
 
   .companions__desc {
-    padding: 0;
+    @include reset-padding;
     padding-right: 30%;
   }
 
@@ -174,10 +186,16 @@
   }
 
   .companions__button {
-    padding: 0 34px;
+    padding-top: 0;
+    padding-right: 34px;
+    padding-left: 34px;
+    padding-bottom: 0;
 
     height: 81px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     font-size: 24px;
     line-height: 1;
@@ -222,7 +240,10 @@
       content: "";
       width: 213px;
       height: 213px;
-      border-radius: 20px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
       background-color: $color-darkbluegreytwo;
     }
 
@@ -234,10 +255,10 @@
   }
 
   .companions__desc {
+    @include reset-padding;
     position: relative;
     margin-right: 153px;
     margin-left: 72px;
-    padding: 0;
     width: 650px;
   }
 

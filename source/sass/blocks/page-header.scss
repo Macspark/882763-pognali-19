@@ -20,6 +20,7 @@
   }
 }
 
+
 .page-header__logo {
   width: 100px;
   height: 19px;
@@ -37,6 +38,8 @@
 }
 
 .page-header__toggle {
+  @include reset-bg;
+
   position: absolute;
   right: 25px;
   top: 24px;
@@ -46,8 +49,6 @@
 
   border: none;
   font-size: 0;
-
-  background: none;
 
   z-index: 1000;
 
@@ -68,7 +69,10 @@
     background-color: #ffffff;
 
     box-shadow: 0 8px 0 0 #ffffff;
-    border-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
   }
 }
 
@@ -136,6 +140,16 @@
   }
 }
 
+.page-header--nojs nav {
+  position: relative;
+  transform: translateY(30px);
+}
+
+.page-header--toggled nav,
+.page-header--nojs nav {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     padding-top: 40px;
@@ -166,6 +180,8 @@
     }
   }
 
+  .page-header--toggled .page-header__logo,
+  .page-header--nojs .page-header__logo,
   .page-header--scrolled .page-header__logo {
     &--white {
       display: none;
@@ -214,6 +230,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header--nojs nav {
+    position: absolute;
+  }
+
   .page-header {
     padding-top: 48px;
     background-color: $color-darkblue;
@@ -250,6 +270,15 @@
 
     &--blue {
       display: block;
+    }
+  }
+
+  .page-header--scrolled nav {
+    top: 5px;
+    color: $color-darkbluegrey;
+
+    &::before {
+      background-color: $color-darkbluegrey;
     }
   }
 }

@@ -7,8 +7,14 @@
 .country-card__desc {
   position: relative;
   margin-top: -15px;
-  padding: 24px 25px;
-  border-radius: 10px;
+  padding-top: 24px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 24px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: #ffffff;
   z-index: 2;
 }
@@ -20,13 +26,13 @@
 }
 
 .country-card__title {
-  margin: 0;
+  @include reset-margin;
   font-size: 21px;
   color: $color-darktwo;
 }
 
 .country-card__text {
-  margin: 0;
+  @include reset-margin;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.13;
@@ -36,11 +42,12 @@
 }
 
 .country-card__views {
+  @include reset-margin;
+
   position: absolute;
   top: 28px;
   right: 24px;
 
-  margin: 0;
   padding-left: 18px;
 
   font-size: 16px;
@@ -63,7 +70,10 @@
 
 @media (min-width: $tablet-width) {
   .country-card {
-    padding: 0 35px;
+    padding-top: 0;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 0;
 
     display: flex;
     align-items: flex-start;
@@ -73,14 +83,18 @@
     order: 1;
 
     margin: 0;
-    padding: 29px 30px 50px;
+    padding-top: 29px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 50px;
 
     width: 100%;
     min-height: 140px;
 
-    border-radius: 0;
     border-top-left-radius: 20px;
+    border-top-right-radius: 0;
     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0;
   }
 
   .country-card__img {
@@ -92,8 +106,9 @@
     min-height: 140px;
     object-fit: fill;
 
-    border-radius: 0;
+    border-top-left-radius: 0;
     border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
     border-bottom-right-radius: 20px;
   }
 

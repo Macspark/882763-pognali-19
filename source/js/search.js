@@ -1,8 +1,8 @@
-var searchBtn = document.querySelectorAll('.search__toggle');
-var searchToggled = 'search__fieldset--toggled';
+var searchBtn = document.querySelectorAll(".search__toggle");
+var searchToggled = "search__fieldset--toggled";
 
 for (var i = 0; i < searchBtn.length; i++) {
-    searchBtn[i].addEventListener('click', function(event) {
+    searchBtn[i].addEventListener("click", function(event) {
       if (event.target.parentElement.classList.contains(searchToggled)) {
         event.target.parentElement.classList.remove(searchToggled);
       } else {

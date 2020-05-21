@@ -1,7 +1,13 @@
 .catalog-card {
   position: relative;
-  padding: 14px 21px 22px 18px;
-  border-radius: 20px;
+  padding-top: 14px;
+  padding-right: 21px;
+  padding-left: 18px;
+  padding-bottom: 22px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   background-color: #ffffff;
 }
 
@@ -9,7 +15,10 @@
   overflow: hidden;
   width: 70px;
   height: 70px;
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .catalog-card__base-info {
@@ -19,7 +28,7 @@
 }
 
 .catalog-card__name {
-  margin: 0;
+  @include reset-margin;
   width: 50%;
   transition: 200ms ease;
 
@@ -46,7 +55,10 @@
   content: "";
   width: 6px;
   height: 6px;
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
   background-color: $color-offline;
 }
 
@@ -112,7 +124,10 @@
   position: relative;
   z-index: 2;
   margin-left: -15px;
-  padding: 0 15px;
+  padding-top: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 0;
 
   font-size: 15px;
   line-height: 1.2;
@@ -170,7 +185,10 @@
     z-index: 2;
     left: -14px;
     top: -32px;
-    padding: 0 15px;
+    padding-top: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 0;
 
     content: "транспорт:";
 
@@ -189,7 +207,10 @@
     z-index: 2;
     left: -11px;
     top: -27px;
-    padding: 0 15px;
+    padding-top: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 0;
 
     content: "левел:";
 
@@ -203,7 +224,10 @@
 .catalog-card__invite {
   width: 100%;
   height: 40px;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   background-color: $color-lightgold;
 
   color: $color-darktwo;
@@ -229,7 +253,10 @@
   width: 31px;
   height: 31px;
   border: none;
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
   background-color: $color-palegrey;
 
   &--liked {
@@ -291,7 +318,10 @@
 
 @media (min-width: $tablet-width) {
   .catalog-card {
-    padding: 30px 35px 1px;
+    padding-top: 30px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 1px;
     display: flex;
     flex-direction: column;
   }
@@ -310,7 +340,10 @@
     overflow: hidden;
     width: 190px;
     height: 190px;
-    border-radius: 18px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
   }
 
 
@@ -338,7 +371,10 @@
     content: "";
     width: 7px;
     height: 7px;
-    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     background-color: $color-offline;
   }
 
@@ -398,10 +434,13 @@
   }
 
   .catalog-card__invite {
-    margin: 0;
+    @include reset-margin;
     width: 148px;
     height: 50px;
-    border-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 
     font-size: 20px;
     font-weight: bold;
@@ -413,7 +452,7 @@
   }
 
   .catalog-card__like-button {
-    margin: 0;
+    @include reset-margin;
     margin-right: 7px;
     width: 50px;
     height: 50px;
@@ -429,8 +468,8 @@
   }
 
   .catalog-card__wishes-wrapper {
+    @include reset-padding;
     order: 2;
-    padding: 0;
   }
 
   .catalog-card__small {
@@ -438,7 +477,7 @@
   }
 
   .catalog-card__wishes {
-    margin: 0;
+    @include reset-margin;
     display: flex;
     flex-wrap: wrap;
   }
@@ -460,7 +499,10 @@
 
 @media (min-width: $desktop-width) {
   .catalog-card {
-    padding: 43px 35px 105px;
+    padding-top: 43px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 105px;
 
     flex-direction: row;
     align-items: flex-start;
@@ -468,9 +510,9 @@
   }
 
   .catalog-card__base-info {
+    @include reset-padding;
     margin-left: 310px;
     margin-right: 80px;
-    padding: 0;
     width: 250px;
   }
 
@@ -508,13 +550,14 @@
   .catalog-card__photo-wrapper {
     width: 285px;
     height: 285px;
-    border-radius: 0;
     border-top-left-radius: 20px;
+    border-top-right-radius: 0;
     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0;
   }
 
   .catalog-card__name {
-    padding: 0;
+    @include reset-padding;
     width: 100%;
   }
 

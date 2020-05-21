@@ -19,8 +19,8 @@
 }
 
 .companions-header__title {
+  @include reset-margin;
   position: relative;
-  margin: 0;
   font-size: 36px;
   font-weight: bold;
   line-height: 1.11;
@@ -35,7 +35,10 @@
     width: 100%;
     height: 5px;
 
-    border-radius: 2.4px;
+    border-top-left-radius: 2.4px;
+    border-top-right-radius: 2.4px;
+    border-bottom-left-radius: 2.4px;
+    border-bottom-right-radius: 2.4px;
     background-color: $color-mango;
   }
 }
@@ -61,7 +64,10 @@
   }
 
   .companions-header__wrapper {
-    padding: 70px 75px 55px;
+    padding-top: 70px;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-bottom: 55px;
   }
 
   .companions-header__title {
@@ -95,6 +101,9 @@
   }
 
   .companions-header__wrapper {
-    padding: 60px 122px 54px 127px;
+    padding-top: 60px;
+    padding-right: 122px;
+    padding-left: 127px;
+    padding-bottom: 54px;
   }
 }

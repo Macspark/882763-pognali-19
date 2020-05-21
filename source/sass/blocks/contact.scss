@@ -51,15 +51,20 @@
 }
 
 .contact__form input {
-  padding: 24px;
+  padding-top: 24px;
   padding-right: 70px;
+  padding-left: 24px;
+  padding-bottom: 24px;
 
   width: 100%;
   height: 62px;
 
   outline: none;
   border: none;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
   font-size: 18px;
   font-weight: bold;
@@ -79,8 +84,10 @@
   background-color: transparent;
   color: #ffffff;
 
-  padding: 20px;
+  padding-top: 24px;
   padding-right: 66px;
+  padding-left: 24px;
+  padding-bottom: 24px;
 }
 
 .contact__form input:focus:invalid {
@@ -96,7 +103,10 @@
   width: 60px;
   height: 62px;
   border: none;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-position: center;
 
   font-size: 0;
@@ -158,7 +168,10 @@
   height: 45px;
   background-color: $dark-blue-grey-two;
 
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
   fill: $color-lightgold;
 }
 
@@ -198,28 +211,36 @@
   }
 
   .contact__form input {
-    padding: 35px 32px;
+    padding-top: 35px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 35px;
     width: auto;
     flex-grow: 1;
     height: 81px;
-    border-radius: 0;
     border-top-left-radius: 20px;
+    border-top-right-radius: 0;
     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0;
     font-size: 24px;
     line-height: 1;
   }
 
   .contact__form input:active,
   .contact__form input:focus {
-    padding: 35px 28px;
+    padding-top: 35px;
+    padding-right: 28px;
+    padding-left: 28px;
+    padding-bottom: 35px;
   }
 
   .contact__form button {
     position: static;
     width: 82px;
     height: 81px;
-    border-radius: 0;
+    border-top-left-radius: 0;
     border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
     border-bottom-right-radius: 20px;
 
     &::before {
@@ -265,7 +286,7 @@
   }
 
   .contact__text {
-    margin: 0 auto;
+    @include centralize;
     width: 650px;
 
     &--bigger {
@@ -274,7 +295,10 @@
   }
 
   .contact__form {
-    margin: 60px auto 65px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 65px;
     width: 1175px;
   }
 
@@ -283,7 +307,10 @@
   }
 
   .contact__form button {
-    padding: 0 35px;
+    padding-top: 0;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 0;
     width: 325px;
     background-position: 89% center;
     font-size: 24px;

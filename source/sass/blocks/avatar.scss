@@ -3,7 +3,10 @@
 }
 
 .avatar__wrapper {
-  padding: 0 18px;
+  padding-top: 0;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-bottom: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -15,7 +18,10 @@
 }
 
 .avatar__img img {
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .avatar__button {
@@ -40,8 +46,8 @@
 
 @media (min-width: $tablet-width) {
   .avatar__wrapper {
+    @include reset-padding;
     margin-bottom: 33px;
-    padding: 0;
   }
 
   .avatar__img {
@@ -50,12 +56,18 @@
   }
 
   .avatar__img img {
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   .avatar__button {
     height: 60px;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
     font-size: 20px;
     font-weight: 500;
@@ -74,21 +86,21 @@
   }
 
   .avatar__wrapper {
-    margin: 0;
+    @include reset-margin;
     align-items: center;
     width: 329px;
   }
 
   .avatar__img {
-    margin: 0;
+    @include reset-margin;
     width: 190px;
     height: 190px;
   }
 
   .avatar__img img {
+    @include reset-radius;
     width: 100%;
     height: 100%;
-    border-radius: 0;
   }
 
   .avatar__level {
@@ -96,10 +108,10 @@
   }
 
   .avatar__button {
+    @include reset-radius;
     margin-left: auto;
     width: 190px;
     height: 47px;
-    border-radius: 0;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
   }
