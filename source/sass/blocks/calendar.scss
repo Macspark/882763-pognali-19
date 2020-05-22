@@ -93,6 +93,7 @@
 .calendar__day .calendar__slot {
   border: 1px solid $color-cloudyblue;
   background-color: $color-palegrey;
+  background-clip: padding-box;
   transition: 200ms ease;
 }
 

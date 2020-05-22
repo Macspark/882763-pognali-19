@@ -66,6 +66,10 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: solid 3px $color-darkbluegrey;
+
+  &::before {
+    right: 15px;
+  }
 }
 
 .map__button:hover,
